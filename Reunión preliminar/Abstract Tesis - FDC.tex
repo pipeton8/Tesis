@@ -1,0 +1,46 @@
+\documentclass[english, a4paper,12pt]{article}
+
+%:Preamble
+\usepackage[bookmarks, colorlinks=true, allcolors=blue, pagebackref=true, hyperfootnotes=false]{hyperref}
+\usepackage{felipito}
+\usepackage[round]{natbib}
+
+\graphicspath{{./Graphics/}}
+
+\textheight = 690pt
+\topmargin = -40pt
+\textwidth = 500pt
+\oddsidemargin = -22pt
+%\spacing{1.2}
+
+%\author{Felipe Del Canto M.}
+%\title{}
+%\date{}
+
+%:Document
+\begin{document}
+
+%%%	Title page		%%%
+%\maketitle
+\thispagestyle{empty}
+%
+%%:	Abstract
+%\vfill
+%\abstract{}
+%\vfill
+%
+\spacing{1.5}
+%
+%\newpage
+%%%	Introduction	%%%
+\begin{center} \bf
+	?`Cómo cuantificar las pérdidas al plegar una economía? \\ Una mirada desde la aproximación. \\ Felipe Del Canto, 5 de Agosto de 2019
+\end{center}
+
+La agregación en sus diferentes formas es una herramienta altamente delicada. Tanto si se quieren aglomerar bienes en uno o considerar la demanda agregada como proveniente de la maximización de utilidad de un solo agente, la primera pregunta que surge es: ?`cuándo esto es pertinente?. La literatura ha identificado condiciones suficientes y en algunos casos también necesarias para que la economía descrita con y sin agregación sean idénticas. Estas condiciones, sin embargo, tienden a ser muy restrictivas y no se cumplen en muchas de las aplicaciones empíricas donde la agregación es crucial para la identificación. Al mismo tiempo, su uso inadecuado puede afectar la interpretación de los resultados y sus predicciones. En este escenario, la pregunta que surge inmediatamente es ?`qué información relevante sobre la economía se está perdiendo en estos casos? ?`es posible medir qué y cuánto se pierde en poder descriptivo o predictivo? El objetivo entonces de este proyecto de tesis es desarrollar medidas de error que permitan dar una noción de la información que se pierde (o no) al agregar. Siguiendo ideas de Bertsekas (\textit{Reinforced Learning and Optimal Control}, 2019, capítulo 6) una primera aproximación consiste en comparar las soluciones al problema del consumidor con y sin agregación y, a partir de las diferencias, extraer las medidas de error. 
+	
+%: 	Bibliography
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}
