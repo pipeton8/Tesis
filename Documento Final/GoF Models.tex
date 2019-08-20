@@ -1,19 +1,25 @@
 \documentclass[english, a4paper,12pt]{article}
 
 %:Preamble
+%:	Packages
 \usepackage[bookmarks, colorlinks=true, allcolors=blue, pagebackref=true, hyperfootnotes=false]{hyperref}
 \usepackage[eng]{felipito}
 \usepackage[round]{natbib}
 
+%:	Graphics path
 \graphicspath{{./Graphics/}}
 
+%:	Dimensions and spacing
 \textheight = 690pt
 \topmargin = -40pt
 \textwidth = 500pt
 \oddsidemargin = -22pt
-%\spacing{2}
 \spacing{1.2}
 
+%:	Epigraph settings
+\setlength{\epigraphwidth}{0.59\textwidth}
+
+%:	Title page content
 \author{Felipe Del Canto M.}
 \title{Goodness-of-fit in economic models \\ ?`How much are we losing?}
 \date{November smth, 2019}
@@ -21,13 +27,18 @@
 %:Document
 \begin{document}
 
-%%%	Title page		%%%
+%:	Title page
 \maketitle
 \thispagestyle{empty}
 
 %:	Abstract
+
 \vfill
-\abstract{}
+\epigraph{(...) all models are approximations. Essentially, all models are wrong, but some are useful. However, %
+the approximate nature of the model must always be borne in mind.}{\textit{Empirical Model-Building and Response Surfaces (1987)} \\ \textsc{George Box and Norman Draper}}
+
+\vfill
+\abstract{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat. Nunc aliquet bibendum enim facilisis gravida. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Amet luctus venenatis lectus magna fringilla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque in. Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Sagittis orci a scelerisque purus semper eget duis. Nulla pharetra diam sit amet nisl suscipit. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Fusce ut placerat orci nulla. Pharetra vel turpis nunc eget lorem dolor. Tristique senectus et netus et malesuada.}
 \vfill
 
 \spacing{1.5}
@@ -36,9 +47,30 @@
 %%%	Introduction	%%%
 \section{Introduction}
 
+%:	General importance of models in science and critics to their generalized use
+Every model in science is by definition a simplified reality. In the bright side, abstracting from the complexity of the real world has allowed society to understand the sometimes subtle mechanisms that rule nature and human behavior. This doesn't mean that a model is useful for every purpose. Evidently, whilst some of them may be very useful to expose certain dynamics of the real world, the approximation may carry errors that harm future predictions. This points directly to the question of which model the most useful for some given problem. When the answer is \textit{many} the modeler needs to make a choice based on the results she expects to highlight and the channel to study \rojo{(examples)}. When the answer is \textit{none} a new model may arise or even an inadequate model can be reused \rojo{(don't like this unless I have examples)}. 
+
+%: Models in economics?
+In economics the use of models\rojo{?}
+
+%:	Representative agent model problems (critics?)
+Take as an example the representative agent models. The assumption that there is only one consumer in the economy is useful to understand the dynamics of other sectors of the economy. Using this model to predict future realizations of certain key variables such as aggregate demand or marginal propensity of consumption (as in the buffer-stock models) may induce serious errors if heterogeneity effects are in place. \rojo{(Read this: Essays in positive economics, Milton Friedman)}.
+
+%:	Aggregation in particular
+The aforementioned model is a particular case of a common practice in economics: aggregation. Describing elements of an economy using clustered units instead of the individual parts is embodied in any economic model. The other canonical example of its use is aggregation across goods \rojo{(this sentence needs content and good placement)}. Regarding these two implementations, previous literature focused in one side of the problem: when is it possible to carry out this practice and describe precisely the same economy. In the case of the representative agent, the necessary and sufficient condition is that indirect utility of individual consumers share a common functional form: the Gorman form \rojo{(Is it necessary to show the Gorman form? I think not)}.\footnote{\cite{Gorman53}.} When aggregation is applied to goods, the answer has been more elusive. First, the Hicks-Leontief (composite commodity) theorem allows aggregation if relative prices are constant in the group of goods that are to be bundled. The second answer states that group some goods is possible if preferences between them are ``independent'' of the remaining goods present in the economy. A somewhat weaker requirement is proposed by \cite{Lewbel96}: bundling is possible if all group relative prices are independent of price indexes and income. For the two kinds of aggregation, the conditions are highly restrictive and not typically met in econometric or theoretical applications. Notwithstanding, the literature has used them in both constructing models and making econometric estimations \rojo{(cite examples)}.
+
+%:	Idea
+Of course, this practice comes at a cost. Discrepancies between predictions from aggregate models and disaggregate ones may be large enough to strip off the results of the formers of economic relevance. Thus, understand and quantify possible approximations errors is crucial to determine and measure the goodness-of-fit of the model. In this work I intend to give a first look at how these deviations appear in simple models that use both types of aggregation. Next, drawing of the previous results, I will discuss a general methodology about approaching this problem in more general settings. 
+
+%:	Index
+The rest of the paper proceeds as follows. In \Cref{sec:repagent} I present the first results bounding the prediction error in the case of a representative agent model. \rojo{Blabla}. Finally, in \Cref{sec:conclusion} I discuss some final thoughts about model fitness.
+
+%%%	Aggregation across consumers	%%%
+\section{Aggregation across consumers} \label{sec:repagent}
+
 
 %%%	Concluding remarks		%%%
-\section{Concluding remarks}
+\section{Concluding remarks} \label{sec:conclusion}
 
 %: 	Bibliography
 \bibliographystyle{abbrvnat}
