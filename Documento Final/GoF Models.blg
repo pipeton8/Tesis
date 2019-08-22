@@ -3,44 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: GoF Models.aux
 The style file: abbrvnat.bst
 Database file #1: references.bib
-You've used 2 entries,
+Warning--empty journal in GormanSeparability
+Warning--empty journal in Morris97
+Warning--empty journal in Agg1
+Warning--empty journal in Leontief36
+Warning--empty booktitle in SuttonMarketStruct
+You've used 16 entries,
             2773 wiz_defined-function locations,
-            610 strings with 4826 characters,
-and the built_in function-call counts, 811 in all, are:
-= -- 77
-> -- 20
-< -- 2
-+ -- 8
-- -- 6
-* -- 60
-:= -- 129
-add.period$ -- 7
-call.type$ -- 2
-change.case$ -- 8
-chr.to.int$ -- 2
-cite$ -- 4
-duplicate$ -- 40
-empty$ -- 79
-format.name$ -- 8
-if$ -- 164
+            740 strings with 7341 characters,
+and the built_in function-call counts, 7286 in all, are:
+= -- 708
+> -- 273
+< -- 17
++ -- 97
+- -- 81
+* -- 581
+:= -- 1107
+add.period$ -- 69
+call.type$ -- 16
+change.case$ -- 75
+chr.to.int$ -- 16
+cite$ -- 37
+duplicate$ -- 347
+empty$ -- 659
+format.name$ -- 105
+if$ -- 1556
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 19
-num.names$ -- 8
-pop$ -- 13
+missing$ -- 17
+newline$ -- 106
+num.names$ -- 64
+pop$ -- 127
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 59
 quote$ -- 0
-skip$ -- 27
+skip$ -- 245
 stack$ -- 0
-substring$ -- 48
-swap$ -- 2
-text.length$ -- 0
+substring$ -- 385
+swap$ -- 32
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 22
-warning$ -- 0
-while$ -- 10
+type$ -- 171
+warning$ -- 5
+while$ -- 73
 width$ -- 0
-write$ -- 35
+write$ -- 251
+(There were 5 warnings)

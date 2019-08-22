@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -28,12 +28,25 @@ R.~C. Feenstra and G.~H. Hanson.
   May 2000.
 \newblock \doi{10.1257/aer.90.2.155}.
 
+\bibitem[Fields and Ok(1999)]{OkFieldsIncome}
+G.~S. Fields and E.~A. Ok.
+\newblock \emph{The Measurement of Income Mobility: An Introduction to the
+  Literature}, pages 557--598.
+\newblock Springer Netherlands, Dordrecht, 1999.
+\newblock ISBN 978-94-011-4413-1.
+\newblock \doi{10.1007/978-94-011-4413-1_20}.
+
 \bibitem[Friedman(1953)]{FriedmanPositive}
 M.~Friedman.
 \newblock The methodology of positive economics.
 \newblock In \emph{Essays in Positive Economics}, A Phoenix book. Business
   economics, pages 3--43. University of Chicago Press, 1953.
 \newblock ISBN 9780226264035.
+
+\bibitem[Gabaix et~al.(2015)Gabaix, Lasry, Lions, and Moll]{GabaixIncome}
+X.~Gabaix, J.-M. Lasry, P.-L. Lions, and B.~Moll.
+\newblock The dynamics of inequality.
+\newblock Working Paper 21363, National Bureau of Economic Research, July 2015.
 
 \bibitem[Gorman(1953)]{Gorman53}
 W.~M. Gorman.
