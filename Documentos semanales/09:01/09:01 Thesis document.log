@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 AUG 2019 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 AUG 2019 17:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"GoF Models.tex"
-(./GoF Models.tex
+**"09:01 Thesis document.tex"
+(./09:01 Thesis document.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -1939,31 +1939,31 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count298
 )
-(./GoF Models.aux
+(./09:01 Thesis document.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
 )
-\openout1 = `"GoF Models.aux"'.
+\openout1 = `"09:01 Thesis document.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 \AtBeginShipoutBox=\box110
-Package backref Info: ** backref set up for natbib ** on input line 28.
-Package hyperref Info: Link coloring ON on input line 28.
+Package backref Info: ** backref set up for natbib ** on input line 17.
+Package hyperref Info: Link coloring ON on input line 17.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1973,16 +1973,16 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count299
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
-(./GoF Models.out) (./GoF Models.out)
+(./09:01 Thesis document.out) (./09:01 Thesis document.out)
 \@outlinefile=\write8
-\openout8 = `"GoF Models.out"'.
+\openout8 = `"09:01 Thesis document.out"'.
 
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2002,45 +2002,45 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 28.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 28.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 28.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 17.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 28.
+(Font)              using `U/stmry/m/n' instead on input line 17.
 
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 28.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 17.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.47998pt on input line 28.
+Package xypdf Info: Line width: 0.47998pt on input line 17.
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
-Package cleveref Info: loaded `spanish' language definitions on input line 28.
-Package cleveref Info: loaded `english' language definitions on input line 28.
+LaTeX Info: Redefining \. on input line 17.
+LaTeX Info: Redefining \% on input line 17.
+Package cleveref Info: loaded `spanish' language definitions on input line 17.
+Package cleveref Info: loaded `english' language definitions on input line 17.
  [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- (./GoF Models.bbl (./GoF Models.brf)
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
+09:01 Thesis document.bbl
+(./09:01 Thesis document.brf)
 \tf@brf=\write9
-\openout9 = `"GoF Models.brf"'.
+\openout9 = `"09:01 Thesis document.brf"'.
 
-
-[4] [5]) [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
- (./GoF Models.aux
+ [3]) [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
+ (./09:01 Thesis document.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 Package cleveref Info: loaded `spanish' language definitions on input line 24.
@@ -2049,56 +2049,55 @@ LaTeX Info: Redefining \% on input line 28.
 Package cleveref Info: loaded `spanish' language definitions on input line 28.
 Package cleveref Info: loaded `english' language definitions on input line 32.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
+Package rerunfilecheck Info: File `"09:01 Thesis document".out' has not changed
+.
+(rerunfilecheck)             Checksum: 91FA684267D0C7B2E08006925C3C7E5A;65.
+Package rerunfilecheck Info: File `"09:01 Thesis document".brf' has not changed
+.
+(rerunfilecheck)             Checksum: A0679A28A0D0206F5B2A4E4CB02F5251;90.
 
-
-Package rerunfilecheck Warning: File `"GoF Models".out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `"GoF Models".out':
-(rerunfilecheck)             Before: FE40F48CC703330DE536AC81E0FA7866;163
-(rerunfilecheck)             After:  BB62CB988B9FCF39AE62F386FFF732D6;222.
-Package rerunfilecheck Info: File `"GoF Models".brf' has not changed.
-(rerunfilecheck)             Checksum: D6FC0E4FE858711CDEC7D8D70FA0C712;716.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  )
-(\end occurred inside a group at level 2)
+(\end occurred inside a group at level 1)
 
-### semi simple group (level 2) entered at line 44 (\begingroup)
-### semi simple group (level 1) entered at line 17 (\begingroup)
+### semi simple group (level 1) entered at line 14 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37768 strings out of 493014
- 726613 string characters out of 6133351
- 890097 words of memory out of 5000000
- 40603 multiletter control sequences out of 15000+600000
- 42276 words of font info for 137 fonts, out of 8000000 for 9000
+ 37581 strings out of 493014
+ 724154 string characters out of 6133351
+ 887108 words of memory out of 5000000
+ 40453 multiletter control sequences out of 15000+600000
+ 21294 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,8n,95p,10522b,2887s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,10n,95p,10533b,2769s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
--super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/s
-fbx1095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfb
-x1728.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1
-095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm070
-0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on "GoF Models.pdf" (6 pages, 199802 bytes).
+-super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/matha12.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/mathb12.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/mathx10.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
+m10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx144
+0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on "09:01 Thesis document.pdf" (4 pages, 173277 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 106 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
