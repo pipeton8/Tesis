@@ -1,0 +1,59 @@
+\documentclass[english, a4paper,12pt]{article}
+
+%:Preamble
+\usepackage[bookmarks, colorlinks=true, allcolors=blue, pagebackref=true, hyperfootnotes=false]{hyperref}
+\usepackage[eng]{felipito}
+\usepackage[round]{natbib}
+
+\graphicspath{{./Graphics/}}
+
+\textheight = 690pt
+\topmargin = -40pt
+\textwidth = 500pt
+\oddsidemargin = -22pt
+\spacing{1.5}
+
+%:Document
+\begin{document}
+
+%:	Title
+\begin{center} \bf \large
+	Hicksian aggregation across consumers \\ or (the rebound problem after derivation went wrong) \\ Felipe Del Canto, 9 de Septiembre de 2019
+\end{center}
+
+%:	
+\section{Do you remember this?}
+Consider an economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in [m,M]$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function, that is,
+	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha}z^{1-\alpha} = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)z^{1-\alpha}.$$
+	
+Assume further that $(y,\alpha)$ follows a certain distribution $F(\mathbf{p},q)$ over its support $S := [m,M] \times  (0,1)$ that may depend on the prices $\mathbf{p}$ and $q$. Suppose that for simplicity the investigator is not interested in a model with disaggregate consumption of the $\mathbf{x}$ goods but instead considers a single good $X$ given by: 
+	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
+
+In this scenario, we can write
+	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
+which is the usual Cobb-Douglas utility function. By defining $\epsilon := (1-\alpha)^{-1}$ and
+	$$P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},$$
+we have that the solutions
+	\begin{equation} \label{eq:probdisagg}
+		\probop{\mathbf{x}(\mathbf{p}, q, y) 
+			:= \argmax_{\mathbf{x}, z}}{u_{\alpha}(\mathbf{x}, z)}
+				{&	\mathbf{p} \mathbf{x} + qz = y.},
+	\end{equation} 
+and
+	\begin{equation} \label{eq:probagg}
+		\probop{X(P(\mathbf{p}), q, y) := \argmax_{X, z}}{U(X,z)}
+										{&	P_{\alpha}(\mathbf{p})X + qz = y}
+	\end{equation}
+satisfy
+	$$X(P_{\alpha}(\mathbf{p}), q, y) = g_{\alpha}\big(\mathbf{x}(\mathbf{p}, q, y)\big).$$
+
+Note that the functions $g_{\alpha}$ and $P_{\alpha}$ depend explicitly on the value of $\alpha$. Hence, in order to correctly aggregate the goods $\mathbf{x}$ a different aggregator and price index for every person is needed. However, if the investigator is not aware of (or concerned with) the heterogeneity of the population then she will use a single function $g := g_{\overline{\alpha}}$ and $P := P_{\overline{\alpha}}$. If she is interested in estimating the demand for category $X_{\alpha} := g_{\alpha}(\mathbf{x})$ for ea
+
+
+
+
+%: 	Bibliography
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}

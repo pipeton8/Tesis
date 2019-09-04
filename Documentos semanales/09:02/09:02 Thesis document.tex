@@ -18,7 +18,7 @@
 
 %:	Title
 \begin{center} \bf \large
-	Hicksian aggregation season 2 \\ Felipe Del Canto, 1 de Septiembre de 2019
+	Hicksian aggregation season 2 \\ Felipe Del Canto, 2 de Septiembre de 2019
 \end{center}
 
 %:	Where have I seen this before?
@@ -42,7 +42,7 @@ satisfy
 Typically, these functions do not exist except in very restrictive cases. Thus, in the general case the equality will not hold and consequently the approximation error could be directly measured by
 	$$\clx{D}(\mathbf{p}, q,y) := \Big|X(f(\mathbf{p}), q, y) - g\big(\mathbf{x}(\mathbf{p}, q, y)\big)\Big|$$
 
-For general functions $u$ and $U$ there is no algebraic expression of the demands $X$ and $x$. Hence, in our last meeting we discussed a method to compute this difference based on a Taylor approximation of both demand functions. In order to obtain the derivatives one could implicitly differentiate the lagrangians of problems \eqref{eq:probdisagg} and \eqref{eq:probagg}. To put in practice this plan in a particular example one wishes to choose some ``nice'' utility functions $u$ and $U$ and aggregators $f$ and $g$ to see how these calculations work out. Sadly, the common Cobb-Douglas utility function is of no interest in this setting. Indeed, if $\alpha \in (0,1)^{n}$ with $|\alpha|_{1} < 1$, then
+For general functions $u$ and $U$ there is no algebraic expression of the demands $X$ and $\mathbf{x}$. Hence, in our last meeting we discussed a method to compute this difference based on a Taylor approximation of both demand functions. In order to obtain the derivatives one could implicitly differentiate the lagrangians of problems \eqref{eq:probdisagg} and \eqref{eq:probagg}. To put in practice this plan in a particular example one wishes to choose some ``nice'' utility functions $u$ and $U$ and aggregators $f$ and $g$ to see how these calculations work out. Sadly, the common Cobb-Douglas utility function is of no interest in this setting. Indeed, if $\alpha \in (0,1)^{n}$ with $|\alpha|_{1} < 1$, then
 	$$\hat{u}_{\alpha}(\mathbf{x}, z) = \underbrace{\left(\prod_{j=1}^{n} x_{j}^{\alpha_{j}}\right)}_{:= v(\mathbf{x})}z^{1-|\alpha|_{1}},$$
 and thus
 	$$\hat{u}_{\alpha}(\mathbf{x},z) = \tilde{u}(v(\mathbf{x}), z),$$
