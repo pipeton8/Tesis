@@ -23,35 +23,66 @@
 
 %:	
 \section{Do you remember this?}
-Consider an economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in [m,M]$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function, that is,
+Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in [m,M]$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function, that is,
 	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha}z^{1-\alpha} = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)z^{1-\alpha}.$$
-	
-Assume further that $(y,\alpha)$ follows a certain distribution $F(\mathbf{p},q)$ over its support $S := [m,M] \times  (0,1)$ that may depend on the prices $\mathbf{p}$ and $q$. Suppose that for simplicity the investigator is not interested in a model with disaggregate consumption of the $\mathbf{x}$ goods but instead considers a single good $X$ given by: 
-	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
 
-In this scenario, we can write
-	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
-which is the usual Cobb-Douglas utility function. By defining $\epsilon := (1-\alpha)^{-1}$ and
-	$$P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},$$
-we have that the solutions
+Consumers choose how much of the $\mathbf{x}$ goods to consume in each period according to
 	\begin{equation} \label{eq:probdisagg}
 		\probop{\mathbf{x}(\mathbf{p}, q, y) 
-			:= \argmax_{\mathbf{x}, z}}{u_{\alpha}(\mathbf{x}, z)}
-				{&	\mathbf{p} \mathbf{x} + qz = y.},
+			:= \argmax_{\mathbf{x}, z}}{u_{\alpha}(\mathbf{x}, z),}
+				{&	\mathbf{p} \mathbf{x} + qz = y.}
 	\end{equation} 
-and
+
+Individuals in this economy (that is, pairs $(y,\alpha)$) are distributed according to $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) with support $S := [m,M] \times  (0,1)$. In this setting, is it possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ given by: 
+	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
+In that case, we have
+	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
+which is the usual Cobb-Douglas utility function. Hence, by defining $\epsilon := (1-\alpha)^{-1}$ and
+	$$P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},$$
+we have that the category demand
 	\begin{equation} \label{eq:probagg}
 		\probop{X(P(\mathbf{p}), q, y) := \argmax_{X, z}}{U(X,z)}
 										{&	P_{\alpha}(\mathbf{p})X + qz = y}
 	\end{equation}
-satisfy
-	$$X(P_{\alpha}(\mathbf{p}), q, y) = g_{\alpha}\big(\mathbf{x}(\mathbf{p}, q, y)\big).$$
+satisfies
+	\begin{equation} \label{eq:aggequality}
+		X(P_{\alpha}(\mathbf{p}), q, y) = g_{\alpha}\big(\mathbf{x}(\mathbf{p}, q, y)\big).
+	\end{equation}
 
-Note that the functions $g_{\alpha}$ and $P_{\alpha}$ depend explicitly on the value of $\alpha$. Hence, in order to correctly aggregate the goods $\mathbf{x}$ a different aggregator and price index for every person is needed. However, if the investigator is not aware of (or concerned with) the heterogeneity of the population then she will use a single function $g := g_{\overline{\alpha}}$ and $P := P_{\overline{\alpha}}$. If she is interested in estimating the demand for category $X_{\alpha} := g_{\alpha}(\mathbf{x})$ for ea
+Note that the functions $g_{\alpha}$ and $P_{\alpha}$ depend explicitly on the value of $\alpha$. Thus, in order to correctly aggregate the goods $\mathbf{x}$ a different aggregator and price index for every person is needed.
 
+In this context, consider now the following situation. An investigator at time $t = 0$ has data available on disaggregate consumption of the $\mathbf{x}$ and $z$ goods, income $y$ and prices $(\mathbf{p},q)$. For simplicity she assumes that all agents have the same preferences, which means that all differences in consumption are accounted by differences in income. The last assumption also implies that in order to obtain the category demand of each agent and the price index, she must set a parameter $\overline{\alpha}$ which in principle could be chosen
+	\begin{itemize}
+		\item based on previous evidence (i.e., the expenditure fraction of category $X$) or,
+		\item optimally in order to minimize discrepancies between actual and predicted category demands in $t = 0$.
+	\end{itemize}
 
+For the second method, the choice of $\overline{\alpha}$ should minimize the expectation of
+	$$\clx{D}(\alpha) = \big| g_{\alpha}(\mathbf{x}(\mathbf{p}, q, y)) - g_{\overline{\alpha}}(\mathbf{x}(\mathbf{p}, q, y) \big|,$$
+which by \eqref{eq:aggequality} is equivalent to
+	$$\clx{D}(\alpha) = \big| X(P_{\alpha}(\mathbf{p}), q, y) - X(P_{\overline{\alpha}}(\mathbf{p}), q, y) \big|,$$
+and this difference can be easily computed by taking advantage of the structure of problem \eqref{eq:probagg},
+	$$\clx{D}(\alpha) = y\left| \frac{\alpha}{P_{\alpha}(\mathbf{p})} - \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p})} \right|.$$
+Thus, $\overline{\alpha}$ should satisfy
+	\[
+		\overline{\alpha}
+			=	\argmin_{\hat{\alpha} \in [0,1]} 
+					\int_{S} y\left| \frac{\alpha}{P_{\alpha}(\mathbf{p})} 
+							- \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p})} \right|\, dF(y,\alpha).
+	\]
+	
+If, as I assumed in previous settings, $\alpha$ and $y$ are independent random variables, then
+	\begin{equation} \label{eq:overalpha}
+		\overline{\alpha}
+			=	\argmin_{\hat{\alpha} \in [0,1]} 
+					\int_{0}^{1} \left| \frac{\alpha}{P_{\alpha}(\mathbf{p})} 
+							- \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p})} \right|\, dF_{\alpha}(\alpha).
+	\end{equation}
+	
+Intuitively, $\overline{\alpha} \in (0,1)$ because $F_{\alpha}$ has support over the open interval and choosing a parameter away from that support should not be optimal.\footnote{A formal argument for this claim would be nice.} As a final comment, observe that choosing $\overline{\alpha}$ needs knowledge about the distribution $F_{\alpha}$, which may not be available.
 
-
+The objective of our researcher is to estimate category demands in $t = 1$. Let's assume that 
+	
 %: 	Bibliography
 \bibliographystyle{abbrvnat}
 \bibliography{references}
