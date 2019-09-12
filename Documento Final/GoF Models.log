@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  11 SEP 2019 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 SEP 2019 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2038,14 +2038,14 @@ Package cleveref Info: loaded `english' language definitions on input line 28.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- [4] [5] [6] [7] (./GoF Models.bbl
-(./GoF Models.brf)
+ [4] [5] [6] [7] [8] [9]
+(./GoF Models.bbl (./GoF Models.brf)
 \tf@brf=\write9
 \openout9 = `"GoF Models.brf"'.
 
- [8] [9]) [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+ [10] [11]) [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
  (./GoF Models.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
@@ -2055,10 +2055,10 @@ LaTeX Info: Redefining \% on input line 28.
 Package cleveref Info: loaded `spanish' language definitions on input line 28.
 Package cleveref Info: loaded `english' language definitions on input line 32.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
 Package rerunfilecheck Info: File `"GoF Models".out' has not changed.
-(rerunfilecheck)             Checksum: 12CCECC94501A0DA015F9A45BF86622F;446.
+(rerunfilecheck)             Checksum: E331CDFF595C2BE864D4F47EC7F7235D;717.
 Package rerunfilecheck Info: File `"GoF Models".brf' has not changed.
 (rerunfilecheck)             Checksum: 46B124A5204E028C18A1C15F745C03F5;986.
 
@@ -2068,7 +2068,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 203.
  )
 (\end occurred inside a group at level 2)
 
@@ -2076,41 +2076,43 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
 ### semi simple group (level 1) entered at line 17 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 37808 strings out of 493014
- 727200 string characters out of 6133351
+ 37820 strings out of 493014
+ 727357 string characters out of 6133351
  890097 words of memory out of 5000000
- 40629 multiletter control sequences out of 15000+600000
+ 40635 multiletter control sequences out of 15000+600000
  43817 words of font info for 139 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,8n,95p,10522b,2890s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,12n,95p,10522b,2892s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmbx8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 mi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
-8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/matha10.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/matha8.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/mathb1
-0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/math
-x10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx109
-5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.
-pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on "GoF Models.pdf" (10 pages, 308781 bytes).
+7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/matha10.pfb
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/matha8.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/mathb10.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/mathabx-type1/mathx1
+0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sbm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1
+095.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx144
+0.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1728.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb>
+Output written on "GoF Models.pdf" (12 pages, 334912 bytes).
 PDF statistics:
- 283 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
- 40 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 319 PDF objects out of 1000 (max. 8388607)
+ 277 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

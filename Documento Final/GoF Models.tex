@@ -22,7 +22,7 @@
 %:	Title page content
 \author{Felipe Del Canto M.}
 \title{Goodness-of-fit in economic models \\ ?`How much are we losing?}
-\date{November smth, 2019}
+\date{September 17, 2019}
 
 %:Document
 \begin{document}
@@ -60,7 +60,7 @@ Back to the economic theory, consider the example of the representative agent mo
 The aforementioned model is a particular case of a common practice in economics: aggregation. The other canonical example of its use is aggregation across goods, where instead of describing the myriad of goods available in an economy they are grouped into one or several categories. Regarding these two implementations, previous theoretical literature focused in one side of the problem: When is it possible to carry out this practice and describe precisely the same economy?. In the case of the representative agent, the necessary and sufficient condition is that the indirect utility function of every consumer has the Gorman form.\footnote{\cite{Gorman53}.} When aggregation is applied to goods, the answer has been more elusive but two results arise. First, the Hicks-Leontief (composite commodity) theorem allows aggregation if relative prices are constant in the group of goods that are to be bundled.\footnote{\cite{Leontief36, HicksBook}.} Although a somewhat weaker requirement is proposed by \cite{Lewbel96}: bundling is possible if all group relative prices are independent of price indexes and income. The second answer states that grouping some goods is possible if preferences between them are ``independent'' of the remaining goods present in the economy.\footnote{See for example \cite{GormanSeparability}.} For the two kinds of aggregation, the conditions are highly restrictive and not typically met in econometric or theoretical applications. As mentioned previously, the literature has used them both in constructing models and making econometric estimations and this practice comes at a cost. Thus, understanding and quantifying possible approximation errors is crucial in determining and measuring their goodness-of-fit. In contrast with some of the articles mentioned earlier, in this work I intend to give a theoretical look at how these deviations appear using simple models and try to bound them in terms of available variables in the economy. Next, drawing on the previous results, I will discuss a methodology about approaching this problem in more general settings.
 
 %:	Index
-The rest of the paper proceeds as follows. First, in \Cref{sec:prevresults} I present a summary of the problems and previous results about conditions that allow aggregation. In \Cref{sec:repagent}, I present the first results bounding the prediction error in the case of a representative agent model. \rojo{More sections I haven't thought about yet}. Finally, in \Cref{sec:conclusion} I discuss some final thoughts about model fitness.
+The rest of the paper proceeds as follows. To motivate the following discussion, in \Cref{sec:prevresults} I present a summary of the problems and previous results about conditions under which aggregation is possible. Then, I present \rojo{3} settings to illustrate how approximation errors appear when using aggregate models to estimate future economic variables. First, in \Cref{sec:repagent}, I present a representative agent model in the context of aggregate demand estimation. Second, In \Cref{sec:onegood} I study aggregation across goods \footnote{when used in the context of demand forecasting}. The third model is presented in \Cref{sec:mixedagg} and mixes the previous two by presenting an economy of several individuals consuming various goods, where the good aggregation takes a different form. \rojo{More sections?}. Finally, in \Cref{sec:conclusion} I discuss some final thoughts about model fitness.
 
 %%%	Previous results in aggregation	%%%
 \section{Previous results in aggregation} \label{sec:prevresults}
@@ -144,11 +144,57 @@ One of the most common applications of good aggregation under Hicksian separabil
 %%%	Aggregation across consumers	%%%
 \section{Aggregation across consumers} \label{sec:repagent}
 
+
+	%%	Description of the economy	%%
+\subsection{Description of the economy}
+Consider a two period economy ($t = 0,1$) composed by a continuum of agents that consume two goods $\mathbf{x}_{t} = (x_{1t}, x_{2t})$ valued at prices $\mathbf{p}_{t} = (p_{1t}, p_{2t}) \in \mathbb{R}^{2}_{++}$. For simplicity, all subindices $t$ will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in [tm,M]$ is her income and $\alpha$ determines the form of her Cobb-Douglas utility function, that is,
+	$$u_{\alpha}(\mathbf{x}) := u_{(y,\alpha)}(\mathbf{x}) = x_{1}^{\alpha}x_{2}^{1-\alpha}.$$
+I will further assume that $y$ and $\alpha$ are independent random variables with distributions $F_{y}$ and $F_{\alpha}$, respectively. The joint distribution of $(y,\alpha)$ will be called $F$, with support $S := [m,M] \times (0,1)$. For every fixed vector $\mathbf{p}$, all agents choose the consumption bundle $\mathbf{x}(\mathbf{p}, y, \alpha)$ by maximizing $u$ over $\mathbf{x}$ subject to their respective budget restriction. Specifically, the agent identified with the pair $(y,\alpha)$ solves
+	$$\probop{\max_{\mathbf{x}}}{u_{\alpha}(\mathbf{x})}
+							{&	\mathbf{p} \cdot \mathbf{x} = y.}$$ 
+Thus,
+	$$x_{j}(\mathbf{p}, y, \alpha) = \alpha \frac{y}{p_{j}}, \qquad j = 1,2,$$
+and thus the aggregate demand is
+	$$X_{j}(\mathbf{p}, F_{y}, F_{\alpha})
+		= \frac{1}{p_{j}} \int_{S} y\alpha \,dF(\alpha,y)
+		= \frac{1}{p_{j}}\mathbb{E}[y]\mathbb{E}[\alpha], \qquad j = 1,2.
+	$$
+
+	%%	The researcher problem	%%
+\subsection{The researcher's problem}
+Suppose now an investigator wishes to describe the aggregate demand of good 1 at time $1$. She has access to a full description of the income of the agents in the economy in $t = 0$ (that is, she knows $F_{y}$) but preferences at any time are not available to her. She also knows $X_{10}$, the aggregate demand of good 1 at time $0$. In this setting, if $X_{1}$ is the aggregate demand for cellphones then our researcher wishes to estimate consumption of mobiles at $t=1$ by using data available at $t=0$ on income and aggregate consumption of these devices.
+
+Since individual preferences are unknown to her, she therefore assumes all individuals are equal, that is, there exists $\overline{\alpha}$ such that every agent in this economy has utility function $u_{\overline{\alpha}}$. This assumption is equivalent as saying there only exists one person in the economy given that aggregation is possible when the parameters of the Cobb-Douglas utility function are the same for all individuals (see \Cref{ssec:repagent}).\footnote{In more subtle interpretation of the mentioned assumption, what the researcher is doing is approximate $F_{\alpha}$ by $\delta_{\overline{\alpha}}$ where $\delta_{x}$ is the Dirac distribution centered at $x$.} Under this assumption, the representative agent has utility function
+	$$U_{\overline{\alpha}}(X_{1}, X_{2}) = X_{1}^{\overline{\alpha}}X_{2}^{1-\overline{\alpha}},$$
+and thus, since $E[y_{t}]$ is the aggregate income of this economy at time $t$, the best estimation for $X_{1t}$ is
+	$$\widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) = \overline{\alpha}\, \frac{E[y_{t}]}{p_{1t}}.$$
+
+	%%	The estimation error	%%
+\subsection{The estimation error}
+As mentioned in the introduction, the aggregation assumption imposes a shadow price on the estimation. The error in this case will arise from the differences between the individual demands for $x_{1}$ and the ones estimated by the simplified model. Indeed, observe that
+	\begin{align*}
+		\Big| \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha}) - X_{1}(p_{1}, F_{y}, F_{\alpha}) \Big|
+			&=	\left|\, \int_{S} \frac{y \alpha}{p_{1}} - \frac{y\overline{\alpha}}{p_{1}} \, dF(y,\alpha) \,\right|	\\
+			&=	\left|\, \int_{S} x_{1}(p_{1}, y, \alpha) - x_{1}(p_{1}, y, \overline{\alpha}) \, dF(y,\alpha)\, \right|,
+	\end{align*}
+and thus the accuracy in the estimation, conditional on having the correct distribution of income, will depend only on the choice of $\overline{\alpha}$. Moreover, note that the monetized difference in the estimation is
+	\begin{align*}
+		p_{1}\Big| \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha}) - X_{1}(p_{1}, F_{y}, F_{\alpha}) \Big|
+			&=	\mathbb{E}[y]\Big|\, \overline{\alpha} - \mathbb{E}[\alpha] \,\Big|
+	\end{align*}
+
+ 
+
 %%%	Aggregation across goods	%%%
 \section{Aggregation across goods} \label{sec:onegood}
 
+%%%	The mixed setting	%%%
+\section{The mixed setting} \label{sec:mixedagg}
+
+
 %%%	Concluding remarks		%%%
 \section{Concluding remarks} \label{sec:conclusion}
+
 
 %: 	Bibliography
 \bibliographystyle{abbrvnat}
