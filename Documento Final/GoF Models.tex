@@ -60,13 +60,13 @@ Back to the economic theory, consider the example of the representative agent mo
 The aforementioned model is a particular case of a common practice in economics: aggregation. The other canonical example of its use is aggregation across goods, where instead of describing the myriad of goods available in an economy they are grouped into one or several categories. Regarding these two implementations, previous theoretical literature focused in one side of the problem: When is it possible to carry out this practice and describe precisely the same economy?. In the case of the representative agent, the necessary and sufficient condition is that the indirect utility function of every consumer has the Gorman form.\footnote{\cite{Gorman53}.} When aggregation is applied to goods, the answer has been more elusive but two results arise. First, the Hicks-Leontief (composite commodity) theorem allows aggregation if relative prices are constant in the group of goods that are to be bundled.\footnote{\cite{Leontief36, HicksBook}.} Although a somewhat weaker requirement is proposed by \cite{Lewbel96}: bundling is possible if all group relative prices are independent of price indexes and income. The second answer states that grouping some goods is possible if preferences between them are ``independent'' of the remaining goods present in the economy.\footnote{See for example \cite{GormanSeparability}.} For the two kinds of aggregation, the conditions are highly restrictive and not typically met in econometric or theoretical applications. As mentioned previously, the literature has used them both in constructing models and making econometric estimations and this practice comes at a cost. Thus, understanding and quantifying possible approximation errors is crucial in determining and measuring their goodness-of-fit. In contrast with some of the articles mentioned earlier, in this work I intend to give a theoretical look at how these deviations appear using simple models and try to bound them in terms of available variables in the economy. Next, drawing on the previous results, I will discuss a methodology about approaching this problem in more general settings.
 
 %:	Index
-The rest of the paper proceeds as follows. To motivate the following discussion, in \Cref{sec:prevresults} I present a summary of the problems and previous results about conditions under which aggregation is possible. Then, I present \rojo{3} settings to illustrate how approximation errors appear when using aggregate models to estimate future economic variables. First, in \Cref{sec:repagent}, I present a representative agent model in the context of aggregate demand estimation. Second, In \Cref{sec:onegood} I study aggregation across goods \footnote{when used in the context of demand forecasting}. The third model is presented in \Cref{sec:mixedagg} and mixes the previous two by presenting an economy of several individuals consuming various goods, where the good aggregation takes a different form. \rojo{More sections?}. Finally, in \Cref{sec:conclusion} I discuss some final thoughts about model fitness.
+The rest of the paper proceeds as follows. To motivate the following discussion, in \Cref{sec:prevresults} I present a summary of the problems and previous results about conditions under which aggregation is possible. Then, I present \rojo{3} settings to illustrate how approximation errors appear when using aggregate models to estimate future economic variables. First, in \Cref{sec:aggcons}, I present a representative agent model in the context of aggregate demand estimation. Second, In \Cref{sec:onegood} I study aggregation across goods \rojo{when used in the context of demand forecasting}. The third model is presented in \Cref{sec:mixedagg} and mixes the previous two by presenting an economy of several individuals consuming various goods, where the good aggregation takes a different form. \rojo{More sections?}. Finally, in \Cref{sec:conclusion} I discuss some final thoughts about model fitness.
 
 %%%	Previous results in aggregation	%%%
 \section{Previous results in aggregation} \label{sec:prevresults}
 The economic literature has recognized two forms of aggregation that are usually taught in microeconomics courses around the world. First, the problem of consumer aggregation or the representative agent problem seeks to describe the aggregate demand of a multi-person economy by focusing only on the aggregate determinants of demand (i.e., the aggregate income), as opposed to the distribution of such variables. The second class of aggregation focuses on describing demands for categories of goods without distinguishing the individual consumption on each element in the category. I will refer to this last problem as the ``Hicksian aggregation problem''.
 
-Both kinds of aggregation are widely used in economic models. The representative model agent was a salient feature of macroeconomic models in the decade of \rojo{which one? I need literature here.}. On the other hand, the two good setting (one particular example of aggregation of goods) has been widely used in buffer-stock models where their main conclusions arise from the interaction between consumption and savings.$^{\text{\rojo{examples}}}$ Empirical studies also make use of both forms of aggregation. Some of them assume all consumers are equal which is an example of consumer aggregation and others overcome problems in the data (e.g., availability or comprehensiveness) by assuming that agents choose consumption on the category and not on individual goods.$^{\text{\rojo{examples}}}$.
+Both kinds of aggregation are widely used in economic models. The representative model agent was a salient feature of macroeconomic models in the decade of \rojo{which one? I need literature here.\footnote{\rojo{Lucas 78', Kydland \& Prescott 82' ciclos reales}}} On the other hand, the two good setting (one particular example of aggregation of goods) has been widely used in buffer-stock models where their main conclusions arise from the interaction between consumption and savings.$^{\text{\rojo{examples}}}$ Empirical studies also make use of both forms of aggregation. Some of them assume all consumers are equal which is an example of consumer aggregation and others overcome problems in the data (e.g., availability or comprehensiveness) by assuming that agents choose consumption on the category and not on individual goods.$^{\text{\rojo{examples}}}$.
 
 In what follows I will formally describe the problems about aggregation the early literature tried to answer. These questions aimed at finding conditions for which aggregation is possible. In order to describe both problems I will rely heavily on \cite{VarianBook}.
 
@@ -91,8 +91,6 @@ Both examples clearly have the Gorman form. However, some homothetic functions c
 	$$u(x_{1}, x_{2}) = x_{1}^{\alpha_{i}}x_{2}^{1-\alpha_{i}},$$
 but where at least two $\alpha_{i}$ are different. In that case the function $v(\mathbf{p})$ in \eqref{eq:homotheticindirect} is different between individuals and thus aggregation is not possible.
 
-In spite of the previous comment, the widespread use of these two classes of utility functions in the literature has induced an overuse of representative agent models in settings where it is not possible to propose them. \rojo{Examples maybe?.} As a final remark, note that functional separability is a sufficient but not a necessary condition for aggregation. 
-
 	%%	Hicksian aggregation	%%
 \subsection{Hicksian aggregation problem} \label{ssec:repagent}
 For this problem consider the following setting. Assume the consumption vector of some agent is divided in two bundles $(\mathbf{x}, \mathbf{z})$. Accordingly, the price vector is separated into $(\mathbf{p}, \mathbf{q})$. Thus, if the utility function of the consumer is $u$, then the demand for the $\mathbf{x}$ goods is
@@ -101,29 +99,32 @@ For this problem consider the following setting. Assume the consumption vector o
 					{&	\mathbf{px} + \mathbf{qz} = y.}
 	\end{equation}
 
-In numerous models, there is no interest in the consumption of each of the $\mathbf{x}$-goods but only in the demand for the group (i.e., focus on expediture in savings against expenditure in different financial instruments). Hence, the Hicksian aggregation problem is finding conditions under which this approximation can be made without losing information. This implies finding a quantity index $X = g(\mathbf{x})$, a price index $P = f(\mathbf{p})$ and a new utility function $U(X, \mathbf{z})$ such that the solution 
+In numerous models, there is no interest in the consumption of each of the $\mathbf{x}$-goods but only in the demand for the group (i.e., focus on expenditure in savings against expenditure in different financial instruments). Hence, the Hicksian aggregation problem is finding conditions under which this approximation can be made without losing information. This implies finding a quantity index $X = g(\mathbf{x})$, a price index $P = f(\mathbf{p})$ and a new utility function $U(X, \mathbf{z})$ such that the solution 
 	 \begin{equation} \label{eq:hickaggprob}
 		\probop{X(P, \mathbf{q}, y) = \argmax_{X, \mathbf{z}}}{U(X, \mathbf{z})}
 					{&	PX + \mathbf{qz} = y.}
 	\end{equation}
 satisfies
 	$$X(f(\mathbf{p}), \mathbf{q}, y) = g(\mathbf{x}(\mathbf{p}, \mathbf{q}, y)).$$
+In other words, the problem seeks to find an alternative model that is coherent with the original. \rojo{Elaborate on this.}
 
-At least two situations exist under which the three requirements can be found: functional and Hicksian separability. In the first, assume that the preference relation represented by $u$ has the following ``independence'' property
+At least two situations exist under which these alternative models can be found: functional and Hicksian separability. In the first, assume that the preference relation represented by $u$ has the following ``independence'' property
 	$$(\mathbf{x}, \mathbf{z}) \succ (\mathbf{x}', \mathbf{z}) 
 		\Longleftrightarrow (\mathbf{x}, \mathbf{z}') \succ (\mathbf{x}', \mathbf{z}') \qquad \paratodo \mathbf{x}, \mathbf{x}', \mathbf{z}, \mathbf{z}'.$$
 This independence property implies that there exists a function $v$ such that
 	$$u(\mathbf{x}, \mathbf{z}) = U(v(\mathbf{x}), \mathbf{z}),$$
-where $U(v,\mathbf{z})$ is increasing in $v$. By calling $m_{\mathbf{x}} := \mathbf{p}\cdot \mathbf{x}(\mathbf{p}, \mathbf{q}, y)$, then it can be shown that the following equality holds
+where $U(v,\mathbf{z})$ is increasing in $v$. In this case, the consumer values consumption of $\mathbf{x}$ only through $v$. For example, consider $\mathbf{x}$ to be different types of food. Independence in this context could manifest If the agent only values the amount of calories she gets from $\mathbf{x}$. In that situation, all kinds of food will be valued differently according to the amount of calories per unit each of them give but the consumer will only value the total caloric intake. The previous example suggest a particularity of this type of separability. Following the same nomenclature: The consumer will choose the amount of calories and the total amount to spend on food first and then she will choose the individual consumption on each kind of food. Models that show this feature are often referred to as hierarchical consumption models.
+
+By calling $m_{\mathbf{x}} := \mathbf{p}\cdot \mathbf{x}(\mathbf{p}, \mathbf{q}, y)$, then it can be shown that the following equality holds
 	$$\probop{\mathbf{x}(\mathbf{p}, \mathbf{q}, y) = \argmax_{\mathbf{x}}}{v(\mathbf{x})}
 					{&	\mathbf{px} = m_{\mathbf{x}}.}$$
 Thus, if $e(\mathbf{p}, v)$ is the expenditure function of the previous problem, then
 	$$	\probop{v(\mathbf{x}(\mathbf{p}, \mathbf{q}, y)) = \argmax_{v, \mathbf{z}}}{U(v, \mathbf{z})}
 				{&	e(\mathbf{p}, v) + \mathbf{qz} = y.}
 	$$
-However, note that the latter problem does not have the exact same structure as \eqref{eq:hickaggprob}. This only happens if $v$ has a particular structure in order to write
+However, note that the latter problem does not have the exact same structure as \eqref{eq:hickaggprob}. This only happens if $v$ has a particular structure that 
 	$$e(\mathbf{p}, v) = e(\mathbf{p})v.$$
-This property holds if, for example, $v$ is homothetic. The Cobb-Douglas utility function is an example for which this kind of aggregation holds. One more time, since this functions are widely used in models (specially in production functions, where labor and capital are grouped goods), the use of this kind of aggregation has also become a norm in the economic work. 
+This property holds if, for example, $v$ is homothetic and thus the Cobb-Douglas utility function is an example in which this kind of aggregation is possible. The previous discussion shows that under functional separability this consumption model is hierarchical.
 
 On the other hand, Hicksian separability is present in the following situation. Assume that $\mathbf{p} = t\mathbf{p}_{0}$, where $t$ is a scalar and $\mathbf{p}_{0}$ is a fixed price vector. By defining $P := t$ and $X := \mathbf{p}_{0}\mathbf{x}$, we can define the following indirect utility function
 	$$	\probop{V(P, \mathbf{q}, y) = \argmax_{\mathbf{x}, \mathbf{z}}}{u(\mathbf{x}, \mathbf{z})}
@@ -142,29 +143,32 @@ and thus aggregation is possible with $g(\mathbf{x}) = \mathbf{p}_{0}\mathbf{x}$
 One of the most common applications of good aggregation under Hicksian separability assumptions are two-good models. Here, the interest is in the demand for one good while bundling the other goods in only one category. These kind of models are frequently used in the macroeconomic literature where the study of aggregate consumption dynamics is greatly simplified by assuming agents just consume and save (and hence there are only two goods available). Observe that for this to happen and in accordance with the conditions in \cite{Lewbel96} it must be true that relative prices of all goods in the economy have to be independent of income and the price index. \rojo{I want to explain why this could be a strong assumption but I can't find a convincing argument yet (I was thinking about connecting the assumption to substitutability issues of price indices but I'm not sure if that works.)}
 
 %%%	Aggregation across consumers	%%%
-\section{Aggregation across consumers} \label{sec:repagent}
+\section{Aggregation across consumers} \label{sec:aggcons}
 
 
 	%%	Description of the economy	%%
 \subsection{Description of the economy}
-Consider a two period economy ($t = 0,1$) composed by a continuum of agents that consume two goods $\mathbf{x}_{t} = (x_{1t}, x_{2t})$ valued at prices $\mathbf{p}_{t} = (p_{1t}, p_{2t}) \in \mathbb{R}^{2}_{++}$. For simplicity, all subindices $t$ will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in [tm,M]$ is her income and $\alpha$ determines the form of her Cobb-Douglas utility function, that is,
+Consider a two period economy ($t = 0,1$) composed by a continuum of agents that consume two goods $\mathbf{x}_{t} = (x_{1t}, x_{2t})$ valued at prices $\mathbf{p}_{t} = (p_{1t}, p_{2t}) \in \mathbb{R}^{2}_{++}$. For simplicity, all subindices $t$ will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha$ determines the form of her Cobb-Douglas utility function, that is,
 	$$u_{\alpha}(\mathbf{x}) := u_{(y,\alpha)}(\mathbf{x}) = x_{1}^{\alpha}x_{2}^{1-\alpha}.$$
-I will further assume that $y$ and $\alpha$ are independent random variables with distributions $F_{y}$ and $F_{\alpha}$, respectively. The joint distribution of $(y,\alpha)$ will be called $F$, with support $S := [m,M] \times (0,1)$. For every fixed vector $\mathbf{p}$, all agents choose the consumption bundle $\mathbf{x}(\mathbf{p}, y, \alpha)$ by maximizing $u$ over $\mathbf{x}$ subject to their respective budget restriction. Specifically, the agent identified with the pair $(y,\alpha)$ solves
+The random variables $y$ and $\alpha$ are distributed according to the CDFs $F_{y}$ and $F_{\alpha}$, respectively. The joint distribution of $(y,\alpha)$ will be called $F$, with support $S := (0,\infty) \times (0,1)$. Observe that in principle $y$ and $\alpha$ could be correlated. \rojo{I want to assume $y$ has Log-normal distribution but I don't know how to do this smoothly.}
+
+For every fixed vector $\mathbf{p}$, the agents choose the consumption bundle $\mathbf{x}(\mathbf{p}, y, \alpha)$ by maximizing $u$ over $\mathbf{x}$ subject to their respective budget restriction. Specifically, the agent identified with the pair $(y,\alpha)$ solves
 	$$\probop{\max_{\mathbf{x}}}{u_{\alpha}(\mathbf{x})}
 							{&	\mathbf{p} \cdot \mathbf{x} = y.}$$ 
 Thus,
 	$$x_{j}(\mathbf{p}, y, \alpha) = \alpha \frac{y}{p_{j}}, \qquad j = 1,2,$$
-and thus the aggregate demand is
+and thus the aggregate demand for good $j$ is
 	$$X_{j}(\mathbf{p}, F_{y}, F_{\alpha})
 		= \frac{1}{p_{j}} \int_{S} y\alpha \,dF(\alpha,y)
-		= \frac{1}{p_{j}}\mathbb{E}[y]\mathbb{E}[\alpha], \qquad j = 1,2.
+		= \frac{1}{p_{j}}\mathbb{E}[y\alpha]
+		= \frac{1}{p_{j}}\Big(\mathbb{E}[y]\mathbb{E}[\alpha] + \mathrm{Cov}(y,\alpha)\Big), \quad j = 1,2.
 	$$
 
 	%%	The researcher problem	%%
 \subsection{The researcher's problem}
-Suppose now an investigator wishes to describe the aggregate demand of good 1 at time $1$. She has access to a full description of the income of the agents in the economy in $t = 0$ (that is, she knows $F_{y}$) but preferences at any time are not available to her. She also knows $X_{10}$, the aggregate demand of good 1 at time $0$. In this setting, if $X_{1}$ is the aggregate demand for cellphones then our researcher wishes to estimate consumption of mobiles at $t=1$ by using data available at $t=0$ on income and aggregate consumption of these devices.
+Suppose now an investigator wishes to describe the aggregate demand of good 1 at time $1$. She has access to a full description of the distribution income of the agents in the economy in $t = 0$ (that is, she knows $F_{y}$) but preferences at any time are not available to her. She also knows $X_{10}$, the aggregate demand of good 1 at time $0$.\footnote{Observe that by assuming complete knowledge on the distribution of income and on the aggregate demand I am abstracting the discussion from the appearance of possible estimation errors due to sampling.} In this setting, if $X_{1}$ is the aggregate demand for cellphones then our researcher wishes to estimate consumption of mobiles at $t=1$ by using data available at $t=0$ on income and aggregate consumption of these devices.
 
-Since individual preferences are unknown to her, she therefore assumes all individuals are equal, that is, there exists $\overline{\alpha}$ such that every agent in this economy has utility function $u_{\overline{\alpha}}$. This assumption is equivalent as saying there only exists one person in the economy given that aggregation is possible when the parameters of the Cobb-Douglas utility function are the same for all individuals (see \Cref{ssec:repagent}).\footnote{In more subtle interpretation of the mentioned assumption, what the researcher is doing is approximate $F_{\alpha}$ by $\delta_{\overline{\alpha}}$ where $\delta_{x}$ is the Dirac distribution centered at $x$.} Under this assumption, the representative agent has utility function
+Since individual preferences are unknown to her, she therefore assumes all individuals are equal, that is, there exists $\overline{\alpha}$ such that every agent in this economy has utility function $u_{\overline{\alpha}}$. This assumption is equivalent as saying there only exists one person in the economy given that aggregation is possible when the parameters of the Cobb-Douglas utility function are the same for all individuals (see \Cref{ssec:repagent}). In more subtle interpretation of the mentioned assumption, what the researcher is doing is approximate $F_{\alpha}$ by $\delta_{\overline{\alpha}}$ where $\delta_{x}$ is the Dirac distribution centered at $x$. Under this assumption, the representative agent has utility function
 	$$U_{\overline{\alpha}}(X_{1}, X_{2}) = X_{1}^{\overline{\alpha}}X_{2}^{1-\overline{\alpha}},$$
 and thus, since $E[y_{t}]$ is the aggregate income of this economy at time $t$, the best estimation for $X_{1t}$ is
 	$$\widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) = \overline{\alpha}\, \frac{E[y_{t}]}{p_{1t}}.$$
@@ -173,17 +177,28 @@ and thus, since $E[y_{t}]$ is the aggregate income of this economy at time $t$, 
 \subsection{The estimation error}
 As mentioned in the introduction, the aggregation assumption imposes a shadow price on the estimation. The error in this case will arise from the differences between the individual demands for $x_{1}$ and the ones estimated by the simplified model. Indeed, observe that
 	\begin{align*}
-		\Big| \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha}) - X_{1}(p_{1}, F_{y}, F_{\alpha}) \Big|
+		\Big| X_{1}(p_{1}, F_{y}, F_{\alpha}) - \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha}) \Big|
 			&=	\left|\, \int_{S} \frac{y \alpha}{p_{1}} - \frac{y\overline{\alpha}}{p_{1}} \, dF(y,\alpha) \,\right|	\\
 			&=	\left|\, \int_{S} x_{1}(p_{1}, y, \alpha) - x_{1}(p_{1}, y, \overline{\alpha}) \, dF(y,\alpha)\, \right|,
 	\end{align*}
-and thus the accuracy in the estimation, conditional on having the correct distribution of income, will depend only on the choice of $\overline{\alpha}$. Moreover, note that the monetized difference in the estimation is
-	\begin{align*}
-		p_{1}\Big| \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha}) - X_{1}(p_{1}, F_{y}, F_{\alpha}) \Big|
-			&=	\mathbb{E}[y]\Big|\, \overline{\alpha} - \mathbb{E}[\alpha] \,\Big|
-	\end{align*}
+and thus the accuracy in the estimation, although observable in macroeconomic variables, has its roots in microeconomic differences. Moreover, conditional on having the correct distribution of income, this discrepancy will depend only on the choice of $\overline{\alpha}$. 
 
- 
+Note that the monetized error in the estimation at time $t$ is
+	\begin{align*}
+		p_{1t}\Big| X_{1t}(p_{1t}, F_{y_{t}}, F_{\alpha_{t}}) - \widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) \Big|
+			&=	\mathbb{E}[y_{t}]\left|\, \mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t},\alpha_{t})}{\mathbb{E}[y_{t}]} - \overline{\alpha}\,\right|,
+	\end{align*}
+and observe that this difference does not depend on prices. Consequently, the error could be reduced to zero if
+	\begin{equation} \label{eq:alphabar}
+		\overline{\alpha} = \underbrace{\mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t}, \alpha_{t})}{\mathbb{E}[y_{t}]}}_{:= D_{t}},
+	\end{equation}
+in the case where the expression on the right hand side is between 0 and 1. Recalling the interpretation of the single consumer assumption as a way to approximate $F_{\alpha}$, then \eqref{eq:alphabar} says that the only features of $F_{\alpha}$ that are important to have an exact fit in time $t$ are the first and second moments of the mentioned distribution. 
+
+Since the researcher has access to $X_{10}$, then $\overline{\alpha}$ could be chosen optimally to reduce the estimation error at $t=0$. Assume that $D_{0} \in (0,1)$. Then, the optimal choice of $\overline{\alpha}$ given this information is $D_{0}$ and thus the estimation error in $t=1$ is
+	$$E[y_{t}]\, \Big|\, D_{1} - D_{0}\,\Big|.$$
+Assume preferences don't change. Then
+	$$D_{1} - D_{0} = \frac{\mathrm{Cov}(y_{1}, \alpha)}{\mathbb{E}[y_{1}]} - \frac{\mathrm{Cov}(y_{2}, \alpha)}{\mathbb{E}[y_{2}]}.$$
+	
 
 %%%	Aggregation across goods	%%%
 \section{Aggregation across goods} \label{sec:onegood}
