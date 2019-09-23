@@ -92,7 +92,7 @@ Both examples clearly have the Gorman form. However, some homothetic functions c
 but where at least two $\alpha_{i}$ are different. In that case the function $v(\mathbf{p})$ in \eqref{eq:homotheticindirect} is different between individuals and thus aggregation is not possible.
 
 	%%	Hicksian aggregation	%%
-\subsection{Hicksian aggregation problem} \label{ssec:repagent}
+\subsection{Hicksian aggregation problem} \label{ssec:Hicksagg}
 For this problem consider the following setting. Assume the consumption vector of some agent is divided in two bundles $(\mathbf{x}, \mathbf{z})$. Accordingly, the price vector is separated into $(\mathbf{p}, \mathbf{q})$. Thus, if the utility function of the consumer is $u$, then the demand for the $\mathbf{x}$ goods is
 	\begin{equation} \label{eq:hickdisprob}
 		\probop{\mathbf{x}(\mathbf{p}, \mathbf{q}, y) = \argmax_{\mathbf{x}, \mathbf{z}}}{u(\mathbf{x}, \mathbf{z})}
@@ -150,7 +150,7 @@ One of the most common applications of good aggregation under Hicksian separabil
 \subsection{Description of the economy}
 Consider a two period economy ($t = 0,1$) composed by a continuum of agents that consume two goods $\mathbf{x}_{t} = (x_{1t}, x_{2t})$ valued at prices $\mathbf{p}_{t} = (p_{1t}, p_{2t}) \in \mathbb{R}^{2}_{++}$. For simplicity, all subindices $t$ will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha$ determines the form of her Cobb-Douglas utility function, that is,
 	$$u_{\alpha}(\mathbf{x}) := u_{(y,\alpha)}(\mathbf{x}) = x_{1}^{\alpha}x_{2}^{1-\alpha}.$$
-The random variables $y$ and $\alpha$ are distributed according to the CDFs $F_{y}$ and $F_{\alpha}$, respectively. The joint distribution of $(y,\alpha)$ will be called $F$, with support $S := (0,\infty) \times (0,1)$. Observe that in principle $y$ and $\alpha$ could be correlated. \rojo{I want to assume $y$ has Log-normal distribution but I don't know how to do this smoothly.}
+The random variables $y$ and $\alpha$ follow a joint distribution, $F$, with support $S := (0,\infty) \times (0,1)$. Observe that in principle $y$ and $\alpha$ could be correlated. The marginal distributions are $F_{y}$ and $F_{\alpha}$, respectively. As is usual in the literature, $y_{t}$ will follow a $log$-Normal distribution with parameters $\mu_{t}$ and $\sigma_{t}$.
 
 For every fixed vector $\mathbf{p}$, the agents choose the consumption bundle $\mathbf{x}(\mathbf{p}, y, \alpha)$ by maximizing $u$ over $\mathbf{x}$ subject to their respective budget restriction. Specifically, the agent identified with the pair $(y,\alpha)$ solves
 	$$\probop{\max_{\mathbf{x}}}{u_{\alpha}(\mathbf{x})}
@@ -192,19 +192,47 @@ and observe that this difference does not depend on prices. Consequently, the er
 	\begin{equation} \label{eq:alphabar}
 		\overline{\alpha} = \underbrace{\mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t}, \alpha_{t})}{\mathbb{E}[y_{t}]}}_{:= D_{t}},
 	\end{equation}
-in the case where the expression on the right hand side is between 0 and 1. Recalling the interpretation of the single consumer assumption as a way to approximate $F_{\alpha}$, then \eqref{eq:alphabar} says that the only features of $F_{\alpha}$ that are important to have an exact fit in time $t$ are the first and second moments of the mentioned distribution. 
+in the case where the expression on the right hand side is between 0 and 1. Recalling the interpretation of the single consumer assumption as a way to approximate $F_{\alpha}$, then \eqref{eq:alphabar} says that the only features of $F_{\alpha}$ that are important to have an exact fit at time $t$ are the first and second moments of the mentioned distribution. 
 
 Since the researcher has access to $X_{10}$, then $\overline{\alpha}$ could be chosen optimally to reduce the estimation error at $t=0$. Assume that $D_{0} \in (0,1)$. Then, the optimal choice of $\overline{\alpha}$ given this information is $D_{0}$ and thus the estimation error in $t=1$ is
 	$$E[y_{t}]\, \Big|\, D_{1} - D_{0}\,\Big|.$$
-Assume preferences don't change. Then
+If preferences don't change, then
 	$$D_{1} - D_{0} = \frac{\mathrm{Cov}(y_{1}, \alpha)}{\mathbb{E}[y_{1}]} - \frac{\mathrm{Cov}(y_{2}, \alpha)}{\mathbb{E}[y_{2}]}.$$
-	
+
 
 %%%	Aggregation across goods	%%%
 \section{Aggregation across goods} \label{sec:onegood}
 
+
 %%%	The mixed setting	%%%
 \section{The mixed setting} \label{sec:mixedagg}
+Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function, that is,
+	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha}z^{1-\alpha} = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)z^{1-\alpha}.$$
+
+Consumers choose how much of the $\mathbf{x}$ goods to consume in each period according to
+	\begin{equation} \label{eq:probdisagg}
+		\probop{\mathbf{x}(\mathbf{p}, q, y) 
+			:= \argmax_{\mathbf{x}, z}}{u_{\alpha}(\mathbf{x}, z),}
+				{&	\mathbf{p} \mathbf{x} + qz = y.}
+	\end{equation} 
+
+The pairs $(y,\alpha)$ follow a distribution $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) over its support $S := (0,\infty) \times  (0,1)$. As was presented in \Cref{sec:aggcons}, $F_{y}$ will be a $log$-Normal distribution with parameters $\mu$ and $\sigma$. In this setting, it is possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ (see \Cref{ssec:Hicksagg}) given by: 
+	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
+In that case, we have
+	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
+which is the usual Cobb-Douglas utility function. Hence, by defining $\epsilon := (1-\alpha)^{-1}$ and
+	$$P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},$$
+we have that the category demand
+	\begin{equation} \label{eq:probagg}
+		\probop{X(P(\mathbf{p}), q, y) := \argmax_{X, z}}{U(X,z)}
+										{&	P_{\alpha}(\mathbf{p})X + qz = y}
+	\end{equation}
+satisfies
+	\begin{equation} \label{eq:aggequality}
+		X(P_{\alpha}(\mathbf{p}), q, y) = g_{\alpha}\big(\mathbf{x}(\mathbf{p}, q, y)\big).
+	\end{equation}
+This means that the disaggregate model is coherent with the aggregate one for each individual consumer.
+
 
 
 %%%	Concluding remarks		%%%
