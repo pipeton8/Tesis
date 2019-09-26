@@ -60,10 +60,10 @@ Back to the economic theory, consider the example of the representative agent mo
 The aforementioned model is a particular case of a common practice in economics: aggregation. The other canonical example of its use is aggregation across goods, where instead of describing the myriad of goods available in an economy they are grouped into one or several categories. Regarding these two implementations, previous theoretical literature focused in one side of the problem: When is it possible to carry out this practice and describe precisely the same economy?. In the case of the representative agent, the necessary and sufficient condition is that the indirect utility function of every consumer has the Gorman form.\footnote{\cite{Gorman53}.} When aggregation is applied to goods, the answer has been more elusive but two results arise. First, the Hicks-Leontief (composite commodity) theorem allows aggregation if relative prices are constant in the group of goods that are to be bundled.\footnote{\cite{Leontief36, HicksBook}.} Although a somewhat weaker requirement is proposed by \cite{Lewbel96}: bundling is possible if all group relative prices are independent of price indexes and income. The second answer states that grouping some goods is possible if preferences between them are ``independent'' of the remaining goods present in the economy.\footnote{See for example \cite{GormanSeparability}.} For the two kinds of aggregation, the conditions are highly restrictive and not typically met in econometric or theoretical applications. As mentioned previously, the literature has used them both in constructing models and making econometric estimations and this practice comes at a cost. Thus, understanding and quantifying possible approximation errors is crucial in determining and measuring their goodness-of-fit. In contrast with some of the articles mentioned earlier, in this work I intend to give a theoretical look at how these deviations appear using simple models and try to bound them in terms of available variables in the economy. Next, drawing on the previous results, I will discuss a methodology about approaching this problem in more general settings.
 
 %:	Index
-The rest of the paper proceeds as follows. To motivate the following discussion, in \Cref{sec:prevresults} I present a summary of the problems and previous results about conditions under which aggregation is possible. Then, I present \rojo{3} settings to illustrate how approximation errors appear when using aggregate models to estimate future economic variables. First, in \Cref{sec:aggcons}, I present a representative agent model in the context of aggregate demand estimation. Second, In \Cref{sec:onegood} I study aggregation across goods \rojo{when used in the context of demand forecasting}. The third model is presented in \Cref{sec:mixedagg} and mixes the previous two by presenting an economy of several individuals consuming various goods, where the good aggregation takes a different form. \rojo{More sections?}. Finally, in \Cref{sec:conclusion} I discuss some final thoughts about model fitness.
+The rest of the paper proceeds as follows. To motivate the following discussion, in \Cref{sec:PrevResults} I present a summary of the problems and previous results about conditions under which aggregation is possible. Then, I present \rojo{3} settings to illustrate how approximation errors appear when using aggregate models to estimate future economic variables. First, in \Cref{sec:RepAg}, I present a representative agent model in the context of aggregate demand estimation. Second, In \Cref{sec: OneGood} I study aggregation across goods \rojo{when used in the context of demand forecasting}. The third model is presented in \Cref{sec:MixedAgg} and mixes the previous two by presenting an economy of several individuals consuming various goods, where the good aggregation takes a different form. \rojo{More sections?}. Finally, in \Cref{sec:Conclusion} I discuss some final thoughts about model fitness.
 
 %%%	Previous results in aggregation	%%%
-\section{Previous results in aggregation} \label{sec:prevresults}
+\section{Previous results in aggregation} \label{sec:PrevResults}
 The economic literature has recognized two forms of aggregation that are usually taught in microeconomics courses around the world. First, the problem of consumer aggregation or the representative agent problem seeks to describe the aggregate demand of a multi-person economy by focusing only on the aggregate determinants of demand (i.e., the aggregate income), as opposed to the distribution of such variables. The second class of aggregation focuses on describing demands for categories of goods without distinguishing the individual consumption on each element in the category. I will refer to this last problem as the ``Hicksian aggregation problem''.
 
 Both kinds of aggregation are widely used in economic models. The representative model agent was a salient feature of macroeconomic models in the decade of \rojo{which one? I need literature here.\footnote{\rojo{Lucas 78', Kydland \& Prescott 82' ciclos reales}}} On the other hand, the two good setting (one particular example of aggregation of goods) has been widely used in buffer-stock models where their main conclusions arise from the interaction between consumption and savings.$^{\text{\rojo{examples}}}$ Empirical studies also make use of both forms of aggregation. Some of them assume all consumers are equal which is an example of consumer aggregation and others overcome problems in the data (e.g., availability or comprehensiveness) by assuming that agents choose consumption on the category and not on individual goods.$^{\text{\rojo{examples}}}$.
@@ -71,7 +71,7 @@ Both kinds of aggregation are widely used in economic models. The representative
 In what follows I will formally describe the problems about aggregation the early literature tried to answer. These questions aimed at finding conditions for which aggregation is possible. In order to describe both problems I will rely heavily on \cite{VarianBook}.
 
 	%%	The representative agent problem	%%
-\subsection{The representative agent problem} \label{ssec:repagent}
+\subsection{The representative agent problem} \label{ssec:RepAgent}
 Consider an economy composed by $n$ consumers indexed by $i = 1, \ldots, n$. Their demand functions of the $k$ goods in the economy are summarized in the vector $\mathbf{x}_{i}(\mathbf{p}, y_{i})$, where $\mathbf{p}$ is the price vector of the goods and $y_{i}$ is the income of agent $i$. The aggregate demand vector is defined by
 	\begin{equation} \label{eq:aggdemand1}
 		\mathbf{X}(\mathbf{p}, y_{1}, \ldots, y_{n}) = \sum_{i=1}^{n} \mathbf{x}_{i}(\mathbf{p},y_{i}).
@@ -79,20 +79,20 @@ Consider an economy composed by $n$ consumers indexed by $i = 1, \ldots, n$. The
 
 The question that automatically arises is: Can this aggregate demand function be regarded as generated by a single (or ``representative'') consumer?. In terms of \cref{eq:aggdemand1}, the previous question is equivalent to looking for conditions under which $\mathbf{X}$ does not depend on the distribution but on the aggregate income
 	$$Y := \sum_{i=1}^{n} y_{i}.$$
-The definitive answer to this problem came with \cite{Gorman53}. According to his result, $\mathbf{X}$ is a function of $M$ if and only if for every $i \in \{1,\ldots,n\}$ the indirect utility function has the Gorman form
+The definitive answer to this problem came with \cite{Gorman53}. According to his result, $\mathbf{X}$ is a function of $Y$ if and only if for every $i \in \{1,\ldots,n\}$ the indirect utility function has the Gorman form
 	$$v_{i}(\mathbf{p}, y_{i}) = a_{i}(\mathbf{p}) + b(\mathbf{p})y_{i},$$ 
 where $a_{i}, b$ are functions that must only depend on $\mathbf{p}$ and $b$ has to be the same across consumers. This functional requirement is somewhat restrictive but at least two particular examples are worth mentioning: homothetic and quasilinear utility functions. For the first, the indirect utility functions is
 	\begin{equation} \label{eq:homotheticindirect}
-		v(\mathbf{p}, y) = v(\mathbf{p})y,
+		v(\mathbf{p}, y) = b(\mathbf{p})y,
 	\end{equation}
 while for the second
-	$$v(\mathbf{p}, y) = v(\mathbf{p}) + y.$$
+	$$v(\mathbf{p}, y) = a(\mathbf{p}) + y.$$
 Both examples clearly have the Gorman form. However, some homothetic functions could differ in the function $v$ between consumers and thus aggregation is not possible. For example, when $k = 2$, an economy of consumers with Cobb-Douglas utility functions
 	$$u(x_{1}, x_{2}) = x_{1}^{\alpha_{i}}x_{2}^{1-\alpha_{i}},$$
 but where at least two $\alpha_{i}$ are different. In that case the function $v(\mathbf{p})$ in \eqref{eq:homotheticindirect} is different between individuals and thus aggregation is not possible.
 
 	%%	Hicksian aggregation	%%
-\subsection{Hicksian aggregation problem} \label{ssec:Hicksagg}
+\subsection{Hicksian aggregation problem} \label{ssec:HicksAgg}
 For this problem consider the following setting. Assume the consumption vector of some agent is divided in two bundles $(\mathbf{x}, \mathbf{z})$. Accordingly, the price vector is separated into $(\mathbf{p}, \mathbf{q})$. Thus, if the utility function of the consumer is $u$, then the demand for the $\mathbf{x}$ goods is
 	\begin{equation} \label{eq:hickdisprob}
 		\probop{\mathbf{x}(\mathbf{p}, \mathbf{q}, y) = \argmax_{\mathbf{x}, \mathbf{z}}}{u(\mathbf{x}, \mathbf{z})}
@@ -143,7 +143,7 @@ and thus aggregation is possible with $g(\mathbf{x}) = \mathbf{p}_{0}\mathbf{x}$
 One of the most common applications of good aggregation under Hicksian separability assumptions are two-good models. Here, the interest is in the demand for one good while bundling the other goods in only one category. These kind of models are frequently used in the macroeconomic literature where the study of aggregate consumption dynamics is greatly simplified by assuming agents just consume and save (and hence there are only two goods available). Observe that for this to happen and in accordance with the conditions in \cite{Lewbel96} it must be true that relative prices of all goods in the economy have to be independent of income and the price index. \rojo{I want to explain why this could be a strong assumption but I can't find a convincing argument yet (I was thinking about connecting the assumption to substitutability issues of price indices but I'm not sure if that works.)}
 
 %%%	Aggregation across consumers	%%%
-\section{Aggregation across consumers} \label{sec:aggcons}
+\section{Aggregation across consumers} \label{sec:RepAg}
 
 
 	%%	Description of the economy	%%
@@ -165,16 +165,18 @@ and thus the aggregate demand for good $j$ is
 	$$
 
 	%%	The researcher problem	%%
-\subsection{The researcher's problem}
+\subsection{The researcher's problem} \label{ssec:RepAgProblem}
 Suppose now an investigator wishes to describe the aggregate demand of good 1 at time $1$. She has access to a full description of the distribution income of the agents in the economy in $t = 0$ (that is, she knows $F_{y}$) but preferences at any time are not available to her. She also knows $X_{10}$, the aggregate demand of good 1 at time $0$.\footnote{Observe that by assuming complete knowledge on the distribution of income and on the aggregate demand I am abstracting the discussion from the appearance of possible estimation errors due to sampling.} In this setting, if $X_{1}$ is the aggregate demand for cellphones then our researcher wishes to estimate consumption of mobiles at $t=1$ by using data available at $t=0$ on income and aggregate consumption of these devices.
 
-Since individual preferences are unknown to her, she therefore assumes all individuals are equal, that is, there exists $\overline{\alpha}$ such that every agent in this economy has utility function $u_{\overline{\alpha}}$. This assumption is equivalent as saying there only exists one person in the economy given that aggregation is possible when the parameters of the Cobb-Douglas utility function are the same for all individuals (see \Cref{ssec:repagent}). In more subtle interpretation of the mentioned assumption, what the researcher is doing is approximate $F_{\alpha}$ by $\delta_{\overline{\alpha}}$ where $\delta_{x}$ is the Dirac distribution centered at $x$. Under this assumption, the representative agent has utility function
+Since individual preferences are unknown to her, she therefore assumes all individuals are equal, that is, there exists $\overline{\alpha}$ such that every agent in this economy has utility function $u_{\overline{\alpha}}$. This assumption is equivalent as saying there only exists one person in the economy given that aggregation is possible when the parameters of the Cobb-Douglas utility function are the same for all individuals (see \Cref{ssec:RepAgent}). In more subtle interpretation of the mentioned assumption, what the researcher is doing is approximate $F_{\alpha}$ by $\delta_{\overline{\alpha}}$ where $\delta_{x}$ is the Dirac distribution centered at $x$. Analogously, she is approximating $F$ with a joint distribution for $(y,\alpha)$ whose marginals are $F_{y}$ and $\delta_{\overline{\alpha}}$.
+
+Under the previous assumption, the representative agent has utility function
 	$$U_{\overline{\alpha}}(X_{1}, X_{2}) = X_{1}^{\overline{\alpha}}X_{2}^{1-\overline{\alpha}},$$
 and thus, since $E[y_{t}]$ is the aggregate income of this economy at time $t$, the best estimation for $X_{1t}$ is
 	$$\widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) = \overline{\alpha}\, \frac{E[y_{t}]}{p_{1t}}.$$
 
 	%%	The estimation error	%%
-\subsection{The estimation error}
+\subsection{The estimation error} \label{ssec:RepAgError}
 As mentioned in the introduction, the aggregation assumption imposes a shadow price on the estimation. The error in this case will arise from the differences between the individual demands for $x_{1}$ and the ones estimated by the simplified model. Indeed, observe that
 	\begin{align*}
 		\Big| X_{1}(p_{1}, F_{y}, F_{\alpha}) - \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha}) \Big|
@@ -183,40 +185,46 @@ As mentioned in the introduction, the aggregation assumption imposes a shadow pr
 	\end{align*}
 and thus the accuracy in the estimation, although observable in macroeconomic variables, has its roots in microeconomic differences. Moreover, conditional on having the correct distribution of income, this discrepancy will depend only on the choice of $\overline{\alpha}$. 
 
-Note that the monetized error in the estimation at time $t$ is
-	\begin{align*}
-		p_{1t}\Big| X_{1t}(p_{1t}, F_{y_{t}}, F_{\alpha_{t}}) - \widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) \Big|
-			&=	\mathbb{E}[y_{t}]\left|\, \mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t},\alpha_{t})}{\mathbb{E}[y_{t}]} - \overline{\alpha}\,\right|,
-	\end{align*}
+Note that the monetized error in the estimation at time $t$, as a function of $\overline{\alpha}$ is
+	\begin{equation} \label{eq:DiffAgRep}
+		D_{t}(\overline{\alpha}) 
+		 	:= p_{1t}\Big| X_{1t}(p_{1t}, F_{y_{t}}, F_{\alpha_{t}}) - \widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) \Big|
+			=	\mathbb{E}[y_{t}]\left|\, \mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t},\alpha_{t})}{\mathbb{E}[y_{t}]} - \overline{\alpha}\,\right|,
+	\end{equation}
 and observe that this difference does not depend on prices. Consequently, the error could be reduced to zero if
 	\begin{equation} \label{eq:alphabar}
-		\overline{\alpha} = \underbrace{\mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t}, \alpha_{t})}{\mathbb{E}[y_{t}]}}_{:= D_{t}},
+		\overline{\alpha} = \underbrace{\mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t}, \alpha_{t})}{\mathbb{E}[y_{t}]}}_{:= M_{t}},
 	\end{equation}
-in the case where the expression on the right hand side is between 0 and 1. Recalling the interpretation of the single consumer assumption as a way to approximate $F_{\alpha}$, then \eqref{eq:alphabar} says that the only features of $F_{\alpha}$ that are important to have an exact fit at time $t$ are the first and second moments of the mentioned distribution. 
+in the case where the expression on the right hand side is between 0 and 1. Recalling the interpretation of the single consumer assumption as a way to approximate $F$, then \eqref{eq:alphabar} says that the only features of the distribution that are important to have an exact fit at time $t$ are its first and second moments. This finding suggests that what matters when estimating aggregate variables using representative consumer models are a finite set of statistics of the underlying distribution of the population.
 
-Since the researcher has access to $X_{10}$, then $\overline{\alpha}$ could be chosen optimally to reduce the estimation error at $t=0$. Assume that $D_{0} \in (0,1)$. Then, the optimal choice of $\overline{\alpha}$ given this information is $D_{0}$ and thus the estimation error in $t=1$ is
-	$$E[y_{t}]\, \Big|\, D_{1} - D_{0}\,\Big|.$$
+Since the researcher has access to $X_{10}$, then $\overline{\alpha}$ could be chosen optimally to reduce the estimation error at $t=0$. Assume that $M_{0} \in (0,1)$. Then, the optimal choice of $\overline{\alpha}$ given this information is $M_{0}$ and thus the estimation error in $t=1$ is
+	$$E[y_{t}]\, \Big|\, M_{1} - M_{0}\,\Big|.$$
 If preferences don't change, then
-	$$D_{1} - D_{0} = \frac{\mathrm{Cov}(y_{1}, \alpha)}{\mathbb{E}[y_{1}]} - \frac{\mathrm{Cov}(y_{2}, \alpha)}{\mathbb{E}[y_{2}]}.$$
+	$$M_{1} - M_{0} = \frac{\mathrm{Cov}(y_{1}, \alpha)}{\mathbb{E}[y_{1}]} - \frac{\mathrm{Cov}(y_{0}, \alpha)}{\mathbb{E}[y_{0}]}.$$
+Moreover, if $y_{1} = R y_{0}$ for some $R > 0$, then $\overline{\alpha} = M_{0}$ completely vanishes the estimation error at $t=1$.
 
+
+\rojo{Dynamics? Simulation?}
 
 %%%	Aggregation across goods	%%%
-\section{Aggregation across goods} \label{sec:onegood}
+\section{Aggregation across goods} \label{sec: OneGood}
 
+%%%	Mixing both types of aggregation	%%%
+\section{Mixing both types of aggregation} \label{sec:MixedAgg}
 
-%%%	The mixed setting	%%%
-\section{The mixed setting} \label{sec:mixedagg}
+	%%	Description of the economy	%%
+\subsection{Description}
 Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function, that is,
 	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha}z^{1-\alpha} = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)z^{1-\alpha}.$$
 
 Consumers choose how much of the $\mathbf{x}$ goods to consume in each period according to
 	\begin{equation} \label{eq:probdisagg}
-		\probop{\mathbf{x}(\mathbf{p}, q, y) 
+		\probop{\mathbf{x}(\mathbf{p}, q, y, \alpha) 
 			:= \argmax_{\mathbf{x}, z}}{u_{\alpha}(\mathbf{x}, z),}
 				{&	\mathbf{p} \mathbf{x} + qz = y.}
 	\end{equation} 
 
-The pairs $(y,\alpha)$ follow a distribution $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) over its support $S := (0,\infty) \times  (0,1)$. As was presented in \Cref{sec:aggcons}, $F_{y}$ will be a $log$-Normal distribution with parameters $\mu$ and $\sigma$. In this setting, it is possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ (see \Cref{ssec:Hicksagg}) given by: 
+The pairs $(y,\alpha)$ follow a distribution $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) over its support $S := (0,\infty) \times  (0,1)$. As was presented in \Cref{sec:RepAg}, $F_{y}$ will be a $log$-Normal distribution with parameters $\mu$ and $\sigma$. In this setting, it is possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ (see \Cref{ssec:HicksAgg}) given by: 
 	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
 In that case, we have
 	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
@@ -224,19 +232,77 @@ which is the usual Cobb-Douglas utility function. Hence, by defining $\epsilon :
 	$$P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},$$
 we have that the category demand
 	\begin{equation} \label{eq:probagg}
-		\probop{X(P(\mathbf{p}), q, y) := \argmax_{X, z}}{U(X,z)}
-										{&	P_{\alpha}(\mathbf{p})X + qz = y}
+		\probop{X(\mathbf{p}, q, y, \alpha) := \argmax_{X, z}}{U(X,z)}
+										{&	P_{\alpha}(\mathbf{p})X + qz = y,}
 	\end{equation}
 satisfies
 	\begin{equation} \label{eq:aggequality}
-		X(P_{\alpha}(\mathbf{p}), q, y) = g_{\alpha}\big(\mathbf{x}(\mathbf{p}, q, y)\big).
+		X(\mathbf{p}, q, y, \alpha) = g_{\alpha}\big(\mathbf{x}(\mathbf{p}, q, y, \alpha)\big).
 	\end{equation}
-This means that the disaggregate model is coherent with the aggregate one for each individual consumer.
+This means that the disaggregate model is coherent with the aggregate one for each individual consumer. Indeed, observe that the price and quantity indices are specific for each agent as they depend on $\alpha$. This means that any attempt to describe this economy using category demands instead of the disaggregate consumption needs knowledge about the heterogeneity of the population in order to avoid approximation errors.
 
+	%%	The prediction problem	%%
+\subsection{The prediction problem}
+Consider now the following situation. An investigator at time $t = 0$ has data available on disaggregate consumption of the $\mathbf{x}$ and $z$ goods, income $y$ (that is, she knows $F_{y}$) and prices $(\mathbf{p},q)$. Her objective is to estimate the aggregate category demand at $t=1$ (i.e., the country demand for meat next year), $\mathbf{X}_{1}$. For simplicity she assumes that all agents have the same preferences, which means that all differences in consumption are accounted by differences in income. The last assumption also implies that she must choose a single parameter $\overline{\alpha}$ in order to obtain the category demand and the price index of each agent. In the distribution approximation sense proposed in \Cref{ssec:RepAgProblem}, observe that the same-preference assumption has the same effect mentioned there: $F_{\alpha}$ is approximated by $\delta_{\overline{\alpha}}$. Along the same line, bundling goods into a category also represents an approximation but of a different nature. Note that $F$ and the function $\mathbf{x}(\mathbf{p}, q, y, \alpha)$ induce a distribution $G$ over the vector $\mathbf{x}$. Then, $g_{\alpha}$ induces a distribution over $X$ that is in some sense an approximation of $G$, due to \eqref{eq:aggequality}. \rojo{Elaborate more? I'm not sure I'm making a point}
 
+Under the previous assumption, the best estimation for the category demand of each agent at time $t$ is
+	$$\widehat{X}_{t}(\mathbf{p}_{t}, y_{t}, \overline{\alpha}) = \overline{\alpha}\, \frac{y_{t}}{P_{\overline{\alpha}}(\mathbf{p}_{t})}.$$
+Thus, the best estimation for the aggregate category demand is
+	\begin{equation} \label{eq:AggCatDemand}
+		\widehat{\mathbf{X}}_{t}(\mathbf{p}_{t}, F_{y_{t}}, \overline{\alpha}) 
+			= \int_{0}^{\infty} \overline{\alpha}\, \frac{y_{t}}{P_{\overline{\alpha}}(\mathbf{p}_{t})} \, dF_{y_{t}}
+			= \overline{\alpha}\, \frac{\mathbb{E}[y_{t}]}{P_{\overline{\alpha}}(\mathbf{p}_{t})}
+	\end{equation}
+
+	%%	 A complex estimation error	%%
+\subsection{A complex estimation error}
+To understand how the estimation errors appear in this setting I proceed in two steps. First, since category demands depend on $\alpha$, then for agent $(y,\alpha)$ the true value will differ from the estimated one by
+	$$\mathcal{D}_{t}(y_{t},\alpha_{t},\overline{\alpha})
+		:=	X(\mathbf{p}_{t}, y_{t}, \alpha_{t}) - \widehat{X}_{t}(\mathbf{p}_{t}, y_{t}, \overline{\alpha})
+		=	y_{t}\left(\frac{\alpha_{t}}{P_{\alpha_{t}}(\mathbf{p}_{t})} - \frac{\overline{\alpha}}{P_{\overline{\alpha_{t}}}(\mathbf{p}_{t})} \right).\footnote{Note that in this setting $X$ does not depend on $q$ and thus, to simplify notation, this variable was suppressed.}
+	$$
+\rojo{Discuss the monotonicity (or absence of it).}
+
+The second step is to note that the estimation error (with sign) of $\mathbf{X}_{1t}$ is just the integral of these errors over $S$. In the simplest case where preferences do not change over time we have,
+	\begin{align*}
+		D_{t}(\overline{\alpha})
+			:&=	\int_{S} \mathcal{D}(y_{t},\alpha,\overline{\alpha})	\\
+			&=	\int_{S} \alpha\,\frac{y_{t}}{P_{\alpha}(\mathbf{p}_{t})} \, dF(y_{t},\alpha) - \overline{\alpha}\, \frac{\mathbb{E}[y_{t}]}{P_{\overline{\alpha}}(\mathbf{p}_{t})}	\\
+			&=	\mathbb{E}\left[\alpha \, \frac{y_{t}}{P_{\alpha}(\mathbf{p}_{t})}\right] - \overline{\alpha}\, \frac{\mathbb{E}[y_{t}]}{P_{\overline{\alpha}}(\mathbf{p}_{t})}	\\
+			&=	\mathrm{Cov}\left(y_{t}, \frac{\alpha}{P_{\alpha}(\mathbf{p}_{t})} \right) + \mathbb{E}[y_{t}]\mathbb{E}\left[\frac{\alpha}{P_{\alpha}(\mathbf{p}_{t})}\right] - \overline{\alpha_{t}}\, \frac{\mathbb{E}[y_{t}]}{P_{\overline{\alpha}}(\mathbf{p}_{t})}	\\
+			&= 	\mathbb{E}[y_{t}]\left\{ \frac{\mathrm{Cov}\left(y_{t}, \frac{\alpha}{P_{\alpha}(\mathbf{p}_{t})} \right)}{\mathbb{E}[y_{t}]} + \mathbb{E}\left[\frac{\alpha}{P_{\alpha}(\mathbf{p}_{t})}\right] - \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p}_{t})} \right\}.
+	\end{align*}
+Let $T_{t}$ be the random variable $\frac{\alpha}{P_{\alpha}(\mathbf{p}_{t})}$ and let $\overline{T}_{t} := \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p}_{t})}$. Then we can (with some abuse of notation on the function $D_{t}$) write
+	\begin{equation} \label{eq:DiffMix}
+		D_{t}\left(\overline{T}_{t} \right) 
+			= \mathbb{E}[y_{t}]\left\{ \mathbb{E}\left[T_{t} \right] + \frac{\mathrm{Cov}\left(y_{t}, T_{t} \right)}{\mathbb{E}[y_{t}]} - \overline{T}_{t} \right\},
+	\end{equation}
+which is in principle very similar to \eqref{eq:DiffAgRep} in \Cref{ssec:RepAgError}. However, note now that $D_{t}$ does depend on prices and hence on their dynamics. In terms of distributions observe that in this case, the mixed setting implies that the distribution that matters is the one of $(y_{t},T_{t})$ that depends also on prices. From \eqref{eq:DiffMix} we know that the sufficient statistics needed to obtain an exact fit at time $t$ are, just as in \Cref{ssec:RepAgError}, the first and second moments of that distribution. The difference in this case is that now there is a third source of variation over time, which are prices.
+
+From \eqref{eq:DiffMix} an investigator interested in making the estimation error the lowest possible should choose $\overline{\alpha}$ such that
+	\begin{equation} \label{eq:OptT}
+		\overline{T}_{t} =  \underbrace{\mathbb{E}\left[T_{t} \right] + \frac{\mathrm{Cov}\left(y_{t}, T_{t} \right)}{\mathbb{E}[y_{t}]}}_{:= \tilde{M}_{t}}.
+	\end{equation}
+
+Observe that changes in prices may affect the right hand side of \eqref{eq:OptT}. If the investigator only has access to $t =0$ variables, knowing the dynamics of prices may not be enough to reduce the estimation error at $t =1$ to zero. Indeed, note that the value of each term in $\tilde{M}_{0}$ is unknown at $t=0$, thus any possible correction using dynamics of prices is not feasible. It is interesting to note however that if relative prices do not change between $t=0$ and $t=1$, that is, if $\mathbf{p}_{1} = \lambda \mathbf{p}_{0}$, then using that $P_{\alpha}(\mathbf{p})$ is homogeneous of degree 1 we have
+	$$\lambda^{-1}\tilde{M}_{0} = \mathbb{E}[T_{1}] + \frac{\mathrm{Cov}\left(y_{0}, T_{1} \right)}{\mathbb{E}[y_{0}]},$$
+and
+	\begin{equation} \label{eq:CorrectT}
+		\overline{T}_{1} = \lambda^{-1}\overline{T}_{0}.
+	\end{equation}
+Hence, in this scenario, setting $\overline{T}_{0} = \tilde{M}_{0}$ as in \eqref{eq:OptT} (assuming that reducing the estimation error to zero at $t=0$ is possible) and then making the correction in \eqref{eq:CorrectT} will further reduce the estimation error if
+	\begin{align*}
+		\left|\tilde{M}_{1} - \lambda^{-1}\tilde{M}_{0} \right|
+			&\leq \left|\tilde{M}_{1} - \tilde{M}_{0} \right|	\\
+		\left| \frac{\mathrm{Cov}\left(y_{1}, T_{1} \right)}{\mathbb{E}[y_{1}]} - \frac{\mathrm{Cov}\left(y_{0}, T_{1} \right)}{\mathbb{E}[y_{0}]} \right|,
+			&\leq \left| \mathbb{E}\left[T_{1} \right] - \mathbb{E}\left[T_{0} \right] + \frac{\mathrm{Cov}\left(y_{1}, T_{1} \right)}{\mathbb{E}[y_{1}]} - \frac{\mathrm{Cov}\left(y_{0}, T_{0} \right)}{\mathbb{E}[y_{0}]} \right|.
+	\end{align*}
+Moreover, if $y_{1} = Ry_{0}$ for some $R>0$, then implementing this correction will reduce the error to zero, just as what happened in \Cref{ssec:RepAgError}.
+
+\rojo{Compute the error as a function of $\overline{\alpha}$ for some parameters?}
 
 %%%	Concluding remarks		%%%
-\section{Concluding remarks} \label{sec:conclusion}
+\section{Concluding remarks} \label{sec:Conclusion}
 
 
 %: 	Bibliography
