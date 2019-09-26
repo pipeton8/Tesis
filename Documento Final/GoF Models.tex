@@ -109,8 +109,11 @@ satisfies
 In other words, the problem seeks to find an alternative model that is coherent with the original. \rojo{Elaborate on this.}
 
 At least two situations exist under which these alternative models can be found: functional and Hicksian separability. In the first, assume that the preference relation represented by $u$ has the following ``independence'' property
-	$$(\mathbf{x}, \mathbf{z}) \succ (\mathbf{x}', \mathbf{z}) 
-		\Longleftrightarrow (\mathbf{x}, \mathbf{z}') \succ (\mathbf{x}', \mathbf{z}') \qquad \paratodo \mathbf{x}, \mathbf{x}', \mathbf{z}, \mathbf{z}'.$$
+	\begin{equation} \label{eq:indepPref}
+		(\mathbf{x}, \mathbf{z}) \succ (\mathbf{x}', \mathbf{z}) 
+			\Longleftrightarrow
+		(\mathbf{x}, \mathbf{z}') \succ (\mathbf{x}', \mathbf{z}') \qquad \paratodo \mathbf{x}, \mathbf{x}', \mathbf{z}, \mathbf{z}'.
+	\end{equation}
 This independence property implies that there exists a function $v$ such that
 	$$u(\mathbf{x}, \mathbf{z}) = U(v(\mathbf{x}), \mathbf{z}),$$
 where $U(v,\mathbf{z})$ is increasing in $v$. In this case, the consumer values consumption of $\mathbf{x}$ only through $v$. For example, consider $\mathbf{x}$ to be different types of food. Independence in this context could manifest If the agent only values the amount of calories she gets from $\mathbf{x}$. In that situation, all kinds of food will be valued differently according to the amount of calories per unit each of them give but the consumer will only value the total caloric intake. The previous example suggest a particularity of this type of separability. Following the same nomenclature: The consumer will choose the amount of calories and the total amount to spend on food first and then she will choose the individual consumption on each kind of food. Models that show this feature are often referred to as hierarchical consumption models.
@@ -209,12 +212,21 @@ Moreover, if $y_{1} = R y_{0}$ for some $R > 0$, then $\overline{\alpha} = M_{0}
 %%%	Aggregation across goods	%%%
 \section{Aggregation across goods} \label{sec: OneGood}
 
+	%%	Economy setting	%%
+\subsection{Economy setting}
+Consider a two period economy with $n+1$ goods available, $(\mathbf{x}, z)$, valued at prices $(\mathbf{p}, q)$ and one consumer whose income is $y \in (0,\infty)$. The vector $\alpha \in (0,1)^{n}$ determines the form of our consumer's pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear in \Cref{sec:MixedAgg}.} utility function,
+	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha_{j}}z^{1-\alpha_{j}}.$$
+
+Hence, the agent can be identified with the pair $(y,\alpha)$. Observe that if all $\alpha_{j}$ are different, then it is not possible to bundle the $\mathbf{x}$ goods into a category. Indeed, as mentioned in \Cref{ssec:HicksAgg}, without assuming certain price dynamics, the only option is to be in presence of functional separability. A necessary condition for this to happen is that the $\mathbf{x}$ goods are independent of $z$ in terms of the preference, that is, \eqref{eq:indepPref} holds. It is straightforward to see that for the preference relation represented by the function $u_{\alpha}$ this property is not satisfied unless all $\alpha_{j}$ are equal. Furthermore, when $\alpha_{j} = \alpha_{0}$ for every $j$, then it can be shown that aggregation is possible and both the price and quantity indices and the ``aggregate'' utility function are easy to obtain (see \Cref{sec:MixedAgg}).
+
+
+
 %%%	Mixing both types of aggregation	%%%
 \section{Mixing both types of aggregation} \label{sec:MixedAgg}
 
 	%%	Description of the economy	%%
 \subsection{Description}
-Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function, that is,
+Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD) utility function,
 	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha}z^{1-\alpha} = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)z^{1-\alpha}.$$
 
 Consumers choose how much of the $\mathbf{x}$ goods to consume in each period according to
@@ -224,7 +236,7 @@ Consumers choose how much of the $\mathbf{x}$ goods to consume in each period ac
 				{&	\mathbf{p} \mathbf{x} + qz = y.}
 	\end{equation} 
 
-The pairs $(y,\alpha)$ follow a distribution $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) over its support $S := (0,\infty) \times  (0,1)$. As was presented in \Cref{sec:RepAg}, $F_{y}$ will be a $log$-Normal distribution with parameters $\mu$ and $\sigma$. In this setting, it is possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ (see \Cref{ssec:HicksAgg}) given by: 
+The pairs $(y,\alpha)$ follow a distribution $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) over its support $S := (0,\infty) \times  (0,1)$. \rojo{As was presented in \Cref{sec:RepAg}, $F_{y}$ will be a $log$-Normal distribution with parameters $\mu$ and $\sigma$.} In this setting, it is possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ (see \Cref{ssec:HicksAgg}) given by: 
 	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
 In that case, we have
 	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
