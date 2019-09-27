@@ -60,7 +60,7 @@ Back to the economic theory, consider the example of the representative agent mo
 The aforementioned model is a particular case of a common practice in economics: aggregation. The other canonical example of its use is aggregation across goods, where instead of describing the myriad of goods available in an economy they are grouped into one or several categories. Regarding these two implementations, previous theoretical literature focused in one side of the problem: When is it possible to carry out this practice and describe precisely the same economy?. In the case of the representative agent, the necessary and sufficient condition is that the indirect utility function of every consumer has the Gorman form.\footnote{\cite{Gorman53}.} When aggregation is applied to goods, the answer has been more elusive but two results arise. First, the Hicks-Leontief (composite commodity) theorem allows aggregation if relative prices are constant in the group of goods that are to be bundled.\footnote{\cite{Leontief36, HicksBook}.} Although a somewhat weaker requirement is proposed by \cite{Lewbel96}: bundling is possible if all group relative prices are independent of price indexes and income. The second answer states that grouping some goods is possible if preferences between them are ``independent'' of the remaining goods present in the economy.\footnote{See for example \cite{GormanSeparability}.} For the two kinds of aggregation, the conditions are highly restrictive and not typically met in econometric or theoretical applications. As mentioned previously, the literature has used them both in constructing models and making econometric estimations and this practice comes at a cost. Thus, understanding and quantifying possible approximation errors is crucial in determining and measuring their goodness-of-fit. In contrast with some of the articles mentioned earlier, in this work I intend to give a theoretical look at how these deviations appear using simple models and try to bound them in terms of available variables in the economy. Next, drawing on the previous results, I will discuss a methodology about approaching this problem in more general settings.
 
 %:	Index
-The rest of the paper proceeds as follows. To motivate the following discussion, in \Cref{sec:PrevResults} I present a summary of the problems and previous results about conditions under which aggregation is possible. Then, I present \rojo{3} settings to illustrate how approximation errors appear when using aggregate models to estimate future economic variables. First, in \Cref{sec:RepAg}, I present a representative agent model in the context of aggregate demand estimation. Second, In \Cref{sec: OneGood} I study aggregation across goods \rojo{when used in the context of demand forecasting}. The third model is presented in \Cref{sec:MixedAgg} and mixes the previous two by presenting an economy of several individuals consuming various goods, where the good aggregation takes a different form. \rojo{More sections?}. Finally, in \Cref{sec:Conclusion} I discuss some final thoughts about model fitness.
+The rest of the paper proceeds as follows. To motivate the following discussion, in \Cref{sec:PrevResults} I present a summary of the problems and previous results about conditions under which aggregation is possible. Then, I present \rojo{3} settings to illustrate how approximation errors appear when using aggregate models to estimate future economic variables. First, in \Cref{sec:RepAg}, I present a representative agent model in the context of aggregate demand estimation. Second, In \Cref{sec:OneGood} I study aggregation across goods \rojo{when used in the context of demand forecasting}. The third model is presented in \Cref{sec:MixedAgg} and mixes the previous two by presenting an economy of several individuals consuming various goods, where the good aggregation takes a different form. \rojo{More sections?}. Finally, in \Cref{sec:Conclusion} I discuss some final thoughts about model fitness.
 
 %%%	Previous results in aggregation	%%%
 \section{Previous results in aggregation} \label{sec:PrevResults}
@@ -150,7 +150,7 @@ One of the most common applications of good aggregation under Hicksian separabil
 
 
 	%%	Description of the economy	%%
-\subsection{Description of the economy}
+\subsection{Description of the economy} \label{ssec:RepAgDescr}
 Consider a two period economy ($t = 0,1$) composed by a continuum of agents that consume two goods $\mathbf{x}_{t} = (x_{1t}, x_{2t})$ valued at prices $\mathbf{p}_{t} = (p_{1t}, p_{2t}) \in \mathbb{R}^{2}_{++}$. For simplicity, all subindices $t$ will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha$ determines the form of her Cobb-Douglas utility function, that is,
 	$$u_{\alpha}(\mathbf{x}) := u_{(y,\alpha)}(\mathbf{x}) = x_{1}^{\alpha}x_{2}^{1-\alpha}.$$
 The random variables $y$ and $\alpha$ follow a joint distribution, $F$, with support $S := (0,\infty) \times (0,1)$. Observe that in principle $y$ and $\alpha$ could be correlated. The marginal distributions are $F_{y}$ and $F_{\alpha}$, respectively. As is usual in the literature, $y_{t}$ will follow a $log$-Normal distribution with parameters $\mu_{t}$ and $\sigma_{t}$.
@@ -209,24 +209,14 @@ Moreover, if $y_{1} = R y_{0}$ for some $R > 0$, then $\overline{\alpha} = M_{0}
 
 \rojo{Dynamics? Simulation?}
 
-%%%	Aggregation across goods	%%%
-\section{Aggregation across goods} \label{sec: OneGood}
-
-	%%	Economy setting	%%
-\subsection{Economy setting}
-Consider a two period economy with $n+1$ goods available, $(\mathbf{x}, z)$, valued at prices $(\mathbf{p}, q)$ and one consumer whose income is $y \in (0,\infty)$. The vector $\alpha \in (0,1)^{n}$ determines the form of our consumer's pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear in \Cref{sec:MixedAgg}.} utility function,
-	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha_{j}}z^{1-\alpha_{j}}.$$
-
-Hence, the agent can be identified with the pair $(y,\alpha)$. Observe that if all $\alpha_{j}$ are different, then it is not possible to bundle the $\mathbf{x}$ goods into a category. Indeed, as mentioned in \Cref{ssec:HicksAgg}, without assuming certain price dynamics, the only option is to be in presence of functional separability. A necessary condition for this to happen is that the $\mathbf{x}$ goods are independent of $z$ in terms of the preference, that is, \eqref{eq:indepPref} holds. It is straightforward to see that for the preference relation represented by the function $u_{\alpha}$ this property is not satisfied unless all $\alpha_{j}$ are equal. Furthermore, when $\alpha_{j} = \alpha_{0}$ for every $j$, then it can be shown that aggregation is possible and both the price and quantity indices and the ``aggregate'' utility function are easy to obtain (see \Cref{sec:MixedAgg}).
 
 
-
-%%%	Mixing both types of aggregation	%%%
-\section{Mixing both types of aggregation} \label{sec:MixedAgg}
+%%%	Consumer aggregation and category goods	%%%
+\section{Consumer aggregation and category goods} \label{sec:MixedAgg}
 
 	%%	Description of the economy	%%
 \subsection{Description}
-Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD) utility function,
+Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in (0,\infty)$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function,
 	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha}z^{1-\alpha} = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)z^{1-\alpha}.$$
 
 Consumers choose how much of the $\mathbf{x}$ goods to consume in each period according to
@@ -237,11 +227,17 @@ Consumers choose how much of the $\mathbf{x}$ goods to consume in each period ac
 	\end{equation} 
 
 The pairs $(y,\alpha)$ follow a distribution $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) over its support $S := (0,\infty) \times  (0,1)$. \rojo{As was presented in \Cref{sec:RepAg}, $F_{y}$ will be a $log$-Normal distribution with parameters $\mu$ and $\sigma$.} In this setting, it is possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ (see \Cref{ssec:HicksAgg}) given by: 
-	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
+	\begin{equation} \label{eq:qtyindex}
+		g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.
+	\end{equation}
 In that case, we have
-	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
+	\begin{equation} \label{eq:utilagg}
+		U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},
+	\end{equation}
 which is the usual Cobb-Douglas utility function. Hence, by defining $\epsilon := (1-\alpha)^{-1}$ and
-	$$P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},$$
+	\begin{equation} \label{eq:priceindex}
+		P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},
+	\end{equation}
 we have that the category demand
 	\begin{equation} \label{eq:probagg}
 		\probop{X(\mathbf{p}, q, y, \alpha) := \argmax_{X, z}}{U(X,z)}
@@ -312,6 +308,40 @@ Hence, in this scenario, setting $\overline{T}_{0} = \tilde{M}_{0}$ as in \eqref
 Moreover, if $y_{1} = Ry_{0}$ for some $R>0$, then implementing this correction will reduce the error to zero, just as what happened in \Cref{ssec:RepAgError}.
 
 \rojo{Compute the error as a function of $\overline{\alpha}$ for some parameters?}
+
+%%%	Aggregation across goods	%%%
+\section{Aggregation across goods} \label{sec:OneGood}
+
+	%%	Economy setting	%%
+\subsection{Economy setting} \label{ssec:OneGoodDescr}
+Consider a two period economy with $n+1$ goods available, $(\mathbf{x}, z)$, valued at prices $(\mathbf{p}, q)$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. In this economy, consider one consumer whose income is $y \in (0,\infty)$.\footnote{I am not claiming there is only one consumer in the economy. Instead I am just focusing on one of them.} The vector $\alpha \in (0,1)^{n}$ determines the form of our consumer's pseudo-Cobb-Douglas (PCD) utility function,
+	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha_{j}}z^{1-\alpha_{j}}.$$
+
+Hence, the agent can be identified with the pair $(y,\alpha)$. This consumer chooses how much of the $\mathbf{x}$ goods to consume in each period according to
+	\begin{equation} \label{eq:probdisagg2}
+		\probop{\mathbf{x}(\mathbf{p}, q, y) 
+			:= \argmax_{\mathbf{x}, z}}{u_{\alpha}(\mathbf{x}, z),}
+				{&	\mathbf{p} \mathbf{x} + qz = y.}
+	\end{equation} 
+
+Observe that if all $\alpha_{j}$ are different, then it is not possible to bundle the $\mathbf{x}$ goods into a category. Indeed, as mentioned in \Cref{ssec:HicksAgg}, without assuming certain price dynamics, the only option is to be in presence of functional separability. A necessary condition for this to happen is that the $\mathbf{x}$ goods are independent of $z$ in terms of the preference, that is, \eqref{eq:indepPref} holds. It is straightforward to see that for the preference relation represented by the function $u_{\alpha}$ this property is not satisfied unless all $\alpha_{j}$ are equal. Furthermore, when $\alpha_{j} = \alpha_{0}$ for every $j$, aggregation is possible as was seen in \Cref{sec:MixedAgg}. 
+
+	%%	The estimation problem	%%
+\subsection{The estimation problem} \label{ssec:OneGoodProblem}
+An investigator at time $t=0$ is interested in studying the evolution of the demand on the $\mathbf{x}$ goods. For that purpose, instead of focusing in the individual demands on the $\mathbf{x}$ goods she wishes to construct a quantity index for them, $g_{\overline{\alpha}}$, like the one defined in \eqref{eq:qtyindex} in \Cref{ssec:RepAgDescr}. In other words she wants to choose a value $\overline{\alpha}$ such that by defining $U$ and $P_{\overline{\alpha}}$ as in \eqref{eq:utilagg} and \eqref{eq:priceindex}, respectively, the category demand
+	\begin{equation} \label{eq:probagg2}
+		\probop{X(\mathbf{p}, q, y) := \argmax_{X, z}}{U(X,z)}
+										{&	P_{\overline{\alpha}}(\mathbf{p})X + qz = y,}
+	\end{equation}
+is the closest possible to $g_{\overline{\alpha}}(\mathbf{x}(\mathbf{p}),q,y)$. In general, the equality
+	$$X(\mathbf{p}, q, y) = g_{\overline{\alpha}}\big(\mathbf{x}(\mathbf{p}, q, y)\big),$$
+will not hold as was discussed in the previous section, but the choice of $\overline{\alpha}$ can be made optimally to reduce the difference as much as possible.
+
+Following the discussion in the previous section, the question that arises in this setting is: Which distribution is being approximated by assuming there is only two, instead of $n+1$ goods in the economy?. The answer is straightforward but the interpretation is subtle. Since $\overline{\alpha}$ is replacing every $\alpha_{j}$ with a single parameter, then what is being approximated is the ``distribution'' of the $\alpha_{j}$. To see this, we can regard the heterogeneous preferences between the $\mathbf{x}$ goods as an equiprobable distribution with mass at each $\alpha_{j}$. This way of seeing this approximation is coherent with the previous examples where the distributions were representing the heterogeneity of the context, in particular the different preferences between individuals in the economy.
+
+	%%	The estimation problem	%%
+\subsection{Measuring the error} \label{ssec:OneGoodError}
+
 
 %%%	Concluding remarks		%%%
 \section{Concluding remarks} \label{sec:Conclusion}
