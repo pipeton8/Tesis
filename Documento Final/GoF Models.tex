@@ -212,10 +212,51 @@ Moreover, if $y_{1} = R y_{0}$ for some $R > 0$, then $\overline{\alpha} = M_{0}
 
 \rojo{Dynamics? Simulation?}
 
-%%%	Consumer aggregation and category goods	%%%
-\section{Consumer aggregation and dynamic models} \label{sec:CarrollAgg}
+%%%	Consumer aggregation in dynamic models	%%%
+\section{Consumer aggregation in dynamic models} \label{sec:CarrollAgg}
 
+	%%	The model	%%
+\subsection{The model}
+Consider the following model where a consumer, identified with parameters $(\rho, \beta)$ solves the following problem
+	\begin{equation} \label{eq:CarrollModel}
+		\probop{\max}{\mathbb{E}_{0}\left[\sum_{t=0}^{\infty} \beta^{t} \frac{C_{t}^{1-\rho}}{1-\rho} \right],}
+				{&	K_{t+1} = (1-\delta)(Y_{t} - C_{t}),	\\
+				&	Y_{t+1} = K_{t+1} + \theta_{t+1}K_{t+1}^{\alpha}L_{t+1}^{1-\alpha},}
+	\end{equation}
+where $C_{t}$ is consumption at time $t$, $K_{t+1}$ is the capital at the start of period $t+1$ and $Y_{t}$ represents the total resources available (income) at time $t$. Let $c(y)$ represent the infinite-horizon consumption as a function of current resources, where both variables are normalized by permanent labor income, that is, $y = \frac{Y}{wL}$ and similarly for $c$.\footnote{If $c_{t}(y)$ is the optimal normalized consumption as a function of normalized current resources, then $c(y) := \lim_{n \to \infty} c_{T-n}(y)$, where $T$ is the last period of the finite horizon counterpart of problem \eqref{eq:CarrollModel}. For a discussion of why the optimal consumption rule $c_{t}(y)$ of \eqref{eq:CarrollModel} converges to $c(x)$ when $t$ goes to infinity see \rojo{Which paper?}.} A salient feature of these models is that $c$ is a highly concave function of $y$, but for low and high values of income the function is nearly linear, as in \Cref{fig:concaveC}. This behavior may harm predictions of the (aggregate) marginal propensity of consumption (MPC) using a representative agent model if the aggregate income is big but wealth is very unequally distributed. As expected, the difference between empirically estimated MPCs and the one predicted by the representative agent model is substantial, while the former are found between 0.2 and 0.5, the latter is only 0.04 under standard parameters.\footnote{See \cite{CarrollRequiem}.}
+	\begin{figure}
+		\caption{Consumption function}
+		\label{fig:concaveC}
+		\includegraphics[width=0.4\textwidth]{example-image}
+		\floatfoot{Note}
+	\end{figure}
+	
+One way to give better predictions is to modify the model to produce a skewed distribution of income, more similar to the data. Of course, if that same data could give hints to choose the parameters of the representative agent model, then its use could produce more reasonable estimates without incorporating more complexity. In what follows I will use the same argument as the one in \Cref{sec:RepAg} to understand how the basic representative agent model in \eqref{eq:CarrollModel} can be calibrated to obtain a better prediction for the MPC.
 
+	%%	The problem of estimating the MPC	%%
+\subsection{The problem of estimating the MPC}
+Suppose the economy is composed by agents identified by their preference parameters ($\beta$, $\rho$) and their income $y$, distributed according to $F$ with marginals $F_{\beta, \rho}$ and $F_{y}$, respectively. According to the model in \eqref{eq:CarrollModel}, for every pair $(\beta,\rho)$ we have an optimal consumption $c_{\beta,\rho}$ and thus the (aggregate) MPC is 
+	$$ \mathrm{MPC}(F) = \int_{S} c_{\beta,\rho}'(y) \, dF, $$
+where $S := \supp F$ is the support of the distribution $F$. Note that using the law of total expectation we can write
+	\begin{equation} \label{eq:lteMPC}
+		\mathrm{MPC}(F) = \mathbb{E}_{y}\Big[ \mathbb{E}_{(\beta,\rho) \, | \, y}[c'_{\rho,\beta}(y)] \; \Big| \; y \Big].
+	\end{equation}
+Note that if patience ($\beta$) and risk aversion ($\rho$) are known from income, then \eqref{eq:lteMPC} gives a reasonable method to compute the MPC.
+
+Suppose now that an investigator wishes to compute the MPC for this economy but instead of using an heterogeneous model (because data on preferences may not be available), she chooses a pair of parameters ($\overline{\beta}, \overline{\rho}$) to propose a representative consumer model. Solving \eqref{eq:CarrollModel} for these values gives a consumption function $c_{\overline{\beta}, \overline{\rho}}$. Suppose this researcher has access to $F_{y}$, that is, she has data on income. As discussed in \Cref{sec:RepAg}, the previous modeling decision is equivalent to approximating $F_{\beta,\rho}$ by a Dirac distribution $\delta_{\overline{\beta},\overline{\rho}}$ or in more broader terms, approximate $F$ by another distribution $G$ with marginals $\delta_{\overline{\beta},\overline{\rho}}$ and $F_{y}$ and with the same support. Hence, the MPC in this context is
+	\begin{equation} \label{eq:aggMPC}
+		\mathrm{MPC}(G) 
+			= \int_{S} c_{\overline{\beta},\overline{\rho}}'(y) \, dG 
+			= \mathbb{E}_{y}\Big[ c_{\overline{\beta},\overline{\rho}}'(y) \Big].
+	\end{equation}	
+Thus, using \eqref{eq:lteMPC} and \eqref{eq:aggMPC}, the estimation error with sign is
+	$$D(\overline{\beta}, \overline{\rho})
+		:=	\mathbb{E}_{y}\Big[ \mathbb{E}_{(\beta,\rho) \, | \, y}[c'_{\rho,\beta}(y) -  c_{\overline{\beta},\overline{\rho}}'(y) ] \; \Big| \; y \Big].$$
+This means that, as happened in \Cref{sec:RepAg}, the estimation error arises from differences in the ``estimated'' MPC for each agent. Of course, the aggregate model is not in principle capturing directly the individual MPC but when though of it as approximating the heterogeneity in the economy, then it is possible to interpret that is indeed the case.
+
+Sadly, for a model like \eqref{eq:CarrollModel} there is no analytic expression for $c_{\beta,\rho}$ and thus neither is one for $c'_{\beta,\rho}$. Nevertheless, it is clear that the dependence of these functions on $\beta$, $\rho$ and $y$ is ``finite'' in the sense that there is a finite number of appearances of these variables in the expression of those functions. Hence, $D(\overline{\beta}, \overline{\rho})$ depends on a finite number of moments of the distribution $F$.
+
+ 
 
 %%%	Consumer aggregation and category goods	%%%
 \section{Consumer aggregation and category goods} \label{sec:MixedAgg}
