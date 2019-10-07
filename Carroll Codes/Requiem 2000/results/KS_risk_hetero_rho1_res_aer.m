@@ -1,0 +1,6 @@
+MatrixForm[{{"ktLevel", 34.00574092938548}, {"ktRatio", 3.909380962704839}, 
+  {"ktBot1PctRatio", 0.0029961980624561165}, 
+  {"ktMedianRatio", 0.08569907426961837}, {"ktTop1PctRatio", 
+   16.51998547929329}, {"MPCMeanQuarterly", 0.14603133137544735}, 
+  {"MPCMeanAnnual", 0.4681762250656727}, {"ktTopFrac", 0.9744730795887917}, 
+  {"kOwLTopMean", 11.549900844046606}, {"kOwLBotMean", 0.14889642379268755}}]
