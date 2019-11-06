@@ -1,0 +1,146 @@
+% !BIB TS-program = biber
+% !BIB program = biber
+\documentclass[10pt, handout]{beamer}
+%\documentclass[10pt]{beamer}
+
+% Packages %
+\usepackage[eng]{felipito}
+%\usepackage{lmodern}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+%\addbibresource{references.bib}
+%\usepackage{coloremoji}
+
+% Theme, color and font
+\usetheme{Madrid}	
+\usefonttheme{professionalfonts}
+\beamertemplatenavigationsymbolsempty
+
+% Epigraph
+\setlength{\epigraphwidth}{0.89\textwidth}
+\renewcommand{\textflush}{flushepinormal}
+\renewcommand {\epigraphflush} {center}
+\renewcommand {\sourceflush} {flushleft}
+
+% Title and date
+\title[]{Aggregate problems require aggregate solutions?}
+\subtitle{When heterogeneity is expendable}
+\author{Felipe Del Canto}
+\institute[]{Pontificia Universidad Católica de Chile}
+\date{\today}
+
+% Graphics path
+\graphicspath{{./Graphics/}}
+
+% Documento %
+\begin{document}
+
+% Portada %
+\frame[noframenumbering, plain]{\titlepage}
+
+%: Outline
+\begin{frame}[noframenumbering, plain]{Index}
+	\tableofcontents
+\end{frame}
+
+%%%	Introduction		%%%
+\section{Introduction}
+
+%:	Outline
+\begin{frame}[t]{Aggregation is an approximation}
+	\begin{center}
+		\epigraph{\scriptsize (...) all models are approximations. Essentially, all models are wrong, but some are useful. However, %
+the approximate nature of the model must always be borne in mind.}{\scriptsize\textit{Empirical Model-Building and Response Surfaces (1987)} \\ \textsc{George Box and Norman Draper}}
+	\end{center} 
+
+\pause \vfill
+	\begin{itemize}
+		\item Aggregate models are, in particular, approximations. \pause \vfill
+		\item The conditions to have exact aggregation are strict. \pause \vfill
+		\item But the important measure of these models are their predictions. \pause \vfill
+		\item Three questions: \vspace{.5ex}
+			\begin{itemize}
+				\item Is it possible to calibrate aggregate models to obtain better predictions? \vspace{1ex}
+				\item How large can be the approximation error when aggregating? \vspace{1ex}
+				\item How can we compare aggregate and disaggregate models?
+			\end{itemize}
+			\vfill
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Aggregation ``$=$'' heterogeneity approximation}
+	\vfill
+	\begin{itemize} 
+		\item Typically two types of aggregation are studied:
+			\begin{itemize}
+				\item Across consumers (representative agent models). \vspace{1ex}
+				\item Across goods (i.e., two good models). 
+			\end{itemize} \vfill \pause
+
+		\item But aggregation is just approximating heterogeneity in preferences, income, geography, etc. \vfill \pause
+			
+		\item Aggregation ``$=$'' approximating distributions of heterogeneous variables:
+			\begin{itemize}
+				\item Distribution $F$ is approximated by a Dirac distribution $\delta_{x}$ at the point $x$. \vspace{1ex}
+				\item $x$ is the choice of parameters of the aggregate model. 
+			\end{itemize} \vfill
+
+	\end{itemize}
+
+\end{frame}
+
+%:	Outline
+\begin{frame}[noframenumbering, plain]
+	\tableofcontents[currentsection]
+\end{frame}
+
+%%%	Aggregation across consumers		%%%
+\section{Aggregation across consumers}
+
+%:	Outline
+\begin{frame}[noframenumbering, plain]
+	\tableofcontents[currentsection]
+\end{frame}
+
+%%%	Aggregation in dynamical models		%%%
+\section{Aggregation in dynamical models}
+
+%:	Outline
+\begin{frame}[noframenumbering, plain]
+	\tableofcontents[currentsection]
+\end{frame}
+
+%%%	Representative agent and category goods		%%%
+\section{Representative agent and category goods}
+
+%:	Outline
+\begin{frame}[noframenumbering, plain]
+	\tableofcontents[currentsection]
+\end{frame}
+
+%%%	Aggregation across goods		%%%
+\section{Aggregation across goods}
+
+%:	Outline
+\begin{frame}[noframenumbering, plain]
+	\tableofcontents[currentsection]
+\end{frame}
+
+%%%	Final remarks		%%%
+\section{Final remarks}
+
+
+%:	Outline
+\begin{frame}[noframenumbering, plain]
+	\tableofcontents[currentsection]
+\end{frame}
+
+
+%:Contraportada
+\begin{frame}[plain,noframenumbering]
+  \titlepage
+ \end{frame}
+
+
+
+\end{document}
+
