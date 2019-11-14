@@ -1,0 +1,97 @@
+\documentclass[english, a4paper,12pt]{article}
+
+%:Preamble
+\usepackage[bookmarks, colorlinks=true, allcolors=blue, pagebackref=true, hyperfootnotes=false]{hyperref}
+\usepackage[eng]{felipito}
+\usepackage[round]{natbib}
+
+\graphicspath{{./Graphics/}}
+
+\textheight = 690pt
+\topmargin = -40pt
+\textwidth = 500pt
+\oddsidemargin = -22pt
+\spacing{1.5}
+
+%:Document
+\begin{document}
+
+%:	Title
+\begin{center} \bf \large
+	The (un)representative consumer: \\ How aggregate demands differ in a simple model \\ Felipe Del Canto, 19 de Agosto de 2019
+\end{center}
+
+%:	Modeler does not choose the best \alpha
+\section{The unaware modeler}
+Consider an economy composed by a continuum of agents and two goods $\mathbf{x} = (x_{1}, x_{2})$ valued at prices $\mathbf{p} = (p_{1}, p_{2}) \in \mathbb{R}^{2}_{++}$. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in [m,M]$ is her income and $\alpha$ determines the form of her Cobb-Douglas utility function, that is,
+	$$u_{\alpha}(\mathbf{x}) := u_{(y,\alpha)}(\mathbf{x}) = x_{1}^{\alpha}x_{2}^{1-\alpha}.$$
+Assume further that $(y,\mathbf{p},\alpha)$ follows a certain distribution $F$ over it support $S := [m,M] \times \mathbb{R}^{2}_{++} \times (0,1)$. For every fixed vector $\mathbf{p}$, all agents choose the consumption bundle $\mathbf{x}(y,\mathbf{p},\alpha)$ by maximizing $u$ over $\mathbf{x}$ subject to their respective budget restriction. Specifically, the agent identified with the pair $(y,\alpha)$ solves
+	$$\probop{\max_{\mathbf{x}}}{u_{\alpha}(\mathbf{x})}
+							{&	\mathbf{p} \cdot \mathbf{x} = y.}$$ 
+
+The solution to this problem is
+	$$x_{1}(y, \mathbf{p}, \alpha) = y\, \frac{\alpha}{p_{1}},$$
+and thus the aggregate demand (conditional on the observed vector $\mathbf{p}$) is,
+	$$X_{1}(F, \mathbf{p}) = \frac{1}{p_{1}}\int_{(0,1) \times [m,M]} y \alpha \, dF(\alpha ,y \, | \, \mathbf{p}) 
+		= \frac{1}{p_{1}}E[y\alpha \, | \, \mathbf{p}].$$
+
+Suppose now we want to describe the aggregate demand of good 1 in this economy but ignoring (willingly or not) the complexity of the agents we choose a representative consumer model whose income is $Y = E[y \, | \, \mathbf{p}]$ and with utility equal to
+	$$u_{\overline{\alpha}}(\mathbf{X}) = X_{1}^{\overline{\alpha}}X_{2}^{1-\overline{\alpha}},$$
+where $\mathbf{X} = (X_{1}, X_{2})$ is the aggregate demand and $\overline{\alpha} = E[\alpha \,| \, \mathbf{p_{0}}]$. This choice of $\overline{\alpha}$ may come, for example, from a previous estimation of the average share of consumption of good 1 among the population. Additionally, observe that both $Y$ and $\overline{\alpha}$ are functions of the prices, reflecting the fact that these measurements are done in a given moment of time. In this scenario, the aggregate demand predicted by the representative agent model is
+	$$\overline{X}_{1}(F, \mathbf{p} ; \mathbf{p_{0}})
+		=	Y \, \frac{\overline{\alpha}}{p_{1}}
+		=	\frac{1}{p_{1}}E[y \, | \, \mathbf{p}] E[\alpha \,| \, \mathbf{p_{0}}].
+	$$
+
+Thus, the (monetized) difference in prediction with this alternative model is
+	$$\mathcal{D}(\mathbf{p}, \mathbf{p_{0}}) := p_{1} \left| X_{1}(F, \mathbf{p}) - \overline{X}_{1}(F, \mathbf{p}; \mathbf{p_{0}})\right| 
+		= \big| E[y\alpha \, | \, \mathbf{p}] - E[y \, | \, \mathbf{p}] E[\alpha \, | \, \mathbf{p_{0}}] \big|,
+	$$
+
+which can be rewritten as
+	\begin{align*}
+		\mathcal{D}(\mathbf{p}, \mathbf{p_{0}})
+			&=	\big| E[y\alpha \, | \, \mathbf{p}] - E[y \, | \, \mathbf{p}] E[\alpha \, | \, \mathbf{p}] + E[y \, | \, \mathbf{p}] E[\alpha \, | \, \mathbf{p}] - E[y \, | \, \mathbf{p}] E[\alpha \, | \, \mathbf{p_{0}}] \big|	\\
+			&=	\big| \mathrm{Cov}(y,\alpha \,|\, \mathbf{p}) + E[y\,|\, \mathbf{p}]\left(E[\alpha \, | \, \mathbf{p}] - E[\alpha \, | \, \mathbf{p_{0}}]\right) \big|
+	\end{align*}
+
+It is possible that for a given vector $\mathbf{p}$, income and preferences are independent (as random variables), meaning that $\mathrm{Cov}(y,\alpha \,|\, \mathbf{p}) = 0$. In that case
+	$$\mathcal{D}(\mathbf{p}, \mathbf{p}_{0}) = E[y\,|\, \mathbf{p}]\big|E[\alpha \, | \, \mathbf{p}] - E[\alpha \, | \, \mathbf{p_{0}}]\big| $$
+
+Of course, this means that when $\mathbf{p} = \mathbf{p}_{0}$ the economy will be perfectly described with this simplified model. In the general case, however, the choice of $\overline{\alpha}$ may not be optimal if changes in prices trigger changes in preferences. If $\mathbf{p}$ represents a future vector of prices that is unobserved, then $\mathcal{D}(\mathbf{p}, \mathbf{p}_{0})$ is not a good measure of the goodness-of-fit of the simplified model. Instead, we could be interested in the \textit{expected} difference in approximation
+	$$E[\mathcal{D}(\mathbf{p}; \mathbf{p}_{0})] =
+		E\Big[ E[y\,|\,\mathbf{p}]\big|E[\alpha \, | \, \mathbf{p}] - E[\alpha \, | \, \mathbf{p_{0}}]\big| \Big]
+	$$
+
+Since $\alpha \in (0,1)$, then this difference is bounded above by
+	$$E[\mathcal{D}(\mathbf{p}; \mathbf{p}_{0})] \leq 
+		E\Big[ E[y\,|\,\mathbf{p}]\Big] \max\{ 1 - \overline{\alpha}, \overline{\alpha}\} = E[y]\max\big\{1-\overline{\alpha}, \overline{\alpha}\big\}
+	$$
+ 
+%:	Modeler chooses the best \alpha
+\section{The sophisticated scientist}
+In the same economy as above, suppose a farsighted modeler wants to choose $\overline{\alpha}$ in such a way that the expected difference between predictions is the smallest possible. That is she wishes to choose
+	\begin{equation*} %\label{eq:choosealpha2}
+		\overline{\alpha}
+			= \argmin_{\hat{\alpha} \in (0,1)} E\left[p_{1}\left| X_{1}(F,\mathbf{p}) - \overline{X}_{1}(F; \mathbf{p})\right|\right]
+			= \argmin_{\hat{\alpha} \in (0,1)} E\Big[\big| E[y \alpha\, |\, \mathbf{p}] - E[y \,|\, \mathbf{p}]\, \hat{\alpha} \big|\Big].
+	\end{equation*}
+
+If the independence assumption is maintained, then
+	$$\overline{\alpha} = \argmin_{\hat{\alpha} \in (0,1)} E\Big[ E[y\,|\,\mathbf{p}]\big|E[\alpha \, | \, \mathbf{p}] - \hat{\alpha}\big| \Big] $$
+
+And observe that the optimal value of the problem above is greater or equal than
+	$$E\Big[ E[y\,|\,\mathbf{p}]\big(\overline{\alpha} - E[\alpha \, | \, \mathbf{p}] \big) \Big] = E[y]\overline{\alpha},$$
+where I have reused the independence assumption.
+
+%:	Carroll and the savings model
+\section{Revisiting Carroll}
+Is it possible to make a similar analysis as the one above in the context of the consumption-savings model described in Carroll (2004)\footnote{\url{http://www.nber.org/papers/w10867}}. Maybe it is possible to assume a certain distribution for the parameter of the CRRA utility and try to approximate each policy function using two lines (analogue as describing the propensity of consumption using only two parameters). Next, try to bound or measure directly the discrepancies between, for example, the representative agent model and the disaggregated case after this approximation when predicting consumption or the MPC.
+
+Here I have more questions than answers. Is there any known method to bound this discrepancies aside from the one of Carroll (Figure 3a)? Is it meaningful to run simulations in this case if that's not a theoretical result? 
+
+%: 	Bibliography
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}

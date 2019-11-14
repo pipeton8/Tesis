@@ -1,0 +1,131 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Basu and Fernald(1997)]{Basu97}
+S.~Basu and J.~G. Fernald.
+\newblock Returns to scale in u.s. production: Estimates and implications.
+\newblock \emph{Journal of Political Economy}, 105\penalty0 (2):\penalty0
+  249--283, 1997.
+\newblock ISSN 00223808, 1537534X.
+
+\bibitem[Carroll(2000)]{CarrollRequiem}
+C.~D. Carroll.
+\newblock Requiem for the representative consumer? aggregate implications of
+  microeconomic consumption behavior.
+\newblock \emph{American Economic Review}, 90\penalty0 (2):\penalty0 110--115,
+  May 2000.
+\newblock \doi{10.1257/aer.90.2.110}.
+
+\bibitem[Feenstra and Hanson(2000)]{Agg3}
+R.~C. Feenstra and G.~H. Hanson.
+\newblock Aggregation bias in the factor content of trade: Evidence from u.s.
+  manufacturing.
+\newblock \emph{American Economic Review}, 90\penalty0 (2):\penalty0 155--160,
+  May 2000.
+\newblock \doi{10.1257/aer.90.2.155}.
+
+\bibitem[Fields and Ok(1999)]{OkFieldsIncome}
+G.~S. Fields and E.~A. Ok.
+\newblock \emph{The Measurement of Income Mobility: An Introduction to the
+  Literature}, pages 557--598.
+\newblock Springer Netherlands, Dordrecht, 1999.
+\newblock ISBN 978-94-011-4413-1.
+\newblock \doi{10.1007/978-94-011-4413-1_20}.
+
+\bibitem[Friedman(1953)]{FriedmanPositive}
+M.~Friedman.
+\newblock The methodology of positive economics.
+\newblock In \emph{Essays in Positive Economics}, A Phoenix book. Business
+  economics, pages 3--43. University of Chicago Press, 1953.
+\newblock ISBN 9780226264035.
+
+\bibitem[Gabaix et~al.(2015)Gabaix, Lasry, Lions, and Moll]{GabaixIncome}
+X.~Gabaix, J.-M. Lasry, P.-L. Lions, and B.~Moll.
+\newblock The dynamics of inequality.
+\newblock Working Paper 21363, National Bureau of Economic Research, July 2015.
+
+\bibitem[Gorman(1953)]{Gorman53}
+W.~M. Gorman.
+\newblock Community preference fields.
+\newblock \emph{Econometrica}, 21\penalty0 (1):\penalty0 63--80, 1953.
+\newblock \doi{10.2307/1906943}.
+
+\bibitem[Gorman(1959)]{GormanSeparability}
+W.~M. Gorman.
+\newblock Separable utility and aggregation.
+\newblock 27\penalty0 (3):\penalty0 469--481, 1959.
+\newblock \doi{10.2307/1909472}.
+
+\bibitem[Hanushek et~al.(1996)Hanushek, Rivkin, and Taylor]{SchoolAggregation}
+E.~A. Hanushek, S.~G. Rivkin, and L.~L. Taylor.
+\newblock Aggregation and the estimated effects of school resources.
+\newblock \emph{The Review of Economics and Statistics}, 78\penalty0
+  (4):\penalty0 611--627, 1996.
+\newblock ISSN 00346535, 15309142.
+
+\bibitem[Hicks(1946)]{HicksBook}
+J.~R. Hicks.
+\newblock \emph{Value and Capital: An Inquiry Into Some Fundamental Principles
+  of Economic Theory}.
+\newblock Clarendon paperbacks. Clarendon Press, 1946.
+\newblock ISBN 9780198282693.
+
+\bibitem[Imbs et~al.(2005)Imbs, Mumtaz, Ravn, and Rey]{Agg4}
+J.~Imbs, H.~Mumtaz, M.~O. Ravn, and H.~Rey.
+\newblock {PPP Strikes Back: Aggregation And the Real Exchange Rate*}.
+\newblock \emph{The Quarterly Journal of Economics}, 120\penalty0 (1):\penalty0
+  1--43, 02 2005.
+\newblock ISSN 0033-5533.
+\newblock \doi{10.1162/0033553053327524}.
+
+\bibitem[Kajii and Morris(1997)]{Morris97}
+A.~Kajii and S.~Morris.
+\newblock The robustness of equilibria to incomplete information.
+\newblock 65\penalty0 (6):\penalty0 1283--1309, 1997.
+\newblock \doi{10.2307/2171737}.
+
+\bibitem[Lee et~al.(1990)Lee, Pesaran, and Pierse]{Agg1}
+K.~C. Lee, M.~H. Pesaran, and R.~G. Pierse.
+\newblock Testing for aggregation bias in linear models.
+\newblock 100\penalty0 (400):\penalty0 137--150, 1990.
+\newblock \doi{10.2307/2234191}.
+
+\bibitem[Leontief(1936)]{Leontief36}
+W.~Leontief.
+\newblock Composite commodities and the problem of index numbers.
+\newblock 4\penalty0 (1):\penalty0 39--59, 1936.
+\newblock \doi{10.2307/1907120}.
+
+\bibitem[Lewbel(1996)]{Lewbel96}
+A.~Lewbel.
+\newblock Aggregation without separability: A generalized composite commodity
+  theorem.
+\newblock \emph{The American Economic Review}, 86\penalty0 (3):\penalty0
+  524--543, 1996.
+\newblock \doi{10.2307/2118210}.
+
+\bibitem[Ravallion(1998)]{Agg2}
+M.~Ravallion.
+\newblock Does aggregation hide the harmful effects of inequality on growth?
+\newblock \emph{Economics Letters}, 61\penalty0 (1):\penalty0 73 -- 77, 1998.
+\newblock ISSN 0165-1765.
+\newblock \doi{https://doi.org/10.1016/S0165-1765(98)00139-6}.
+
+\bibitem[Sutton(2007)]{SuttonMarketStruct}
+J.~Sutton.
+\newblock Market structure: Theory and evidence.
+\newblock volume~3, chapter~35, pages 2301--2368. Elsevier, 1 edition, 2007.
+
+\bibitem[ter Vehn and Morris(2011)]{Morris2011}
+M.~M. ter Vehn and S.~Morris.
+\newblock The robustness of robust implementation.
+\newblock \emph{Journal of Economic Theory}, 146\penalty0 (5):\penalty0 2093 --
+  2104, 2011.
+\newblock ISSN 0022-0531.
+\newblock \doi{https://doi.org/10.1016/j.jet.2011.03.011}.
+
+\end{thebibliography}

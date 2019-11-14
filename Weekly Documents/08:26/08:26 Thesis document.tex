@@ -1,0 +1,81 @@
+\documentclass[english, a4paper,12pt]{article}
+
+%:Preamble
+\usepackage[bookmarks, colorlinks=true, allcolors=blue, pagebackref=true, hyperfootnotes=false]{hyperref}
+\usepackage[eng]{felipito}
+\usepackage[round]{natbib}
+
+\graphicspath{{./Graphics/}}
+
+\textheight = 690pt
+\topmargin = -40pt
+\textwidth = 500pt
+\oddsidemargin = -22pt
+\spacing{1.5}
+
+%:Document
+\begin{document}
+
+%:	Title
+\begin{center} \bf \large
+	Hicksian aggregation and a world full of derivatives \\ Felipe Del Canto, 19 de Agosto de 2019
+\end{center}
+
+%:	Taylor is that you?
+\section{Taylor is that you?}
+To tackle the problem of aggregation across goods, I am considering an agent with utility function $u : \R^{n+m}_{++} \to \R$ that solves the following optimization problem
+	$$\probop{\max_{\mathbf{x}, \mathbf{z}}}{u(\mathbf{x}, \mathbf{z})}
+							{&	\mathbf{p} \mathbf{x} + \mathbf{q}\mathbf{z} = y.}$$ 
+
+With solution $\mathbf{x}(\mathbf{p}, \mathbf{q}, y)$. Assume we have a rule to aggregate the consumption bundle $\mathbf{x}$ using a function $g: \R^{n} \to \R$ and call $X := g(x)$. The Hicks aggregation problem seeks to find $P := f(\mathbf{p})$ and $U: \R^{1+m} \to \R$ such that the function
+	$$\probop{X(f(\mathbf{p}), \mathbf{q}, y) := \argmax_{X, \mathbf{z}}}{U(X,\mathbf{z})}
+										{&	PX + \mathbf{q}\mathbf{z} = y}$$ 
+
+satisfies
+	$$X(f(\mathbf{p}), \mathbf{q}, y) = g\big(\mathbf{x}(\mathbf{p}, \mathbf{q}, y)\big).$$
+ 
+Typically this is not possible except in very restrictive cases. Suppose the model imposes some function $U$ to the agent and some price index $f$. We would like to measure the error in the estimation of the aggregate demand $X = g(x)$. Note that the Lagrangians of both problems are
+	\begin{align}
+		\clx{L}_{d}
+			&=	u(\mathbf{x}, \mathbf{z}) + \lambda_{d}(y - \mathbf{p}\mathbf{x} - \mathbf{q}\mathbf{z}),	\label{eq:Ld}	\\
+		\clx{L}_{a}
+			&=	U(X, \mathbf{z}) + \lambda_{a}(y - f(\mathbf{p})X - \mathbf{q}\mathbf{z}),	\label{eq:La}
+	\end{align}
+ 
+And the corresponding first order conditions are
+	\begin{align}
+		&\left\{ \begin{aligned}
+			&\nabla_{\mathbf{x}}u - \lambda_{d}\mathbf{p} = \mathbf{0},	\\
+			&\nabla_{\mathbf{z}}u - \lambda_{d}\mathbf{q} = \mathbf{0}
+		\end{aligned}\right.	\label{eq:CPOd}	\\[1ex]
+		&\left\{ \begin{aligned}
+			&\pfpx{U}{x} - \lambda_{a}f(\mathbf{p}) = 0,	\\
+			&\nabla_{\mathbf{z}}U - \lambda_{a}\mathbf{q} = \mathbf{0}
+		\end{aligned}\right.	\label{eq:CPOa}
+	\end{align}
+
+We are interested in the difference
+	$$\Big| X(f(\mathbf{p}), \mathbf{q}, y) - g(\mathbf{x}(\mathbf{p}, \mathbf{q}, y)) \Big|.$$
+
+Assuming the investigator has access to both aggregate and disaggregate data in consumption and a set of prices $\mathbf{p_{0}}, \mathbf{q_{0}}$ and income $y_{0}$. It is possible to approximate each function using a Taylor expansion around $(\mathbf{p_{0}}, \mathbf{q_{0}}, y_{0})$. Explicitly
+	\begin{align*}
+		X(f(\mathbf{p}), \mathbf{q}, y)
+			&=	X(f(\mathbf{p_{0}}), \mathbf{q_{0}}, y_{0})
+					+ \pfpx{X}{P} \nabla f (\mathbf{p} - \mathbf{p_{0}})
+					+ \nabla_{q} X (\mathbf{q} - \mathbf{q_{0}})
+					+ \pfpx{X}{m}(m - m_{0}) + \clx{O}(2)	\\
+		g(x(\mathbf{p}, \mathbf{q}, m))
+			&=	g(x(\mathbf{p_{0}}, \mathbf{q_{0}}, m_{0})) + \nabla g \cdot D_{\mathbf{x}} \Big((\mathbf{p}, \mathbf{q}, m) - (\mathbf{p_{0}}, \mathbf{q_{0}}, m_{0})\Big) + \clx{O}(2)
+	\end{align*}
+
+The derivatives of each function could in principle be obtained by implicit differentiation of \cref{eq:CPOd,eq:CPOa}. In particular, the derivatives of $X$ and $\mathbf{x}$ with respect to $m$ can be obtained using the envelope theorem.
+
+%:	In other news
+\section{In other news\ldots}
+The Schechtman y Escudero paper seems promising. Theorem 1.1 provides bounds on the MPC, but they depend on the solution of another (though deterministic) problem. Besides, the bounds work on a finite horizon problem although I think it may be enough if we take $t$ large enough. Again, I have more questions than answers in this point.
+
+%: 	Bibliography
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}

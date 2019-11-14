@@ -1,0 +1,136 @@
+\documentclass[english, a4paper,12pt]{article}
+
+%:Preamble
+\usepackage[bookmarks, colorlinks=true, allcolors=blue, pagebackref=true, hyperfootnotes=false]{hyperref}
+\usepackage[eng]{felipito}
+\usepackage[round]{natbib}
+
+\graphicspath{{./Graphics/}}
+
+\textheight = 690pt
+\topmargin = -40pt
+\textwidth = 500pt
+\oddsidemargin = -22pt
+\spacing{1.5}
+
+%:Document
+\begin{document}
+
+%:	Title
+\begin{center} \bf \large
+	Hicksian aggregation across consumers \\ or (the rebound problem after derivation went wrong) \\ Felipe Del Canto, 9 de Septiembre de 2019
+\end{center}
+
+%:	
+\section{The mixed setting}
+Consider a two period economy composed by a continuum of agents that consume $n+1$ goods: an essential good $z$ (i.e., water) and $n$ different goods grouped in the vector $\mathbf{x}$. Good $z$ is valued at price $q \in \mathbb{R}_{++}$ and the $\mathbf{x}$ goods are valued at prices $\mathbf{p} \in \mathbb{R}^{n}_{++}$.  In what follows and for simplicity of notation, the subindices $t$ for all variables will be omitted unless needed. Each individual in this setting is identified with a pair $(y,\alpha)$, where $y \in [m,M]$ is her income and $\alpha \in (0,1)$ determines the form of her pseudo-Cobb-Douglas (PCD)\footnote{The choice of this name will be clear shortly.} utility function, that is,
+	$$u_{\alpha}(\mathbf{x},z) := u_{(y,\alpha)}(\mathbf{x},z) = \sum_{j=1}^{n} x_{j}^{\alpha}z^{1-\alpha} = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)z^{1-\alpha}.$$
+
+Consumers choose how much of the $\mathbf{x}$ goods to consume in each period according to
+	\begin{equation} \label{eq:probdisagg}
+		\probop{\mathbf{x}(\mathbf{p}, q, y) 
+			:= \argmax_{\mathbf{x}, z}}{u_{\alpha}(\mathbf{x}, z),}
+				{&	\mathbf{p} \mathbf{x} + qz = y.}
+	\end{equation} 
+
+The pairs $(y,\alpha)$) follow a distribution $F$ (with marginal distributions $F_{y}$ and $D_{\alpha}$) over its support $S := [m,M] \times  (0,1)$. In this setting, is it possible to aggregate consumption of the $\mathbf{x}$ goods into a single good $X$ given by: 
+	$$g_{\alpha}(\mathbf{x}) = \left(\sum_{j=1}^{n} x_{j}^{\alpha}\right)^{1/\alpha}.$$
+In that case, we have
+	$$U(g_{\alpha}(\mathbf{x}), z) := g_{\alpha}(\mathbf{x})^{\alpha}z^{1-\alpha},$$
+which is the usual Cobb-Douglas utility function. Hence, by defining $\epsilon := (1-\alpha)^{-1}$ and
+	$$P_{\alpha}(\mathbf{p}) :=  \left( \sum_{j=1}^{n} p_{j}^{1-\epsilon} \right)^{\frac{1}{1-\epsilon}},$$
+we have that the category demand
+	\begin{equation} \label{eq:probagg}
+		\probop{X(P(\mathbf{p}), q, y) := \argmax_{X, z}}{U(X,z)}
+										{&	P_{\alpha}(\mathbf{p})X + qz = y}
+	\end{equation}
+satisfies
+	\begin{equation} \label{eq:aggequality}
+		X(P_{\alpha}(\mathbf{p}), q, y) = g_{\alpha}\big(\mathbf{x}(\mathbf{p}, q, y)\big).
+	\end{equation}
+
+Note that the functions $g_{\alpha}$ and $P_{\alpha}$ depend on the value of $\alpha$. Thus, in order to correctly aggregate the goods $\mathbf{x}$ a different aggregator and price index for every person is needed.
+
+Consider now the following situation. An investigator at time $t = 0$ has data available on disaggregate consumption of the $\mathbf{x}$ and $z$ goods, income $y$ and prices $(\mathbf{p},q)$. Her objective is to estimate category demands for $t=1$. For simplicity she assumes that all agents have the same preferences, which means that all differences in consumption are accounted by differences in income. The last assumption also implies that in order to obtain the category demand of each agent and the price index, she must set a parameter $\overline{\alpha}$ which in principle could be chosen
+	\begin{itemize}
+		\item based on previous evidence (i.e., the income share of category $X$) or,
+		\item optimally in order to minimize discrepancies between actual and predicted category demands in $t = 0$.
+	\end{itemize}
+
+For the second method, the choice of $\overline{\alpha}$ should minimize the expectation of
+	$$\clx{D}(\alpha) = \big| g_{\alpha}(\mathbf{x}(\mathbf{p}, q, y)) - g_{\overline{\alpha}}(\mathbf{x}(\mathbf{p}, q, y) \big|,$$
+which by \eqref{eq:aggequality} is equivalent to
+	$$\clx{D}(\alpha) = \big| X(P_{\alpha}(\mathbf{p}), q, y) - X(P_{\overline{\alpha}}(\mathbf{p}), q, y) \big|,$$
+and this difference can be easily computed by taking advantage of the structure of problem \eqref{eq:probagg},
+	$$\clx{D}(\alpha) = y\left| \frac{\alpha}{P_{\alpha}(\mathbf{p})} - \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p})} \right|.$$
+Thus, $\overline{\alpha}$ should satisfy
+	\[
+		\overline{\alpha}
+			=	\argmin_{\hat{\alpha} \in [0,1]} 
+					\int_{S} y\left| \frac{\alpha}{P_{\alpha}(\mathbf{p})} 
+							- \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p})} \right|\, dF(y,\alpha).
+	\]
+	
+If, as I assumed in previous settings, $\alpha$ and $y$ are independent random variables, then
+	\begin{equation} \label{eq:overalpha}
+		\overline{\alpha}
+			=	\argmin_{\hat{\alpha} \in [0,1]} 
+					\int_{0}^{1} \left| \frac{\alpha}{P_{\alpha}(\mathbf{p})} 
+							- \frac{\overline{\alpha}}{P_{\overline{\alpha}}(\mathbf{p})} \right|\, dF_{\alpha}(\alpha).
+	\end{equation}
+	
+Intuitively, $\overline{\alpha} \in (0,1)$ because $F_{\alpha}$ has support over the open interval and choosing a parameter away from that support should not be optimal.\footnote{A formal argument for this claim would be nice.} As a final comment, observe that choosing $\overline{\alpha}$ needs knowledge about the distribution $F_{\alpha}$, which may not be available.
+
+%:	World dynamics
+\section{World dynamics}
+In the second period ($t = 1$), prices change to
+	$$\mathbf{p}_{1} = (1+\pi)\mathbf{p}_{0},$$
+where $\pi$ is the inflation between periods. The random variable $y_{2}$ relates to $y_{1}$ according to the following process
+	$$y_{2} - y_{1} = \mu + \epsilon,$$
+where $\mu > 0$ is a constant and $\epsilon \sim \clx{N}_{[-\mu, \mu]}(0, \sigma^{2})$.\footnote{$\clx{N}_{[a,b]}(\mu, \sigma^{2})$ is the truncated normal distribution in $[a,b]$ with mean $\mu$ and variance $\sigma^{2}$} Hence, $y_{2}$ has support over $[m,M+2\mu]$ and $E[y_{2}] = E[y_{1}] + \mu$. Preferences also change in such a way that $\mathbb{E}[\alpha_{1}] \neq \mathbb{E}[\alpha_{0}]$.\footnote{I don't know how to model a reasonable change in preferences.}
+
+%:	Previous evidence
+\section{Relying on the past}
+Let's consider the case where $\overline{\alpha}$ is chosen based on the income share of category $X$, that is $\overline{\alpha} = \mathbb{E}[\alpha_{0}]$. If the investigator is not aware of income dynamics and has to estimate inflation by $\overline{\pi}$ (i.e., the central bank inflation goal), then her best estimation is
+	$$X\big(P_{\overline{\alpha}}((1+\overline{\pi})\mathbf{p}, (1+\overline{\pi})q, y_{1})\big) 
+		= y_{1}\frac{\overline{\alpha}}{P_{\overline{\alpha}}((1+\overline{\pi})\mathbf{p})}
+		= y_{1}\frac{\overline{\alpha}}{(1+\overline{\pi})P_{\overline{\alpha}}(\mathbf{p})},
+	$$
+where for simplicity of notation $\alpha = \alpha_{1}$ and $\mathbf{p} = \mathbf{p}_{0}$. Thus, the monetized estimation error for each person is
+	\begin{equation} \label{eq:differencenoincome}
+	\begin{aligned}
+		\clx{D}(y_{1}, \alpha) 
+			&=	P_{\alpha}((1+\pi)\mathbf{p}) \Big| X\big(P_{\overline{\alpha}}((1+\overline{\pi})\mathbf{p}, (1+\overline{\pi})q, y_{1})\big) 
+					- X\big(P_{\alpha}((1+\pi)\mathbf{p}, (1+\pi)q, y_{2})\big) \Big|	\\
+			&=	\left| y_{1}\overline{\alpha}\frac{(1+\pi)P_{\alpha}(\mathbf{p})}{(1+\overline{\pi})P_{\overline{\alpha}}(\mathbf{p})} 
+					- y_{2}\alpha \right|.
+	\end{aligned}
+	\end{equation}
+
+To measure the total (monetized) estimation error one should integrate $\clx{D}$. I'm not entirely sure how this should be done.
+
+In the scenario where the investigator takes into account the income dynamics, then her best estimation in just
+	$$X\big(P_{\overline{\alpha}}((1+\overline{\pi})\mathbf{p}, (1+\overline{\pi})q, y_{2})\big) 
+		= y_{1}\frac{\overline{\alpha}}{P_{\overline{\alpha}}((1+\overline{\pi})\mathbf{p})}
+		= y_{1}\frac{\overline{\alpha}}{(1+\overline{\pi})P_{\overline{\alpha}}(\mathbf{p})},
+	$$
+and the estimation error in this case comes only from the difference in the inflation rate and the choice of $\overline{\alpha}$
+	\begin{align*}
+		\clx{D}(y_{2}, \alpha) 
+			&=	P_{\alpha}((1+\pi)\mathbf{p}) \Big| X\big(P_{\overline{\alpha}}((1+\overline{\pi})\mathbf{p}, (1+\overline{\pi})q, y_{2})\big) 
+					- X\big(P_{\alpha}((1+\pi)\mathbf{p}, (1+\pi)q, y_{2})\big) \Big|	\\
+			&=	y_{2}\left| \overline{\alpha}\frac{(1+\pi)P_{\alpha}(\mathbf{p})}{(1+\overline{\pi})P_{\overline{\alpha}}(\mathbf{p})} 
+							-\alpha \right|.
+	\end{align*}
+In this case the expectation is clearly taken in terms of the distribution of $y_{2}$ and $\alpha$. Although it is not that easy to compute and bound.
+
+%:	Optimizing $\overline{\alpha}$
+\section{Optimizing $\overline{\alpha}$}
+Assume now $\overline{\alpha}$ is obtained as in \eqref{eq:overalpha}. Observe that when the income dynamics are taken into account, if $\pi = \overline{\pi}$ then the (expected) estimation error is the smallest possible by construction.\footnote{Is it zero?} When less dynamics are considered and when $\overline{\pi} \neq \pi$, the estimation error grows but again it depends on $\clx{D}(y_{1}, \alpha)$ as obtained in \eqref{eq:differencenoincome}. A valid question I don't have an answer for is: Should I incorporate $\overline{\pi}$ in problem \eqref{eq:overalpha}? Or in other words, should I assume $\overline{\pi} = \pi$ to simplify?
+
+
+%: 	Bibliography
+\bibliographystyle{abbrvnat}
+\bibliography{references}
+
+\end{document}
