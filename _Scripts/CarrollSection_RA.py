@@ -240,8 +240,8 @@ def graphsMPC(params, MPC_e_l, MPC):
     x = [params[i][1] for i in range(N)]
     y = [params[i][0] for i in range(N)]
     
-    redKwargs = {'linewidth' : 0.2, 'antialiased' : True, 'alpha' : 0.3, 'color' : 'red'}
-    blueKwargs = {'linewidth' : 0.2, 'antialiased' : True, 'alpha' : 1.0}
+    redKwargs = {'linewidth' : 0.2, 'antialiased' : False, 'alpha' : 0.6, 'color' : 'red'}
+    blueKwargs = {'linewidth' : 0.8, 'antialiased' : False, 'alpha' : 1.0}
     
     # MPC by parameters
     f = plt.figure()
@@ -341,7 +341,7 @@ if __name__ == "__main__":
     
 ### Generate distribution for both rho and beta
 #     There are 200 people in the economy
-    CRRAdist, BetaDist, yDist = generateDistribution()
+#    CRRAdist, BetaDist, yDist = generateDistribution()
 
     # Plots
 #    plotDistribution(CRRAdist, BetaDist)

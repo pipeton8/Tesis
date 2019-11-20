@@ -449,7 +449,7 @@ Thus, the best estimation for the aggregate category demand is
 	\end{equation}
 
 	%%	 A complex estimation error	%%
-\subsection{A complex estimation error}
+\subsection{A complex estimation error} \label{ssec:Category-Error}
 To understand how the estimation errors appear in this setting I proceed in two steps. First, since category demands depend on $\alpha_{t}$, then for agent $(y_{t},\alpha_{t})$ the true value will differ from the estimated one by
 	\begin{equation} \label{eq:DtCategory}
 		\mathcal{D}_{t}(y_{t},\alpha_{t},\overline{\alpha})
@@ -511,8 +511,8 @@ Hence, in this scenario, setting $\overline{T}_{0} = \tilde{M}_{0}$ as in \eqref
 Moreover, if $y_{1} = Ry_{0}$ for some $R>0$, then implementing this correction will reduce the error to zero, just as what happened in \Cref{ssec:RepAgError}. Finally, note that if prices do not change then $T_{0} = T_{1}$ and \eqref{eq:DiffMix} has the same form as \eqref{eq:DiffAgRep}. This phenomenon is in line with the previous discussion: By suppressing the variation or heterogeneity in prices over time we return to the results of the model in \Cref{sec:RepAg}.
 
 	%%	Numerical example	%%
-\subsection{Numerical example}
-In this section I will construct an example in order to understand this particular setting and study how the optimal aggregation parameters and the approximation accuracy change between one period and the next. For this purpose, I take $n = 2$ and $\mathbf{p}_{0} = (1,10)$, I assume preferences do not change (thus, $\alpha_{0} = \alpha_{1} = \alpha$) and consider the same constructions for the joint distributions $F_{0}$ and $F_{1}$ that were presented in \Cref{ssec:RAexample}, except for the fact that, for clarifying purposes $\alpha$ is restricted to the interval $[0.15, 0.85]$.\footnote{This is, $y_{0}$ and $y_{1}$ follow $log$-Normal distributions with parameters $(\mu, \sigma_{0})$ and $(\mu, \sigma_{1})$, respectively, $\alpha \sim U(0.15, 0.85)$ and the joint distribution is such that individuals with higher $\alpha$ have higher income.} In this case I choose $\mu = \ln 5.5$, $\sigma_{0} = 0.25$ and $\sigma_{1} \in [0.25, 1.25]$. This value of $\mu$ ensures that the median consumer can buy half of each of the $\mathbf{x}$-goods. As a first exercise I will consider $\mathbf{p}_{1} = \lambda\mathbf{p}_{0}$ and two values for $\lambda$, $\lambda_{1} = 0.5$, $\lambda_{2} = 1.5$, that is with $\lambda_{1}$ the $\mathbf{x}$-goods reduce their cost (relative to $z$) and viceversa with $\lambda_{2}$. The difference between $T_{0}$ and both $T_{1}$ is presented in \Cref{fig:DiffTtLambda}. As can be seen in the image, lower prices rise the value of $T_{1}$ in contrast to $T_{0}$ while greater prices have the opposite effect. As expected from the functional form of $T_{t}$, since prices appear in the denominator, the increase of $T_{t}$ after a price fall is greater than its drop.\footnote{Remember that in this scheme $T_{1} = \lambda^{-1}T_{0}$ and hence, for a given value of $T_{0}$, $T_{1}$ as a function $\lambda$ behaves like the function $x^{-1}$.}
+\subsection{Numerical example} \label{ssec:Category-Example}
+In this section I will construct an example in order to understand this particular setting and study how the optimal aggregation parameters and the approximation accuracy change between one period and the next. For this purpose, I take $n = 2$ and $\mathbf{p}_{0} = (1,10)$, I assume preferences do not change (thus, $\alpha_{0} = \alpha_{1} = \alpha$) and consider the same constructions for the joint distributions $F_{0}$ and $F_{1}$ that were presented in \Cref{ssec:RAexample}, except for the fact that, for clarifying purposes $\alpha$ is restricted to the interval $[0.15, 0.85]$.\footnote{This is, $y_{0}$ and $y_{1}$ follow $log$-Normal distributions with parameters $(\mu, \sigma_{0})$ and $(\mu, \sigma_{1})$, respectively, $\alpha \sim U(0.15, 0.85)$ and the joint distribution is such that individuals with higher $\alpha$ have higher income.} In this case I choose $\mu = \ln 5.5$, $\sigma_{0} = 0.25$ and $\sigma_{1} \in [0.25, 1.25]$. This value of $\mu$ ensures that the median consumer can buy half of each of the $\mathbf{x}$-goods. \rojo{As a first exercise} I will consider $\mathbf{p}_{1} = \lambda\mathbf{p}_{0}$ and two values for $\lambda$, $\lambda_{1} = 0.5$, $\lambda_{2} = 1.5$, that is with $\lambda_{1}$ the $\mathbf{x}$-goods reduce their cost (relative to $z$) and viceversa with $\lambda_{2}$. The difference between $T_{0}$ and both $T_{1}$ is presented in \Cref{fig:DiffTtLambda}. As can be seen in the image, lower prices rise the value of $T_{1}$ in contrast to $T_{0}$ while greater prices have the opposite effect. As expected from the functional form of $T_{t}$, since prices appear in the denominator, the increase of $T_{t}$ after a price fall is greater than its drop.\footnote{Remember that in this scheme $T_{1} = \lambda^{-1}T_{0}$ and hence, for a given value of $T_{0}$, $T_{1}$ as a function $\lambda$ behaves like the function $x^{-1}$.}
 	\begin{figure}[H]
 		\caption{$T_{0}$ and $T_{1}$ as a function of $\alpha$.}
 		\label{fig:DiffTtLambda}
@@ -534,6 +534,65 @@ In the previous section I mentioned that for this setting the important distribu
 		\floatfoot{\begin{minipage}{0.9\textwidth} The figure shows the support of the joint distributions of $(y_{t}, \alpha)$, $(y_{t}, T_{t})$ with $\lambda = 0.5$ and $(y_{t}, T_{t})$ with $\lambda = 0.5$ for five different values of $\sigma_{1}$. The dashed gray lines correspond to $y_{t} = 5.5$, the median of the distribution.
 		\end{minipage}}
 	\end{figure}
+For this setting, the choice of optimal parameters at $t = 0$ is summarized in \Cref{tab:OptimalAlphaT}. The optimal $\overline{\alpha}$ is chosen so as to minimize the error at $t = 0$, then $\overline{T}_{0}$ is computed using the formula. Finally, is obtained following the aforementioned correction $\overline{T}_{1} = \lambda^{-1}\overline{T}_{0}$. The first two rows of the column are equal precisely because the optimal parameters are obtained at $t =0$, when no price change has yet occurred. The last row is in line with the previous discussion. The optimal $\overline{T}_{1}$ in both cases is closer to the more constant part given by the rich half of the population. The explanation comes directly from \eqref{eq:DtCategory}: Since income is higher for this half, to reduce the error to zero is more important to diminish the difference for these agents than for the other half. 
+	\begin{table}[H]
+		\centering
+		\caption{Optimal parameters at $t = 0$.}
+		\label{tab:OptimalAlphaT}
+		\centering
+		\begin{tabular}{ccc}
+		\hline\hline
+														\\[-2ex]
+							&	\multicolumn{2}{c}{$\lambda$}	\\\cline{2-3}
+														\\[-2ex]
+							&	$0.5$		&	$1.5$	\\ \hline
+														\\[-2ex]
+			$\overline{\alpha}$	&	$0.75$		&	$0.75$	\\[1ex]
+			$\overline{T}_{0}$	&	$0.75$		&	$0.75$	\\[1ex]
+			$\overline{T}_{1}$	&	$1.5$		&	$0.5$	\\[.5ex]
+		\hline\hline
+		\end{tabular} \vspace{2ex}
+	
+		\begin{minipage}{.6\textwidth} \scriptsize
+			The table shows the optimal parameters $\overline{\alpha}$, $\overline{T}_{0}$ and $\overline{T}_{1} = \lambda^{-1} \overline{T}_{0}$ for the two values of $\lambda$. The price vector used to compute each is $\mathbf{p}_{0} = (1,10)$.
+		\end{minipage}
+	\end{table}
+Now, it is important to determine how big is the estimation error between periods. In \Cref{fig:CategoryDiff1Plot} is presented the difference $D_{1}(\overline{T}_{1})$ (see \eqref{eq:DiffMix}) as a function of $\sigma_{1}$, the parameter of redistribution. As we can see from the figure the approximation error using this corrected parameter is near zero and in both cases the aggregate demand is overestimated. Although meaningless because of the magnitude, it is interesting to note that when prices drop, the error is bigger in magnitude than when they increase. In other words, when prices fall from $t=0$ to $t = 1$, the overestimation of the aggregate demand is more pronounced. This result should come with no surprise after analyzing \Cref{fig:JointDistribsCategory}. In Panels b and c we see that the drop in $T_{t}$ after a price increase is smaller than its rise after a price fall. Hence, the change in $X_{1}$ in the first case is smaller than in the second. 
+	\begin{figure}[H] 
+		\caption{Estimation error $D(\overline{T}_{1})$ as a function of $\sigma_{1}$.}
+		\label{fig:CategoryDiff1Plot}
+		\subfloat[$\lambda = 0.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff1Plot_0} \label{fig:Diffa}}\,
+		\subfloat[$\lambda = 1.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff1Plot_1} \label{fig:Diffb}}
+		\floatfoot{\begin{minipage}{0.9\textwidth}
+			The blue dots show $D(\overline{T}_{1})$ as a function of $\sigma_{1}$, computed using \eqref{eq:DiffMix}.
+		\end{minipage}}
+	\end{figure}
+From the discussion at the end of \Cref{ssec:Category-Error}, the correction in \eqref{eq:CorrectT} is useful only if
+	$$\left|\tilde{M}_{1} - \lambda^{-1}\tilde{M}_{0} \right|
+			\leq \left|\tilde{M}_{1} - \tilde{M}_{0} \right|.$$
+Using this numerical example it is possible to determine if the change from $\overline{T}_{0}$ to $\overline{T}_{1}$ is capable of lowering the (absolute value of the) error by directly computing $D_{1}(\overline{T}_{0})$. In \Cref{fig:CategoryDiff0Plot} I show how this difference changes with $\sigma_{1}$. Comparing this figure with \Cref{fig:CategoryDiff1Plot} we see that making the correction lowers the error by several orders of magnitude: While making the parameter obtained with \eqref{eq:CorrectT} gives an error of magnitude $10^{-7}$, using $\overline{T}_{0}$ directly returns an estimate that differs with the real value by $10^{-1}$: six orders of magnitude greater than in the previous case. Nevertheless, it must be borne in mind that to use $\overline{T}_{0}$ it is not necessary to know the value of $\lambda$, which may not be available at $t = 0$. If that is the case, the difference found may be small enough to choose to stay with the un-corrected parameter.
+	\begin{figure}[H] 
+		\caption{Estimation error $D(\overline{T}_{0})$ as a function of $\sigma_{1}$.}
+		\label{fig:CategoryDiff0Plot}
+		\subfloat[$\lambda = 0.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff0Plot_0} \label{fig:Diffa}}\,
+		\subfloat[$\lambda = 1.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff0Plot_1} \label{fig:Diffb}}
+		\floatfoot{\begin{minipage}{0.9\textwidth}
+			The blue dots show $D(\overline{T}_{0})$ as a function of $\sigma_{1}$, computed using \eqref{eq:DiffMix}.
+		\end{minipage}}
+	\end{figure}
+
+To close this section I show how the optimal $\overline{\alpha}$ should evolve depending on the value of $\sigma$. The results shown in \Cref{fig:CategoryDiff1Plot,fig:CategoryDiff0Plot} suggest that $\overline{\alpha}$ should be constant over time, since the error committed in both cases was small, especially in the first case. In \Cref{fig:CategoryAlphaPlot} I show that this is exactly the case: Both when prices drop and when they increase, the optimal $\overline{\alpha}$ is the same notwithstanding the value of $\sigma_{1}$. The explanation for this phenomenon is, again, obtained directly from \eqref{eq:OptT}. In this example, $\rmx{Cov}(y_{t}, T_{t})$ is extremely small, with values around $10^{-15}$. This contrasts with the same statistic for $(y_{t}, \alpha_{t})$ obtained in \Cref{sec:RepAg}, where $\rmx{Cov}(y_{t}, \alpha_{t})$ was large and increased monotonically with $\sigma_{1}$. The previous explanation implies that $\overline{T}_{t}$ will be very close to $\mathbb{E}[T_{t}]$ for every $\sigma_{1}$ and thus the optimal parameter will not change noticeably.
+	\begin{figure}[H] 
+		\caption{Optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$.}
+		\label{fig:CategoryAlphaPlot}
+		\subfloat[$\lambda = 0.5$]{\includegraphics[width = 0.45\textwidth]{CategoryAlphasPlot_0} \label{fig:AlphaCata}}\,
+		\subfloat[$\lambda = 1.5$]{\includegraphics[width = 0.45\textwidth]{CategoryAlphasPlot_1} \label{fig:AlphaCatb}}
+		\floatfoot{\begin{minipage}{0.9\textwidth}
+			The blue line shows the optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$. Note that for $\sigma_{1} = 0$, the optimal value of $\overline{\alpha}$ is the same as the one computed at $t = 0$: $0.75$ (see \Cref{tab:OptimalAlphaT}).
+		\end{minipage}}
+	\end{figure}
+
+
 	
 
 
@@ -574,6 +633,15 @@ In the previous section I mentioned that for this setting the important distribu
 %%%	Concluding remarks		%%%
 \section{Concluding remarks} \label{sec:Conclusion}
 
+The previous exercises and problems presented three situations where the inherent diversity of a model was replaced by a completely homogeneous alternative. In all three cases, aggregation was used as a tool to overcome the difficulty or complexity imposed by the difference between agents. Hence, aggregation can be regarded as a tool or solution used in the problem of heterogeneity approximation. Using the insights and lines of argumentation of the previous section it is possible to reformulate this modeling problem as follows. Diversity is, in formal terms, a certain distribution $F$ over a given set of parameters in the economy and thus the question of finding a suitable substitute to it consists of two parts: 1) determine which aspects of $F$ are relevant to the specific objective of the model, and 2) finding a suitable distance that allows the researcher to find the best $\hat{F}$ to replace the original distribution. Hence, the original problem which may be ambiguous in its conception is replaced by one that is both transparent and possible to tackle directly using mathematical tools. 
+
+From the above discussion it is clear that between taking into account the full diversity of the model and using a completely aggregate one it is possible to find a wide spectrum of possibilities, depending on the particular problem to confront. The ultimate choice depends on the two aspects of the problem mentioned above: the question to answer and the accuracy needed. In all the examples I presented in the preceding sections, the choice was a Dirac distribution centered at a certain tailored set of parameters which were obtainable from known state variables of the economy. However - and as was explicitly mentioned in \Cref{ssec:Category-Example} - choosing slightly more complex models could improve the precision or the robustness of the fit without burdening the model.
+
+All in all, the final decision, conditional on having drawn the purpose of the model, is the level of exactitude desired. This problem of finding the right distance between distributions is no easy task and requires the most precise definition. In the examples developed throughout this text the metric used were simple differences between moments of the distributions, although this may not be the best choice in general. However, in the case of a researcher interested in a given variable (or set of variables) $X$ this choice may be backed by the fact that for a certain tolerance in the goodness-of-fit there is possible to perform a Taylor approximation of $X$ around a point previously know (e.g., around the known value at the moment of the modeling process). This polynomial will provide the relevant moments of the distribution of the variables needed to have a suitable fit and thus a possible next step is finding another distribution $\hat{F}$ that shares those moments with $F$. Another option is using a simple $\hat{F}$ that is calibrated using this same approximation, like the examples in the text.
+
+In summary, while earlier authors treated the aggregation problem as one of an exact representation of a heterogeneous model, I showed that is possible instead to think of it as a particular answer in a broader problem of approximation. Using this insight is possible to forget - as has been the common practice - the conditions to have exact aggregation and instead focus on where it fails and how is possible to correct it. Moreover, what I show is that by forgetting these requirements a researcher can focus on a clear aspect of the problem: where heterogeneity appears and how to model it. This particular way of thinking of the problem has implications on a variety of models where intrinsic differences appear naturally. Moreover, this task is allegedly easier to address for it has a broader set of tool to use against it. 
+
+So far, this analysis has taken care of problems where the interest is predicting an aggregate variable. It remains to be studied specific examples where the interest is of different kind (e.g., estimation of treatment effects or robustness of the conclusions of a model). As mentioned before, it is possible that the main challenge in any other question will be the choice of the appropriate measure of error or, in other words, the distance between the chosen distributions. However, this last challenge provides a unifying framework for researches to deal with modeling problems in which diversity of any kind makes its appearance.
 
 %: 	Bibliography
 \bibliographystyle{abbrvnat}

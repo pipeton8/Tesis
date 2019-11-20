@@ -144,7 +144,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 				\item \hyperlink{SupportRA}{\beamerbutton{Joint support}}
 			\end{itemize}\vfill
 		
-		\item From $t = 0$ to $t = 1$, a redistribution of income: $\sigma_{1} \geq \sigma_{0}$.\vspace{1ex}
+		\item From $t = 0$ to $t = 1$, a redistribution of income: $\sigma_{1} \geq \sigma_{0} = 0.25$.\vspace{1ex}
 			\begin{itemize}
 				\item Median is maintained $\Rightarrow$ Transfer from poor half to rich half. \vspace{1ex}
 				\item \hyperlink{DensityRA}{\beamerbutton{Income densities}} 
@@ -273,20 +273,22 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\begin{itemize}
 		\item Suppose $\alpha_{0} = \alpha_{1} = \alpha \sim U(0.15,0.85)$, and $y_{t} \sim \log\text{-Normal}(\log 5.5, \sigma_{t})$.\vspace{1ex}
 			\begin{itemize}
-				\item Joint support is such that for higher $\alpha$, the agent has higher income. \vspace{1ex}
-				\item \hyperlink{Category-JointSupport}{\beamerbutton{Joint support}}
+				\item For higher $\alpha$, agent has higher income. \hyperlink{Category-Support}{\beamerbutton{Joint support}} \vspace{1ex}
+				\item From $t = 0$ to $t = 1$ redistribution: $\sigma_{1} \geq \sigma_{0} = 0.25$
 			\end{itemize}\vfill
 		
-		\item From $t = 0$ to $t = 1$, a redistribution of income: $\sigma_{1} \geq \sigma_{0}$.\vspace{1ex}
+		\item From $t = 0$ to $t = 1$, $\mathbf{p}_{1} = \lambda \mathbf{p}_{0}$. \vspace{1ex}
 			\begin{itemize}
-				\item Median is maintained $\Rightarrow$ Transfer from poor half to rich half. \vspace{1ex}
-				\item \hyperlink{DensityRA}{\beamerbutton{Income densities}} 
+				\item Compare $\lambda_{1} = 0.5$ and $\lambda_{2} = 1.5$.\vspace{1ex}
+				\item Set $\mathbf{p}_{0} = (1,10)$.\vspace{1ex}
+				\item \hyperlink{Category-TbyP}{\beamerbutton{$T_{t}$ by price}}
 			\end{itemize} \vfill
-			
-		\item $\overline{\alpha}$ is chosen at $t = 0$ $\Rightarrow$ $D_{1}(\overline{\alpha})$ is the associated error.\vspace{1ex}
+		
+		\item $\overline{\alpha}$ is chosen at $t = 0$ $\Rightarrow$ $\overline{T}_{1} = \lambda_{i}^{-1} \overline{T}_{0}$ $\Rightarrow$ $D_{1}(\overline{T}_{1})$ is the error.\vspace{1ex}
 			\begin{itemize}
-				\item \hyperlink{alphaBar-RA}{\beamerbutton{Optimal $\overline{\alpha}$}} \vspace{1ex}
-				\item \hyperlink{Dt-RA}{\beamerbutton{Approximation error}} 
+				\item $\mathrm{Cov}(y_{t}, T_{t})$ is small, close to $10^{-15}$.\vspace{1ex}
+				\item Low variance of $\overline{\alpha}$. \hyperlink{Category-alphaBar}{\beamerbutton{Optimal $\overline{\alpha}$}} \vspace{1ex}
+				\item $D_{1}(\overline{T}_{1}) \approx 0$. \hyperlink{Category-Dt}{\beamerbutton{Approximation error}}
 			\end{itemize} \vfill
 
 	\end{itemize}
@@ -337,7 +339,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 %:Annex
 \section*{Annex}
 
-\begin{frame}[label=SupportRA,plain,noframenumbering]{\secname: Joint Distributions (Representative agent) \hyperlink{RA-Example}{\beamerreturnbutton} }
+\begin{frame}[label=SupportRA,plain,noframenumbering]{\secname: Joint Distributions (Representative agent)\,\hyperlink{RA-Example}{\beamerreturnbutton} }
 	\begin{figure}[H] 
 		\caption{Support of $F_{0}$ and $F_{1}$}
 		\label{fig:JointDistributions}
@@ -348,7 +350,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=DensityRA,plain,noframenumbering]{\secname: Income density (Representative agent) \hyperlink{RA-Example}{\beamerreturnbutton} }
+\begin{frame}[label=DensityRA,plain,noframenumbering]{\secname: Income density (Representative agent)\,\hyperlink{RA-Example}{\beamerreturnbutton} }
 	\begin{figure}[H] 
 		\caption{Densities of $y_{0}$ and $y_{1}$ for different values of $\sigma_{1}$.}
 		\label{fig:LogNormalSigma1}
@@ -359,7 +361,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=alphaBar-RA,plain,noframenumbering]{\secname: Optimal $\overline{\alpha}$ (Representative agent) \hyperlink{RA-Example}{\beamerreturnbutton} }
+\begin{frame}[label=alphaBar-RA,plain,noframenumbering]{\secname: Optimal $\overline{\alpha}$ (Representative agent)\,\hyperlink{RA-Example}{\beamerreturnbutton} }
 	\begin{figure}[H] 
 		\caption{Optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma$.}
 		\label{fig:RAoptimalAlphas}
@@ -370,7 +372,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Dt-RA,plain,noframenumbering]{\secname: Approximation error (Representative agent) \hyperlink{RA-Example}{\beamerreturnbutton} }
+\begin{frame}[label=Dt-RA,plain,noframenumbering]{\secname: Approximation error (Representative agent)\,\hyperlink{RA-Example}{\beamerreturnbutton} }
 	\begin{figure}[H] 
 		\caption{Estimation error $D(\overline{\alpha})$ as a function of $\sigma_{1}$.}
 		\label{fig:RADiffPlot}
@@ -381,7 +383,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Carroll-Program, plain, noframenumbering]{\secname: Agent Program (Dynamic models) \hyperlink{Carroll-Model}{\beamerreturnbutton}}
+\begin{frame}[label=Carroll-Program, plain, noframenumbering]{\secname: Agent Program (Dynamic models)\,\hyperlink{Carroll-Model}{\beamerreturnbutton}}
 	\vfill
 	\begin{itemize}
 		\item The agent solves \vspace{2ex}
@@ -401,7 +403,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 
 \end{frame}
 
-\begin{frame}[label=Carroll-Consumption, plain, noframenumbering]{\secname: Policy Function (Dynamic models) \hyperlink{Carroll-Model}{\beamerreturnbutton}}
+\begin{frame}[label=Carroll-Consumption, plain, noframenumbering]{\secname: Policy Function (Dynamic models)\,\hyperlink{Carroll-Model}{\beamerreturnbutton}}
 	\begin{figure}[H]
 		\caption{Consumption function}
 		\label{fig:concaveC}
@@ -410,7 +412,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Carroll-Construction, plain, noframenumbering]{\secname: Economy Construction (Dynamic models) \hyperlink{Carroll-Example}{\beamerreturnbutton}}
+\begin{frame}[label=Carroll-Construction, plain, noframenumbering]{\secname: Economy Construction (Dynamic models)\,\hyperlink{Carroll-Example}{\beamerreturnbutton}}
 	\vfill
 	\begin{itemize}
 		\item Each agent is a triple $(\beta,\rho,y)$. \vfill
@@ -427,7 +429,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 
 \end{frame}
 
-\begin{frame}[label=Carroll-JointBetaRho, plain, noframenumbering]{\secname: $(\beta, \rho)$ distribution (Dynamic models) \hyperlink{Carroll-Example}{\beamerreturnbutton}}
+\begin{frame}[label=Carroll-JointBetaRho, plain, noframenumbering]{\secname: $(\beta, \rho)$ distribution (Dynamic models)\,\hyperlink{Carroll-Example}{\beamerreturnbutton}}
 	\begin{figure}[H]
 		\caption{Distribution of $\beta$ and $\rho$ in the economy.}
 		\label{fig:distribBetaRho}
@@ -438,7 +440,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Carroll-JointAll, plain, noframenumbering]{\secname: $(\beta, \rho, y)$ distribution (Dynamic models) \hyperlink{Carroll-Example}{\beamerreturnbutton}}
+\begin{frame}[label=Carroll-JointAll, plain, noframenumbering]{\secname: $(\beta, \rho, y)$ distribution (Dynamic models)\,\hyperlink{Carroll-Example}{\beamerreturnbutton}}
 	\begin{figure}[H]
 		\caption{Joint distribution of $\beta$, $\rho$ and $y$ in the economy.}
 		\label{fig:JointDistrib}
@@ -449,7 +451,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Carroll-MPCgrid, plain, noframenumbering]{\secname: RA $MPC$ (Dynamic models) \hyperlink{Carroll-Example}{\beamerreturnbutton}}
+\begin{frame}[label=Carroll-MPCgrid, plain, noframenumbering]{\secname: RA $MPC$ (Dynamic models)\,\hyperlink{Carroll-Example}{\beamerreturnbutton}}
 	\begin{figure}[H]
 		\caption{Computed MPC for each pair $(\overline{\beta}, \overline{\rho})$.}
 		\label{fig:MPCPlane}
@@ -460,7 +462,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Carroll-ZeroDiff, plain, noframenumbering]{\secname: ``Zero'' difference curves (Dynamic models)  \hyperlink{Carroll-Example}{\beamerreturnbutton}}
+\begin{frame}[label=Carroll-ZeroDiff, plain, noframenumbering]{\secname: ``Zero'' difference curves (Dynamic models)\,\hyperlink{Carroll-Example}{\beamerreturnbutton}}
 	\begin{figure}[H]
 		\caption{``Zero'' difference curves}
 		\label{fig:ZeroCurve}
@@ -474,7 +476,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Category-OptimalityCondition]{\secname: Optimality of correction (Category goods) \hyperlink{Category-Error}{\beamerreturnbutton}}
+\begin{frame}[label=Category-OptimalityCondition,plain,noframenumbering]{\secname: Optimality of correction (Category goods)\,\hyperlink{Category-Error}{\beamerreturnbutton}}
 	\vfill
 	\begin{itemize}
 		\item If $\mathbf{p}_{1} = \lambda \mathbf{p}_{0}$, then
@@ -494,22 +496,55 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 	\end{itemize}
 \end{frame}
 
-\begin{frame}[label=Category-Support,plain,noframenumbering]{\secname: Joint Distributions (Category goods) \hyperlink{Category-Example}{\beamerreturnbutton} }
+\begin{frame}[label=Category-Support,plain,noframenumbering]{\secname: Joint Distributions (Category goods)\,\hyperlink{Category-Example}{\beamerreturnbutton} }
 	\begin{figure}[H]
-		\caption{Support of joint distributions of different variables.}
-		\label{fig:JointDistribsCategory}
-		
-		\subfloat[$(y_{t},\alpha)$]{\includegraphics[width = 0.45\textwidth]{JointYA}\label{fig:Jointa}}
-		
+		\caption{Support of joint distributions of $y_{t}$ and $T_{t}$.}
+		\label{fig:JointDistribsCategory}		
 		\subfloat[$(y_{t},T_{t}), \lambda_{1} = 0.5$]{\includegraphics[width = 0.45\textwidth]{JointYT_0}\label{fig:Jointb}}\,
 		\subfloat[$(y_{t},T_{t}), \lambda_{2} = 1.5$]{\includegraphics[width = 0.45\textwidth]{JointYT_1}\label{fig:Jointc}}
-		
+		\vspace{-2ex}
 		\floatfoot{\begin{minipage}{0.9\textwidth} The figure shows the support of the joint distributions of $(y_{t}, \alpha)$, $(y_{t}, T_{t})$ with $\lambda = 0.5$ and $(y_{t}, T_{t})$ with $\lambda = 0.5$ for five different values of $\sigma_{1}$. The dashed gray lines correspond to $y_{t} = 5.5$, the median of the distribution.
 		\end{minipage}}
 	\end{figure}
 \end{frame}
 
-\begin{frame}[label=Vector-Norms]{Vector norms \hyperlink{Category-Model}{\beamerreturnbutton}}
+\begin{frame}[label=Category-TbyP,plain,noframenumbering]{\secname: $T_{t}$ by price (Category goods)\,\hyperlink{Category-Example}{\beamerreturnbutton}}
+	\begin{figure}[H]
+		\caption{$T_{0}$ and $T_{1}$ as a function of $\alpha$.}
+		\label{fig:DiffTtLambda}
+		\includegraphics[width = 0.6\textwidth]{TtLambdas}
+		\floatfoot{\begin{minipage}{0.6\textwidth} The figure shows $T_{0}$ and $T_{1}$ as a function of $\alpha$. $T_{0}$ is computed using $\mathbf{p}_{0} = (1,10)$ and each $T_{1}$ is computed with $\mathbf{p}_{1} = \lambda_{i}\mathbf{p}_{0}$, where $\lambda_{1} = 0.5$ and $\lambda_{2} = 1.5$.
+		\end{minipage}}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}[label=Category-alphaBar,plain,noframenumbering]{\secname: Optimal $\overline{\alpha}$ (Category goods)\,\hyperlink{Category-Example}{\beamerreturnbutton} }
+	\begin{figure}[H] 
+		\caption{Optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$.}
+		\label{fig:CategoryAlphaPlot}
+		\subfloat[$\lambda = 0.5$]{\includegraphics[width = 0.45\textwidth]{CategoryAlphasPlot_0} \label{fig:AlphaCata}}\,
+		\subfloat[$\lambda = 1.5$]{\includegraphics[width = 0.45\textwidth]{CategoryAlphasPlot_1} \label{fig:AlphaCatb}}
+		\floatfoot{\begin{minipage}{0.9\textwidth}
+			The blue line shows the optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$. Note that for $\sigma_{1} = 0$, the optimal value of $\overline{\alpha}$ is the same as the one computed at $t = 0$: $0.75$.
+		\end{minipage}}
+	\end{figure}
+\end{frame}
+
+\begin{frame}[label=Category-Dt,plain,noframenumbering]{\secname: Approximation error (Category goods)\,\hyperlink{Category-Example}{\beamerreturnbutton} }
+	\begin{figure}[H] 
+		\caption{Estimation error $D(\overline{T}_{1})$ as a function of $\sigma_{1}$.}
+		\label{fig:CategoryDiff1Plot}
+		\subfloat[$\lambda = 0.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff1Plot_0} \label{fig:Diffa}}\,
+		\subfloat[$\lambda = 1.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff1Plot_1} \label{fig:Diffb}}
+		\floatfoot{\begin{minipage}{0.9\textwidth}
+			The blue dots show $D(\overline{T}_{1})$ as a function of $\sigma_{1}$.
+		\end{minipage}}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}[label=Vector-Norms,plain,noframenumbering]{Vector norms\,\hyperlink{Category-Model}{\beamerreturnbutton}}
 	\vfill
 	\begin{itemize}
 		\item For $\mathbf{x} \in \mathbb{R}^{n}_{++}$, $0 < \alpha < \infty$

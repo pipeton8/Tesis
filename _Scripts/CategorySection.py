@@ -383,7 +383,7 @@ def computeCovariance(y,T):
 
 def computeOptimalAlpha(params, T, y,p):
 
-    cov =computeCovariance(y,T)
+    cov = computeCovariance(y,T)
     
     Mt = computeMt(cov,np.mean(y),np.mean(T))
     
@@ -402,7 +402,7 @@ def computeDt(Tbar, Mt):
     return Mt - Tbar
 
 def computeDiffAlphas(params, alpha, y0, p0, L, sigma1_l):
-    Diff = []
+    Diffs = [[], []]
     OpAlphas = []
 
     p1 = p0 * L
@@ -412,69 +412,73 @@ def computeDiffAlphas(params, alpha, y0, p0, L, sigma1_l):
 
     ### Compute Diff and optimal alpha at t=0
     alphaBar = computeOptimalAlpha(params, T, y0, p0)
-    Tbar = L**(-1) * computeTt(alphaBar, p0, dim = -1)[0]
-
+    Tbar0 = computeTt(alphaBar, p0, dim = -1)[0]
+    Tbar1 = L**(-1) * Tbar0
+    
+    print("For lambda = {:.1f}, alpha = {:.2f}, T0 = {:.2f} and T1 = {:.2f}".format(L,alphaBar,Tbar0, Tbar1))
     
     for sigma in sigma1_l:
         ### Income distribution for this sigma
         y1 = generateIncomeDistribution(sigma)
         T = computeTt(alpha,p1)
         
-        cov = computeCovariance(y1,T)
+        Mt = computeMt(computeCovariance(y1,T), np.mean(y1), np.mean(T))
         
-        Mt = computeMt(cov, np.mean(y1), np.mean(T))
-        
-        Diff.append(computeDt(Tbar, Mt))
-        OpAlphas.append(computeOptimalAlpha(params, alpha, y1, p1))
+        Diffs[0].append(computeDt(Tbar0, Mt))
+        Diffs[1].append(computeDt(Tbar1, Mt))
+        OpAlphas.append(computeOptimalAlpha(params, T, y1, p1))
         
         ### Print progress
-        if len(Diff) % 100 == 0:
-            print("{:d}".format(len(Diff)), end = '')
-        elif len(Diff) % 20 == 0:
+        if len(Diffs[0]) % 100 == 0:
+            print("{:d}".format(len(Diffs[0])), end = '')
+        elif len(Diffs[0]) % 20 == 0:
             print(".", end = '')
     
     print("")
     
-    return Diff, OpAlphas
+    return Diffs, OpAlphas
 
 def plotDtvSigma(params, alpha, y0, p0, L, sigma1_l):
     
-    Diff, OpAlphas = computeDiffAlphas(params, alpha, y0, p0, L, sigma1_l)
-    
-    print(Diff)
-    print(OpAlphas)
+    for i in range(len(L)):
+        Diffs, OpAlphas = computeDiffAlphas(params, alpha, y0, p0, L[i], sigma1_l)
+        
+        for j in range(len(Diffs)):
+            ### Create figure
+            f, ax1 = plt.subplots()
 
-    ### Create figure
-    f, ax1 = plt.subplots()
-    g, ax2 = plt.subplots()
-    
-    ### Plot Diff graph
-    ax1.plot(sigma1_l,Diff, color = '#4a69bd', linewidth = 2.5)
-    ax1.plot(sigma_y1, [Diff[0], Diff[-1]], color = 'black', linestyle = (0,(4,6)), alpha = 0.6)
-             
-    ### Customize Diff graph
-    ax1.set_xlabel(r'$\sigma_1$')
-#    ax1.set_xticks([k*0.25 for k in range(1,6)])
-    
-    ax1.set_ylabel(r'$D_1(\overline{\alpha})$', rotation = 0, labelpad = 20)
-#    ax1.set_ylim(top = np.max(Diff) + 1000)
-#    ax1.set_yticks([k*2000 for k in range(7)])
-             
-    ### Plot Alpha graph
-    ax2.plot(sigma1_l,OpAlphas, linestyle = '', marker = '.', color = '#4a69bd', linewidth = 2.5)
-    ax2.plot(sigma_y1, [OpAlphas[0], OpAlphas[-1]], color = 'black', linestyle = (0,(4,6)), alpha = 0.6)
+            ### Plot Diff graphs
+            ax1.plot(sigma1_l,Diffs[j], linestyle = '', marker = '.', color = '#4a69bd', linewidth = 2.5)
+    #        ax1.plot(sigma_y1, [Diff[0], Diff[-1]], color = 'black', linestyle = (0,(4,6)), alpha = 0.6)
+                     
+            ### Customize Diff graph
+            ax1.set_xlabel(r'$\sigma_1$')
+            ax1.set_xticks([k*0.25 for k in range(1,6)])
+            
+            ax1.set_ylabel(r'$D_1(\overline{T}'+'_{:d})$'.format(j), rotation = 0, labelpad = 20)
+#            ax1.set_ylim([-10**-7, -10**-8])
+        #    ax1.set_yticks([k*2000 for k in range(7)])
 
-    ### Customize Alpha graph
-    ax2.set_xlabel(r'$\sigma_1$')
-#    ax2.set_xticks([k*0.25 for k in range(1,6)])
-
-    ax2.set_ylabel(r'$\overline{\alpha}$', rotation = 0, labelpad = 15)
-#    ax2.set_ylim([0.45, 1.05])
-#    ax2.set_yticks([0.5 + k*0.1 for k in range(6)])
+            ### Save figures
+            f.savefig(Fpath+"Categorydiff{:d}Plot_{:d}.pdf".format(j,i), bbox_inches='tight')
+                
+        ### Create figure
+        g, ax2 = plt.subplots()        
+                 
+        ### Plot Alpha graph
+        ax2.plot(sigma1_l,OpAlphas, linestyle = '', marker = '.', color = '#4a69bd', linewidth = 2.5)
+#        ax2.plot(sigma_y1, [OpAlphas[0], OpAlphas[-1]], color = 'black', linestyle = (0,(4,6)), alpha = 0.6)
     
-    ### Save figures
-    f.savefig(Fpath+"CategorydiffPlot_{:.1f}.pdf".format(L), bbox_inches='tight')
-    g.savefig(Fpath+"CategorydiffAlphasPlot_{:.1f}.pdf".format(L), bbox_inches='tight')
+        ### Customize Alpha graph
+        ax2.set_xlabel(r'$\sigma_1$')
+        ax2.set_xticks([k*0.25 for k in range(1,6)])
+    
+        ax2.set_ylabel(r'$\overline{\alpha}$', rotation = 0, labelpad = 15)
+        ax2.set_ylim([0.15, 0.85])
+    #    ax2.set_yticks([0.5 + k*0.1 for k in range(6)])
+        
+        ### Save figures
+        g.savefig(Fpath+"CategoryAlphasPlot_{:d}.pdf".format(i), bbox_inches='tight')
 
 
 if __name__ == '__main__':
@@ -502,7 +506,6 @@ if __name__ == '__main__':
     ### Plot Diff vs sigma
     sigma1_l = np.linspace(sigma_y1[0], sigma_y1[1], numSigma_calc)
 
-    for l in L:
-        plotDtvSigma(alphaBarParams, alpha, y_0, p_0, l, sigma1_l)
+    plotDtvSigma(alphaBarParams, alpha, y_0, p_0, L, sigma1_l)
 
     
