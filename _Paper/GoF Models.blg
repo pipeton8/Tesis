@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: GoF Models.aux
+The style file: abbrvnat.bst
+Database file #1: GoFModels.bib
+You've used 27 entries,
+            2773 wiz_defined-function locations,
+            843 strings with 9567 characters,
+and the built_in function-call counts, 12470 in all, are:
+= -- 1229
+> -- 497
+< -- 26
++ -- 173
+- -- 146
+* -- 1026
+:= -- 1916
+add.period$ -- 124
+call.type$ -- 27
+change.case$ -- 128
+chr.to.int$ -- 27
+cite$ -- 54
+duplicate$ -- 570
+empty$ -- 1099
+format.name$ -- 193
+if$ -- 2652
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 29
+newline$ -- 182
+num.names$ -- 110
+pop$ -- 189
+preamble$ -- 1
+purify$ -- 102
+quote$ -- 0
+skip$ -- 407
+stack$ -- 0
+substring$ -- 654
+swap$ -- 51
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 287
+warning$ -- 0
+while$ -- 124
+width$ -- 0
+write$ -- 441

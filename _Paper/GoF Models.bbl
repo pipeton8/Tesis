@@ -1,4 +1,4 @@
-\begin{thebibliography}{17}
+\begin{thebibliography}{27}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,22 @@ S.~Basu and J.~G. Fernald.
   249--283, 1997.
 \newblock ISSN 00223808, 1537534X.
 
+\bibitem[Berger and Vavra(2015)]{BergerVavra15}
+D.~Berger and J.~Vavra.
+\newblock Consumption dynamics during recessions.
+\newblock \emph{Econometrica}, 83\penalty0 (1):\penalty0 101--154, 2015.
+\newblock \doi{10.3982/ECTA11254}.
+\newblock URL \url{https://doi.org/10.3982/ECTA11254}.
+
+\bibitem[Carroll(1992)]{Carroll92}
+C.~D. Carroll.
+\newblock The buffer-stock theory of saving: Some macroeconomic evidence.
+\newblock \emph{Brookings Papers on Economic Activity}, 23\penalty0
+  (2):\penalty0 61--156, 1992.
+\newblock \doi{DOI: ,}.
+\newblock URL
+  \url{https://ideas.repec.org/a/bin/bpeajo/v23y1992i1992-2p61-156.html}.
+
 \bibitem[Carroll(2000)]{CarrollRequiem}
 C.~D. Carroll.
 \newblock Requiem for the representative consumer? aggregate implications of
@@ -19,6 +35,15 @@ C.~D. Carroll.
 \newblock \emph{American Economic Review}, 90\penalty0 (2):\penalty0 110--115,
   May 2000.
 \newblock \doi{10.1257/aer.90.2.110}.
+
+\bibitem[Fagereng et~al.(2017)Fagereng, Guiso, and
+  Pistaferri]{FagerengGuisoPistaferri17}
+A.~Fagereng, L.~Guiso, and L.~Pistaferri.
+\newblock Firm-related risk and precautionary saving response.
+\newblock \emph{American Economic Review}, 107\penalty0 (5):\penalty0 393--97,
+  May 2017.
+\newblock \doi{10.1257/aer.p20171093}.
+\newblock URL \url{http://www.aeaweb.org/articles?id=10.1257/aer.p20171093}.
 
 \bibitem[Feenstra and Hanson(2000)]{Agg3}
 R.~C. Feenstra and G.~H. Hanson.
@@ -44,8 +69,22 @@ W.~M. Gorman.
 \bibitem[Gorman(1959)]{GormanSeparability}
 W.~M. Gorman.
 \newblock Separable utility and aggregation.
-\newblock 27\penalty0 (3):\penalty0 469--481, 1959.
+\newblock \emph{Econometrica}, 27\penalty0 (3):\penalty0 469--481, 1959.
 \newblock \doi{10.2307/1909472}.
+
+\bibitem[Gourinchas and Parker(2002)]{GourinchasParker02}
+P.~Gourinchas and J.~A. Parker.
+\newblock Consumption over the life cycle.
+\newblock \emph{Econometrica}, 70\penalty0 (1):\penalty0 47--89, 2002.
+\newblock \doi{10.1111/1468-0262.00269}.
+\newblock URL \url{https://doi.org/10.1111/1468-0262.00269}.
+
+\bibitem[Gul and Pesendorfer(2004)]{GulPesendorfer04}
+F.~Gul and W.~Pesendorfer.
+\newblock Self‐control and the theory of consumption.
+\newblock \emph{Econometrica}, 72\penalty0 (1):\penalty0 119--158, 2004.
+\newblock \doi{10.1111/j.1468-0262.2004.00480.x}.
+\newblock URL \url{https://doi.org/10.1111/j.1468-0262.2004.00480.x}.
 
 \bibitem[Hanushek et~al.(1996)Hanushek, Rivkin, and Taylor]{SchoolAggregation}
 E.~A. Hanushek, S.~G. Rivkin, and L.~L. Taylor.
@@ -72,19 +111,43 @@ J.~Imbs, H.~Mumtaz, M.~O. Ravn, and H.~Rey.
 \bibitem[Kajii and Morris(1997)]{Morris97}
 A.~Kajii and S.~Morris.
 \newblock The robustness of equilibria to incomplete information.
-\newblock 65\penalty0 (6):\penalty0 1283--1309, 1997.
+\newblock \emph{Econometrica}, 65\penalty0 (6):\penalty0 1283--1309, 1997.
 \newblock \doi{10.2307/2171737}.
+
+\bibitem[Kan et~al.(2017)Kan, Peng, and Wang]{KanPengWang17}
+K.~Kan, S.-K. Peng, and P.~Wang.
+\newblock Understanding consumption behavior: Evidence from consumers' reaction
+  to shopping vouchers.
+\newblock \emph{American Economic Journal: Economic Policy}, 9\penalty0
+  (1):\penalty0 137--53, February 2017.
+\newblock \doi{10.1257/pol.20130426}.
+\newblock URL \url{http://www.aeaweb.org/articles?id=10.1257/pol.20130426}.
+
+\bibitem[Kaplan and Violante(2014)]{KaplanViolante14}
+G.~Kaplan and G.~L. Violante.
+\newblock A model of the consumption response to fiscal stimulus payments.
+\newblock \emph{Econometrica}, 82\penalty0 (4):\penalty0 1199--1239, 2014.
+\newblock \doi{10.3982/ECTA10528}.
+\newblock URL \url{https://doi.org/10.3982/ECTA10528}.
+
+\bibitem[Kydland and Prescott(1982)]{KyPr82}
+F.~E. Kydland and E.~C. Prescott.
+\newblock Time to build and aggregate fluctuations.
+\newblock \emph{Econometrica}, 50\penalty0 (6):\penalty0 1345--1370, 1982.
+\newblock \doi{10.2307/1913386}.
+\newblock URL \url{www.jstor.org/stable/1913386}.
 
 \bibitem[Lee et~al.(1990)Lee, Pesaran, and Pierse]{Agg1}
 K.~C. Lee, M.~H. Pesaran, and R.~G. Pierse.
 \newblock Testing for aggregation bias in linear models.
-\newblock 100\penalty0 (400):\penalty0 137--150, 1990.
+\newblock \emph{The Economic Journal}, 100\penalty0 (400):\penalty0 137--150,
+  1990.
 \newblock \doi{10.2307/2234191}.
 
 \bibitem[Leontief(1936)]{Leontief36}
 W.~Leontief.
 \newblock Composite commodities and the problem of index numbers.
-\newblock 4\penalty0 (1):\penalty0 39--59, 1936.
+\newblock \emph{Econometrica}, 4\penalty0 (1):\penalty0 39--59, 1936.
 \newblock \doi{10.2307/1907120}.
 
 \bibitem[Lewbel(1996)]{Lewbel96}
@@ -94,6 +157,21 @@ A.~Lewbel.
 \newblock \emph{The American Economic Review}, 86\penalty0 (3):\penalty0
   524--543, 1996.
 \newblock \doi{10.2307/2118210}.
+
+\bibitem[Lucas(1978)]{Lucas78}
+R.~E. Lucas.
+\newblock Asset prices in an exchange economy.
+\newblock \emph{Econometrica}, 46\penalty0 (6):\penalty0 1429--1445, 1978.
+\newblock \doi{10.2307/1913837}.
+\newblock URL \url{www.jstor.org/stable/1913837}.
+
+\bibitem[Parker and Preston(2005)]{ParkerPreston05}
+J.~A. Parker and B.~Preston.
+\newblock Precautionary saving and consumption fluctuations.
+\newblock \emph{American Economic Review}, 95\penalty0 (4):\penalty0
+  1119--1143, September 2005.
+\newblock \doi{10.1257/0002828054825556}.
+\newblock URL \url{http://www.aeaweb.org/articles?id=10.1257/0002828054825556}.
 
 \bibitem[Ravallion(1998)]{Agg2}
 M.~Ravallion.
@@ -105,7 +183,9 @@ M.~Ravallion.
 \bibitem[Sutton(2007)]{SuttonMarketStruct}
 J.~Sutton.
 \newblock Market structure: Theory and evidence.
-\newblock volume~3, chapter~35, pages 2301--2368. Elsevier, 1 edition, 2007.
+\newblock In M.~Armstrong and R.~Porter, editors, \emph{Handbook of Industrial
+  Organization}, volume~3, chapter~35, pages 2301--2368. Elsevier, 1 edition,
+  2007.
 
 \bibitem[ter Vehn and Morris(2011)]{Morris2011}
 M.~M. ter Vehn and S.~Morris.
