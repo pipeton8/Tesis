@@ -174,9 +174,9 @@ and thus the aggregate demand for good $j$ is
 
 	%%	The researcher problem	%%
 \subsection{The researcher's problem} \label{ssec:RepAgProblem}
-Suppose now an investigator wishes to describe the aggregate demand of good 1 at time $1$. She has access to a full description of the distribution income of the agents in the economy in $t = 0$ (that is, she knows $F_{y}$) but preferences at any time are not available to her. She also knows $X_{10}$, the aggregate demand of good 1 at time $0$.\footnote{\,Observe that by assuming complete knowledge on the distribution of income and on the aggregate demand I am abstracting the discussion from the appearance of possible estimation errors due to sampling.} In this setting, if $X_{1}$ is the aggregate demand for cellphones then our researcher wishes to estimate consumption of mobiles at $t=1$ by using data available at $t=0$ on income and aggregate consumption of these devices.
+Suppose now an investigator wishes to describe the aggregate demand of good 1 at time $1$. She has access to a full description of the income distribution of the agents in the economy in $t = 0$ (that is, she knows $F_{y_{0}}$) but preferences at any time are not available to her. She also knows $X_{10}$, the aggregate demand of good 1 at time $0$.\footnote{\,Observe that by assuming complete knowledge on the distribution of income and on the aggregate demand I am abstracting the discussion from the appearance of possible estimation errors due to sampling.} In this setting, if $X_{1}$ is the aggregate demand for cellphones then our researcher wishes to estimate consumption of mobiles at $t=1$ by using data available at $t=0$ on income and aggregate consumption of these devices.
 
-Since individual preferences are unknown to her, she assumes all individuals are equal, that is, there exists $\overline{\alpha}$ such that every agent in this economy has utility function $u_{\overline{\alpha}}$. This assumption is equivalent to saying only one person exists in the economy, given that aggregation is possible when the parameters of the Cobb-Douglas utility function are the same for all individuals (see \Cref{ssec:RepAgent}). In a more subtle interpretation, what the researcher is doing is approximate $F_{\alpha}$ by $\delta_{\overline{\alpha}}$ where $\delta_{x}$ is the Dirac distribution centered at $x$. Analogously, she is approximating $F$ with a joint distribution $G$ over the same support $S$ and with marginals $F_{y}$ and $\delta_{\overline{\alpha}}$.
+Since individual preferences are unknown to her, she assumes all individuals are equal, that is, there exists $\overline{\alpha}$ such that every agent in this economy has utility function $u_{\overline{\alpha}}$. This assumption is equivalent to saying only one person exists in the economy, given that aggregation is possible when the parameters of the Cobb-Douglas utility function are the same for all individuals (see \Cref{ssec:RepAgent}). In a different point of view, what the researcher is doing is approximate $F_{\alpha}$ by $\delta_{\overline{\alpha}}$ where $\delta_{x}$ is the Dirac distribution centered at $x$. Analogously, she is approximating $F$ with a joint distribution $G$ over the same support $S$ and with marginals $F_{y}$ and $\delta_{\overline{\alpha}}$. \azul{This alternative interpretation goes in line with the discussion at the end of \Cref{ssec:RepAgent}, where the use of aggregate models is an additional layer of approximation within the construction of a model.}
 
 Under the previous assumption, the representative agent has utility function
 	$$U_{\overline{\alpha}}(X_{1}, X_{2}) = X_{1}^{\overline{\alpha}}X_{2}^{1-\overline{\alpha}},$$
@@ -187,28 +187,28 @@ and thus, since $E[y_{t}]$ is the aggregate income of this economy at time $t$, 
 \subsection{The estimation error} \label{ssec:RepAgError}
 As mentioned in the introduction, the aggregation assumption imposes a shadow price on the estimation. The error in this case will arise from the differences between the individual demands for $x_{1}$ and the ones estimated by the simplified model. Indeed, observe that
 	\begin{align*}
-		\Big| X_{1}(p_{1}, F_{y}, F_{\alpha}) - \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha}) \Big|
-			&=	\left|\, \int_{S} \frac{y \alpha}{p_{1}} - \frac{y\overline{\alpha}}{p_{1}} \, dF(y,\alpha) \,\right|	\\
-			&=	\left|\, \int_{S} x_{1}(p_{1}, y, \alpha) - x_{1}(p_{1}, y, \overline{\alpha}) \, dF(y,\alpha)\, \right|,
+		X_{1}(p_{1}, F_{y}, F_{\alpha}) - \widehat{X}_{1}(p_{1}, F_{y}, \overline{\alpha})
+			&=	\int_{S} \frac{y \alpha}{p_{1}} - \frac{y\overline{\alpha}}{p_{1}} \, dF(y,\alpha),	\\
+			&=	\int_{S} x_{1}(p_{1}, y, \alpha) - x_{1}(p_{1}, y, \overline{\alpha}) \, dF(y,\alpha),
 	\end{align*}
 and thus the accuracy in the estimation, although observable in macroeconomic variables, has its roots in microeconomic differences. Moreover, conditional on having the correct distribution of income, this discrepancy will depend only on the choice of $\overline{\alpha}$. 
 
-Note that the monetized error in the estimation at time $t$, as a function of $\overline{\alpha}$ is
+Note that the monetized error (with sign) in the estimation at time $t$, as a function of $\overline{\alpha}$ is
 	\begin{equation} \label{eq:DiffAgRep}
 		D_{t}(\overline{\alpha}) 
-		 	:= p_{1t}\Big| X_{1t}(p_{1t}, F_{y_{t}}, F_{\alpha_{t}}) - \widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) \Big|
-			=	\mathbb{E}[y_{t}]\left|\, \mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t},\alpha_{t})}{\mathbb{E}[y_{t}]} - \overline{\alpha}\,\right|,
+		 	:= p_{1t}\Big\{ X_{1t}(p_{1t}, F_{y_{t}}, F_{\alpha_{t}}) - \widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) \Big\}
+			=	\mathbb{E}[y_{t}]\left\{\, \mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t},\alpha_{t})}{\mathbb{E}[y_{t}]} - \overline{\alpha}\,\right\},
 	\end{equation}
 and observe that this difference does not depend on prices. Consequently, the error could be reduced to zero if
 	\begin{equation} \label{eq:alphabar}
 		\overline{\alpha} = \underbrace{\mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t}, \alpha_{t})}{\mathbb{E}[y_{t}]}}_{:= M_{t}}
 		.\footnote{\,Note that $M_{t} = \mathbb{E}[\alpha_{t}] + \frac{\mathbb{E}[y_{t}\alpha_{t}] - \mathbb{E}[y_{t}] \mathbb{E}[\alpha_{t}]}{\mathbb{E}[y_{t}]} = \frac{\mathbb{E}[y_{t}\alpha_{t}]}{\mathbb{E}[y_{t}]}$. This is positive because $y_{t}$ and $\alpha_{t}$ are. $M_{t}$ is also lower than 1 because $\alpha_{t} < 1$ and thus $\frac{\mathbb{E}[y_{t}\alpha_{t}]}{\mathbb{E}[y_{t}]} < \frac{\mathbb{E}[y_{t}]}{\mathbb{E}[y_{t}]} = 1$. Hence, $M_{t} \in (0,1)$.}
 	\end{equation}
-Observe that this equation says that taking $\overline{\alpha}$ as the expectation of $\alpha_{t}$ is not enough. Instead, some heterogeneity correction (in the form of the covariance of income and preferences) is necessary to obtain an exact fit at time $t$. Recalling the interpretation of the single consumer assumption as a way to approximate $F$, then \eqref{eq:alphabar} says that the only features of the distribution that are important to have an exact fit at time $t$ are its first and second moments. This finding suggests that what matters when estimating aggregate variables (with a certain degree of precision) using representative consumer models are a finite set of statistics of the underlying distribution of the population.
+Observe that this equation says that taking $\overline{\alpha}$ as the expectation of $\alpha_{t}$ is not enough. Instead, some heterogeneity correction (in the form of the covariance of income and preferences) is necessary to obtain an exact fit at time $t$. Recalling the interpretation of the single consumer assumption as a way to approximate $F_{t}$, then \eqref{eq:alphabar} says that the only features of the distribution that are important to have an exact fit at time $t$ are its first and second moments. This finding suggests that what matters when estimating aggregate variables (with a certain degree of precision) using representative consumer models are a finite set of statistics of the underlying distribution of the population.
 
 Since the researcher has access to $X_{10}$, then $\overline{\alpha}$ could be chosen optimally to reduce the estimation error at $t=0$. Indeed, the optimal choice of $\overline{\alpha}$ given this information is $M_{0}$ and thus, by \eqref{eq:DiffAgRep}, the estimation error in $t=1$ is
 	\begin{equation} \label{eq:errorT1}
-		E[y_{t}]\, \Big|\, M_{1} - M_{0}\,\Big|.
+		E[y_{t}]\, \Big\{\, M_{1} - M_{0}\,\Big\}.
 	\end{equation}
 If preferences do not change, then letting $\alpha := \alpha_{0} = \alpha_{1}$,
 	\begin{equation} \label{eq:errorT1equalAlpha}
@@ -219,71 +219,77 @@ Moreover, if $y_{1} = R y_{0}$ for some $R > 0$, then $\overline{\alpha} = M_{0}
 
 	%%	An example	%%
 \subsection{An example} \label{ssec:RAexample}
-To illustrate the appearance and magnitude of the estimation error in a model as described above, consider the following setting. The preferences are the same in both periods and $\alpha \sim U(0,1)$ (the marginal distribution of $\alpha$ is uniform). At $t = 0$, the income follows a $\log$-Normal distribution with parameters $(\mu, \sigma_{0})$ with $\mu = 10$ and $\sigma_{0} = 0.25$. The joint distribution $F_{0}$ is such that $S_{0} = \{(y,\alpha) : P(y_{0} \leq y) = \alpha\}$. This condition implies that $\mathrm{Cov}(y_{0}, \alpha) \geq 0$. To construct this joint distribution I use the following algorithm:
+To illustrate the appearance and magnitude of the estimation error in a model as the one described above, consider the following setting. The preferences are the same in both periods and $\alpha \sim U(0,1)$ (the marginal distribution of $\alpha$ is uniform). At $t = 0$, the income follows a $\log$-Normal distribution with parameters $(\mu, \sigma_{0})$ with $\mu = 10$ and $\sigma_{0} = 0.25$. The joint distribution $F_{0}$ is such that $S_{0} = \{(y,\alpha) : P(y_{0} \leq y) = \alpha\}$. This condition implies that $\mathrm{Cov}(y_{0}, \alpha) \geq 0$. To construct this joint distribution I use the following algorithm:
 	\begin{enumerate}
 		\item Take $10^{7}$ draws from each marginal distribution.
 		\item Sort each list in ascending order.
 		\item Pair each of the $10^{7}$ points of each distribution in the order given in the previous step.
 	\end{enumerate}
 The support of the distribution constructed this way can be seen in the thick line in \Cref{fig:JointDistributions}. 
-
+	\begin{figure}
+		\caption{Support of $F_{0}$ and $F_{1}$}
+		\label{fig:JointDistributions}
+		\includegraphics[width = 0.6\textwidth]{RAjointDistribs}
+		\vspace{-1ex}
+		\floatfoot{\begin{minipage}{0.7\textwidth}
+			The thick line represents the joint distribution at $t = 0$. The thin lines are five different examples of joint distributions at $t = 1$, varying in the value of $\sigma_{1}$.
+		\end{minipage}}
+	\end{figure}
+	
 Under these parameters and according to \eqref{eq:alphabar}, the optimal choice of $\overline{\alpha}$ at $t = 0$ is
 	\begin{equation} \label{eq:exAlphaBar}
 		\overline{\alpha} 
 			= \mathbb{E}[\alpha_{0}] + \frac{\mathrm{Cov}(y_{0}, \alpha_{0})}{\mathbb{E}[y_{0}]}
 			= 0.57,
 	\end{equation}
-which is 14\% bigger than the mean of the distribution of $\alpha$.\footnote{\,Since $\alpha \sim U(0,1)$, $E[\alpha] = 0.5$.} Now, suppose that between $t = 0$ and $t = 1$ there is a redistribution of income inside each of the two halves of the distribution determined by the median. In particular, I assume there is a ``transfer'' from the poorest half to the richest one. A modification like this could occur for example, after a unequal growth in income or after a financial crisis. To generate this change I take $y_{1} \sim \log\text{-Normal}(\mu, \sigma_{1})$, with $\sigma_{1} \geq \sigma_{0}$. To see the effects that different values of $\sigma_{1}$ have in the estimation error I consider $\sigma_{1} \in [0.25, 1.25]$. Note that both $y_{0}$ and $y_{1}$ have the same median but the tails of both distributions are heavier, as shown in \Cref{fig:LogNormalSigma1}.\footnote{\,The median of a $\log$-Normal distribution with parameters $\mu$ and $\sigma$ is $e^{\mu}$. For $\mu = 10$, we have that $e^{\mu} \approx 22\,026$.} I assume that the joint distribution at $t = 1$, $F_{1}$, still satisfies $S_{1} = \{(y,\alpha) : P(y_{0} \leq y) = \alpha\}$ and is constructed using the same algorithm. This means that the redistribution did not change the order. In order to illustrate the differences between $S_{0}$ and the different supports $S_{1}$, in \Cref{fig:JointDistributions} I show both sets, using the same values for $\sigma_{1}$ as in \Cref{fig:LogNormalSigma1}. From \Cref{fig:JointDistributions} it is clear that given that more mass is moved to the tails of the income distribution, preferences grow more quickly at the beginning of the income distribution and higher values of $\alpha$ are restricted to high values of $y$.
-	\begin{figure}[H] 
-		\caption{Support of $F_{0}$ and $F_{1}$}
-		\label{fig:JointDistributions}
-		\includegraphics[width = 0.6\textwidth]{RAjointDistribs}
-		\floatfoot{\begin{minipage}{0.6\textwidth}
-			The thick line represents the joint distribution at $t = 0$. The thin lines are five different examples of joint distributions at $t = 1$, varying in the value of $\sigma_{1}$.
-		\end{minipage}}
-	\end{figure}
-
-	\begin{figure}[H] 
+which is 14\% bigger than the mean of the distribution of $\alpha$.\footnote{\,Since $\alpha \sim U(0,1)$, $E[\alpha] = 0.5$.} Now, suppose that between $t = 0$ and $t = 1$ there is a redistribution of income between each of the two halves of the distribution determined by the median. In particular, I assume there is a ``transfer'' from the poorest half to the richest one. A modification like this could occur for example, after a unequal growth in income or after a financial crisis. To generate this change I take $y_{1} \sim \log\text{-Normal}(\mu, \sigma_{1})$, with $\sigma_{1} \geq \sigma_{0}$. To see the effects that different values of $\sigma_{1}$ have in the estimation error I consider $\sigma_{1} \in [0.25, 1.25]$. Note that both $y_{0}$ and $y_{1}$ have the same median but the tails of both distributions are heavier, as shown in \Cref{fig:LogNormalSigma1}.\footnote{\,The median of a $\log$-Normal distribution with parameters $\mu$ and $\sigma$ is $e^{\mu}$. For $\mu = 10$, we have that $e^{\mu} \approx 22\,026$.} I assume that the joint distribution at $t = 1$, $F_{1}$, still satisfies $S_{1} = \{(y,\alpha) : P(y_{0} \leq y) = \alpha\}$ and thus is constructed using the same algorithm. This assumptions means that the redistribution did not change the order. In order to illustrate the differences between $S_{0}$ and the different supports $S_{1}$, in \Cref{fig:JointDistributions} I show both sets, using the same values for $\sigma_{1}$ as in \Cref{fig:LogNormalSigma1}. From \Cref{fig:JointDistributions} it is clear that given that more mass is moved to the tails of the income distribution, preferences grow more quickly at the beginning of the interval $(0, \infty)$ and higher values of $\alpha$ are restricted to high values of $y$.
+	\begin{figure}
 		\caption{Densities of $y_{0}$ and $y_{1}$ for different values of $\sigma_{1}$.}
 		\label{fig:LogNormalSigma1}
 		\includegraphics[width = 0.6\textwidth]{RAwageDistribs}
-		\floatfoot{\begin{minipage}{0.6\textwidth}
+		\floatfoot{\begin{minipage}{0.7\textwidth}
 			All distributions have $\mu = 10$ and $\sigma$ according to the legend. The thick line represents the income distribution at $t = 0$. The thin lines are five different examples of distributions at $t = 1$. The dashed gray line corresponds to the common median at, approximately, 22\,026.
 		\end{minipage}}
 	\end{figure}
 
-It is clear from \Cref{fig:JointDistributions} that the covariance between $\alpha$ and $y_{1}$ changes depending on the value of $\sigma_{1}$. Hence, according to \eqref{eq:errorT1} and \eqref{eq:errorT1equalAlpha}, the estimation error will change with $\sigma_{1}$. In \Cref{fig:RADiffPlot} I show the relationship between the estimation error, $D(\overline{\alpha})$ and the value of $\sigma_{1}$ for $0.25 \leq \sigma_{1} \leq 1.25$ in monetary terms. The maximum difference is close to 10\,000 which representes nearly a half of the median income.\footnote{\,10\,000 is approximately 0.45 times the median income.} The figure also shows that the error is monotone in $\sigma_{1}$ and weakly convex, as can be seen from the proximity of the curve to the straight line that joins the extremes of it.
-	\begin{figure}[H] 
-		\caption{Estimation error $D(\overline{\alpha})$ as a function of $\sigma_{1}$.}
+It is clear from \Cref{fig:JointDistributions} that the covariance between $\alpha$ and $y_{1}$ changes depending on the value of $\sigma_{1}$. Hence, according to \eqref{eq:errorT1} and \eqref{eq:errorT1equalAlpha}, the estimation error will change with $\sigma_{1}$. In \Cref{fig:RADiffPlot} I show the relationship between the estimation error, $D(\overline{\alpha})$ and $\sigma_{1}$ for $0.25 \leq \sigma_{1} \leq 1.25$ in monetary terms. The maximum difference is close to 10\,000 which representes nearly a half of the median income.\footnote{\,10\,000 is approximately 0.45 times the median income.} The figure also shows that the error is monotone in $\sigma_{1}$ and weakly convex, as can be seen from the proximity of the curve to the straight line that joins the extremes. \azul{Finally, observe that the error is positive for all the values of $\sigma_{1}$ considered and the reason comes directly from the particular construction of this example. Since the covariance between $y_{0}$ and $\alpha$ is always positive and grows (or stalls) at $t=1$, then $M_{1} \geq M_{0}$ for all values of $\sigma_{1}$ (see \eqref{eq:alphabar}) and thus according to \eqref{eq:errorT1}, $D_{1}(\overline{\alpha}) \geq 0$ for every $\sigma_{1}$.}
+	\begin{figure}
+		\caption{Estimation error $D_{1}(\overline{\alpha})$ as a function of $\sigma_{1}$.}
 		\label{fig:RADiffPlot}
 		\includegraphics[width = 0.6\textwidth]{RAdiffPlot}
-		\floatfoot{\begin{minipage}{0.6\textwidth}
-			The blue line shows $D(\overline{\alpha})$ as a function of $\sigma_{1}$. The dashed gray line corresponds joins the two extremes of the curve.
+		\floatfoot{\begin{minipage}{0.7\textwidth}
+			The blue line shows $D_{1}(\overline{\alpha})$ as a function of $\sigma_{1}$. The dashed gray line corresponds joins the two extremes of the curve.
 		\end{minipage}}
 	\end{figure}
+	
+\newpage
 As noted in \eqref{eq:exAlphaBar}, the value of $\overline{\alpha}$ was slightly over the mean value of the preference marginal distribution. From the previous exercise at least two questions arise:
 	\begin{enumerate}
 		\item How different is the optimal $\overline{\alpha}$ in \eqref{eq:exAlphaBar} from those needed to reduce the error to zero at $t = 1$?
 		\item Is it possible, in the context of this setting, to obtain optimal $\overline{\alpha}$ that completely cover the $(0,1)$ interval?  
 	\end{enumerate}
-Both questions are closely related, since each one requires studying the sensitivity of $\overline{\alpha}$ to changes in the value of $\sigma_{1}$. However, the answers point to different aspects of this setting. The answer to the first question may give additional insight about how sensible is the model to the choice of parameters. For example, if the relationship between the optimal $\overline{\alpha}$ at $t = 1$ and $\sigma_{1}$ is strongly convex, then a representative agent model is very sensible to changes in the underlying heterogeneity of the economy. On the other hand, the answer to the second question illustrates how unrestrained could be the error in the parameter selection even in a simple model like the one presented here. Observe, however, that in this setting, given that $\rmx{Cov}(y_{1},\alpha) \geq 0$, the value of $\overline{\alpha}$ is always greater or equal that $\mathbb{E}[\alpha] = 0.5$ (see \eqref{eq:alphabar}).
+Both questions are closely related, since each one requires studying the response of $\overline{\alpha}$ to changes in the value of $\sigma_{1}$. However, the answers point to different aspects of this setting. The solution to the first question may give additional insight about how sensitive is the model to the choice of parameters. For example, if the relationship between the optimal $\overline{\alpha}$ at $t = 1$ and $\sigma_{1}$ is strongly convex, then a representative agent model is very reactive to even the smallest changes in the underlying heterogeneity of the economy. On the other hand, the answer to the second question illustrates how unrestrained could be the error in the parameter selection even in a simple model like the one presented here. Observe, however, that in this setting, given that $\rmx{Cov}(y_{1},\alpha) \geq 0$, the value of $\overline{\alpha}$ is always greater or equal that $\mathbb{E}[\alpha] = 0.5$ (see \eqref{eq:alphabar}).
 
 To address the first question I compute $M_{1}$ (that according to \eqref{eq:alphabar} is equal to the optimal $\overline{\alpha}$ at $t = 1$) for the different values of $\sigma_{1} \in [0.25, 1.25]$ and plot them in \Cref{fig:RAalphaDiff}. The figure shows that the optimal value of $\overline{\alpha}$ grows fairly linear with $\sigma_{1}$ in this range, which is illustrated by the closeness of both the blue and gray lines. Note that for $\sigma_{1} = 1.25$ the optimal $\overline{\alpha}$ is approximately equal to $0.811$ which is 42.3\% bigger than the chosen value of $0.57$.
-	\begin{figure}[H] 
+
+	\begin{figure}[h]
 		\caption{Optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$.}
 		\label{fig:RAalphaDiff}
 		\includegraphics[width = 0.6\textwidth]{RAdiffAlphasPlot}
-		\floatfoot{\begin{minipage}{0.6\textwidth}
+		\vspace{-1ex}
+		\floatfoot{\begin{minipage}{0.7\textwidth}
 			The blue line shows the optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$. The dashed gray line corresponds joins the two extremes of the curve. Note that for $\sigma_{1} = 0$, the optimal value of $\overline{\alpha}$ is the same as the one computed at $t = 0$, approximately at $0.57$ (see \eqref{eq:exAlphaBar}).
 		\end{minipage}}
 	\end{figure}
 	
-Now, to find an answer to the second question I conduct the following exercise. I take the same distributions as before, that is, $\alpha \sim U(0,1)$, $y \sim \log\text{-Normal}(\mu, \sigma)$ with $\mu = 10$ and allow $\sigma$ to move between 0 and 5. The joint distribution of $(y,\alpha)$ satisfies the same condition over its support as before. Next, I compute the optimal $\overline{\alpha}$ using \eqref{eq:alphabar} for these parameters and plot them in \Cref{fig:RAoptimalAlphas}. As mentioned above, $\overline{\alpha} \geq 0.5$ for every $\sigma$ in the considered range. Observe that the curve is highly concave, meaning that $\overline{\alpha}$ can be highly sensitive to the change of $\sigma$. In fact, the growth in the optimal $\overline{\alpha}$ is very steep at the beginning, reaching $0.9$ approximately at $\sigma = 1.83$.\footnote{\,For $\sigma = 1.809$, $\overline{\alpha} = 0.899$ and for $\sigma = 1.834$, $\overline{\alpha} = 0.902$.} Additionally, growth after $\sigma = 2.91$ is greatly reduced, the derivative at this point is 0.01 and since $\overline{\alpha} = 0.98$ at this point, then the relative derivative - that is, the derivative divided by the value of $\overline{\alpha}$ at the point - is also close to 0.01, meaning that from this point onwards the growth in $\overline{\alpha}$ is lower than 1\%.  It is also interesting to highlight the opposite curvature of the functions in \Cref{fig:RADiffPlot,fig:RAoptimalAlphas}. According to \eqref{eq:alphabar} and \eqref{eq:errorT1}, the error is a multiple of the difference between the optimal $\overline{\alpha}$ and thus what drives the convexity of the curve in \Cref{fig:RADiffPlot} must be the growth in the mean of $y_{1}$. As a final remark, note that, although this setting does not allow $\overline{\alpha} < 0.5$, reversing the covariance between $\alpha$ and $y$ will produce a similar picture as that of \Cref{fig:RAoptimalAlphas}, but the curve will be concave decreasing instead of increasing.
-	\begin{figure}[H] 
+Now, to find an answer to the second question I conduct the following exercise. I take the same distributions as before, that is, $\alpha \sim U(0,1)$, $y \sim \log\text{-Normal}(\mu, \sigma)$ with $\mu = 10$ and allow $\sigma$ to move between 0 and 5. The joint distribution of $(y,\alpha)$ satisfies the same condition over its support as before. Next, I compute the optimal $\overline{\alpha}$ using \eqref{eq:alphabar} for these parameters and plot them in \Cref{fig:RAoptimalAlphas}. As mentioned above, $\overline{\alpha} \geq 0.5$ for every $\sigma$ in the considered range. Observe that the curve is highly concave, meaning that $\overline{\alpha}$ can be highly sensitive to the change of $\sigma$. In fact, the growth in the optimal $\overline{\alpha}$ is very steep at the beginning, reaching $0.9$ approximately at $\sigma = 1.83$.\footnote{\,For $\sigma = 1.809$, $\overline{\alpha} = 0.899$ and for $\sigma = 1.834$, $\overline{\alpha} = 0.902$.} Additionally, growth after $\sigma = 2.91$ is greatly reduced, the derivative at this point is 0.01 and since $\overline{\alpha} = 0.98$ at this point, then the relative derivative - that is, the derivative divided by the value of $\overline{\alpha}$ at the point - is also close to 0.01, meaning that from this point onwards the growth in $\overline{\alpha}$ is lower than 1\%.  It is also interesting to highlight the opposite curvature of the functions in \Cref{fig:RADiffPlot,fig:RAoptimalAlphas}. According to \eqref{eq:alphabar} and \eqref{eq:errorT1}, the error is a multiple of the difference between the optimal $\overline{\alpha}$ and thus what drives the convexity of the curve in \Cref{fig:RADiffPlot} must be the growth in the mean of $y_{1}$. As a final remark, note that, although this setting does not allow $\overline{\alpha} < 0.5$, reversing the covariance between $\alpha$ and $y$ will produce a similar picture as that of \Cref{fig:RAoptimalAlphas}, but the curve will be concave decreasing instead of increasing \azul{and with an asymptote at $\overline{\alpha} = 0$.}
+
+	\begin{figure}[tbh!]
 		\caption{Optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma$.}
 		\label{fig:RAoptimalAlphas}
 		\includegraphics[width = 0.6\textwidth]{RAoptimalAlphas}
-		\floatfoot{\begin{minipage}{0.6\textwidth}
+		\vspace{-1ex}
+		\floatfoot{\begin{minipage}{0.7\textwidth}
 			The blue line shows the optimal $\overline{\alpha}$ as a function of $\sigma$, computed according to \eqref{eq:alphabar}, with $\alpha \sim U(0,1)$ and $y \sim \log\text{-Normal}(\mu, \sigma)$, with $\mu = 10$. The dashed gray line joins the two extremes of the curve.
 		\end{minipage}}
 	\end{figure}
@@ -295,16 +301,23 @@ Now, to find an answer to the second question I conduct the following exercise. 
 \subsection{The model}
 Consider the following model where a consumer, identified with parameters $(\rho, \beta)$ solves the following problem
 	\begin{equation} \label{eq:CarrollModel}
-		\probop[s.t.]{\max}{\mathbb{E}_{0}\left[\sum_{t=0}^{\infty} \beta^{t} \frac{C_{t}^{1-\rho}}{1-\rho} \right],}
-				{&	K_{t+1} = (1-\delta)(Y_{t} - C_{t}),	\\
-				&	Y_{t+1} = K_{t+1} + \theta_{t+1}K_{t+1}^{\alpha}L_{t+1}^{1-\alpha},}
+		\probop[s.t.]{\max_{\{c_{t}\}_{t}}}{\sum_{t=1}^{\infty} \beta^{t}\frac{c_{t}^{1-\rho}}{1-\rho}}
+					{&	k_{t+1} = (1-\delta)(y_{t} - c_{t+1})	\\
+					&	y_{t} = k_{t} + \theta_{t}k_{t}^{\alpha}},
+%		\probop[s.t.]{\max}{\mathbb{E}_{0}\left[\sum_{t=0}^{\infty} \beta^{t} \frac{C_{t}^{1-\rho}}{1-\rho} \right],}
+%				{&	K_{t+1} = (1-\delta)(Y_{t} - C_{t}),	\\
+%				&	Y_{t+1} = K_{t+1} + \theta_{t+1}K_{t+1}^{\alpha}L_{t+1}^{1-\alpha},}
 	\end{equation}
 where $C_{t}$ is consumption at time $t$, $K_{t+1}$ is the capital at the start of period $t+1$ and $Y_{t}$ represents the total resources available (income) at time $t$. Let $c(y)$ represent the infinite-horizon consumption as a function of current resources, where both variables are normalized by permanent labor income, that is, $y = \frac{Y}{wL}$ and similarly for $c$.\footnote{\,If $c_{t}(y)$ is the optimal normalized consumption as a function of normalized current resources, then $c(y) := \lim_{n \to \infty} c_{T-n}(y)$, where $T$ is the last period of the finite horizon counterpart of problem \eqref{eq:CarrollModel}. For a discussion of why the optimal consumption rule $c_{t}(y)$ of \eqref{eq:CarrollModel} converges to $c(x)$ when $t$ goes to infinity see \rojo{Which paper?}.} A salient feature of these models is that $c$ is a highly concave function of $y$, but for low and high values of income the function is nearly linear, as in \Cref{fig:concaveC}. This behavior may harm predictions of the (aggregate) marginal propensity of consumption (MPC) using a representative agent model if the aggregate income is high but wealth is very unequally distributed. As expected, the difference between empirically estimated MPCs and the one predicted by the representative agent model is substantial, while the former are found between 0.2 and 0.5, the latter is only 0.04 under standard parameters.\footnote{\,See \cite{CarrollRequiem}.}
+
 	\begin{figure}
 		\caption{Consumption function}
 		\label{fig:concaveC}
 		\includegraphics[width=0.6\textwidth]{CarrollCons}
-		%\floatfoot{Note}
+		\floatfoot{\begin{minipage}{0.7\textwidth}
+			The blue line shows the (normalized) consumption as a function of the cash-on-hand $y$. The model that produces this type of function includes permanent and idiosyncratic shocks, as in \cite{KrusellSmith98}.
+		\end{minipage}
+}
 	\end{figure}
 	
 One way to makes better predictions is to modify the model to produce a skewed distribution of income, more similar to the data. Of course, if that same data could give hints to choose the parameters of the representative agent model, then its use could produce more reasonable estimates without incorporating more complexity. Hereinafter I use the same argument as the one in \Cref{sec:RepAg} to understand how the basic representative agent model in \eqref{eq:CarrollModel} can be calibrated to obtain a better prediction for the MPC.

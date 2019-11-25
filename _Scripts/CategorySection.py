@@ -456,7 +456,11 @@ def plotDtvSigma(params, alpha, y0, p0, L, sigma1_l):
             ax1.set_xticks([k*0.25 for k in range(1,6)])
             
             ax1.set_ylabel(r'$D_1(\overline{T}'+'_{:d})$'.format(j), rotation = 0, labelpad = 20)
-#            ax1.set_ylim([-10**-7, -10**-8])
+            if j == 1:
+                ax1.set_ylim([-10**-6, 10**-6])
+            else:
+                ax1.set_ylim([-0.2, 0.2])
+           
         #    ax1.set_yticks([k*2000 for k in range(7)])
 
             ### Save figures

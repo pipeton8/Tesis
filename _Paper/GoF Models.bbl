@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -129,6 +129,14 @@ G.~Kaplan and G.~L. Violante.
 \newblock \emph{Econometrica}, 82\penalty0 (4):\penalty0 1199--1239, 2014.
 \newblock \doi{10.3982/ECTA10528}.
 \newblock URL \url{https://doi.org/10.3982/ECTA10528}.
+
+\bibitem[Krusell and Smith(1998)]{KrusellSmith98}
+P.~Krusell and A.~A. Smith, Jr.
+\newblock Income and wealth heterogeneity in the macroeconomy.
+\newblock \emph{Journal of Political Economy}, 106\penalty0 (5):\penalty0
+  867--896, 1998.
+\newblock \doi{10.1086/250034}.
+\newblock URL \url{www.jstor.org/stable/10.1086/250034}.
 
 \bibitem[Kydland and Prescott(1982)]{KyPr82}
 F.~E. Kydland and E.~C. Prescott.
