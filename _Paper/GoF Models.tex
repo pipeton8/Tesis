@@ -308,12 +308,12 @@ Consider the following model where a consumer, identified with parameters $(\rho
 %				{&	K_{t+1} = (1-\delta)(Y_{t} - C_{t}),	\\
 %				&	Y_{t+1} = K_{t+1} + \theta_{t+1}K_{t+1}^{\alpha}L_{t+1}^{1-\alpha},}
 	\end{equation}
-where $C_{t}$ is consumption at time $t$, $K_{t+1}$ is the capital at the start of period $t+1$ and $Y_{t}$ represents the total resources available (income) at time $t$. Let $c(y)$ represent the infinite-horizon consumption as a function of current resources, where both variables are normalized by permanent labor income, that is, $y = \frac{Y}{wL}$ and similarly for $c$.\footnote{\,If $c_{t}(y)$ is the optimal normalized consumption as a function of normalized current resources, then $c(y) := \lim_{n \to \infty} c_{T-n}(y)$, where $T$ is the last period of the finite horizon counterpart of problem \eqref{eq:CarrollModel}. For a discussion of why the optimal consumption rule $c_{t}(y)$ of \eqref{eq:CarrollModel} converges to $c(x)$ when $t$ goes to infinity see \rojo{Which paper?}.} A salient feature of these models is that $c$ is a highly concave function of $y$, but for low and high values of income the function is nearly linear, as in \Cref{fig:concaveC}. This behavior may harm predictions of the (aggregate) marginal propensity of consumption (MPC) using a representative agent model if the aggregate income is high but wealth is very unequally distributed. As expected, the difference between empirically estimated MPCs and the one predicted by the representative agent model is substantial, while the former are found between 0.2 and 0.5, the latter is only 0.04 under standard parameters.\footnote{\,See \cite{CarrollRequiem}.}
-
-	\begin{figure}
+where $C_{t}$ is consumption at time $t$, $K_{t+1}$ is the capital at the start of period $t+1$ and $Y_{t}$ represents the total resources available (income) at time $t$. Let $c(y)$ represent the infinite-horizon consumption as a function of current resources, where both variables are normalized by permanent labor income, that is, $y = \frac{Y}{wL}$ and similarly for $c$.\footnote{\,If $c_{t}(y)$ is the optimal normalized consumption as a function of normalized current resources, then $c(y) := \lim_{n \to \infty} c_{T-n}(y)$, where $T$ is the last period of the finite horizon counterpart of problem \eqref{eq:CarrollModel}.} A salient feature of these models is that $c$ is a highly concave function of $y$, but for low and high values of income the function is nearly linear, as in \Cref{fig:concaveC}. This behavior may harm predictions of the (aggregate) marginal propensity of consumption (MPC) using a representative agent model if the aggregate income is high but wealth is very unequally distributed. As expected, the difference between empirically estimated MPCs and the one predicted by the representative agent model is substantial, while the former are found between 0.2 and 0.5, the latter is only 0.04 under standard parameters.\footnote{\,See \cite{CarrollRequiem}.}
+	\begin{figure}[H]
 		\caption{Consumption function}
 		\label{fig:concaveC}
 		\includegraphics[width=0.6\textwidth]{CarrollCons}
+		\vspace{-1ex}
 		\floatfoot{\begin{minipage}{0.7\textwidth}
 			The blue line shows the (normalized) consumption as a function of the cash-on-hand $y$. The model that produces this type of function includes permanent and idiosyncratic shocks, as in \cite{KrusellSmith98}.
 		\end{minipage}
@@ -343,27 +343,32 @@ Thus, using \eqref{eq:lteMPC} and \eqref{eq:aggMPC}, the estimation error with s
 		:=	\mathbb{E}_{y}\Big[ \mathbb{E}_{(\beta,\rho) \, | \, y}[c'_{\beta,\rho}(y) -  c_{\overline{\beta},\overline{\rho}}'(y) ] \; \Big| \; y \Big].$$
 This means that, as shown in \Cref{sec:RepAg}, the estimation error arises from differences in the ``estimated'' MPC for each agent. Of course, the aggregate model is not in principle capturing directly the individual MPC but when thought of it as approximating the heterogeneity in the economy, then it is possible to interpret that is indeed the case.
 
-\rojo{Sadly, for a model like \eqref{eq:CarrollModel} there is no analytic expression for $c_{\beta,\rho}$ and thus neither one for $c'_{\beta,\rho}$. Nevertheless, it is clear that the dependence of these functions on $\beta$, $\rho$ and $y$ is ``finite'' in the sense that there is a finite number of appearances of these variables in the expression of those functions. Hence, $D(\overline{\beta}, \overline{\rho})$ depends on a finite number of moments of the distribution $F$.}
+\azul{Sadly, for a model like \eqref{eq:CarrollModel} there is no analytic expression for $c_{\beta,\rho}$ and thus neither one for $c'_{\beta,\rho}$. Nevertheless, conditional on having a Taylor approximation to a given desired degree of precision, it is clear that these these functions will depend on a finite amount of moments of the joint distribution of $\beta$, $\rho$ and $y$. Hence, $D(\overline{\beta}, \overline{\rho})$ will also depend on a finite number of moments of $F$, allowing a tailoring in the approximation of the heterogeneity with the objective of reducing the estimation error.}
 
 	%%	Numerical example	%%
 \subsection{Numerical example}
-In this section I show the possibility that an optimally chosen representative agent model can provide close estimates of the aggregate MPC without modeling the heterogeneity of the population. As mentioned above, every pair $(\beta,\rho)$ in the economy is associated with a consumption function $c_{\beta,\rho}$ from which the MPC at the respective income value $y$ is obtained. To get a feeling of how different the policy functions are depending on these parameters, observe \Cref{fig:ConsRhoBeta}. In Panel (a), $\beta$ is fixed at 0.99 and $\rho$ varies from 1 to 5 and the concavity of the function is greater as $\rho$ grows. It is also interesting to note that the curves are almost parallel for large $y$, meaning that for different values of $\rho$, the MPC will be very similar if $y$ is big enough. On the other hand, in Panel (b), $\rho$ is fixed at 3 and $\beta$ varies from $0.89$ to $0.99$. All functions are fairly similar but the concavity again increases as $\beta$ gets closer to $0.99$. Contrary to what was shown in Panel (a), the curves have different slopes for large values of $y$, meaning that the MPC will differ significantly for each different $\beta$. As a final remark, note that the smooth transitions showed in this figure strongly suggest that the choice of the parameters of a representative agent model can balance the underlying heterogeneity of the agents' policy functions when estimating the aggregate MPC.
+In this section I show it is possible that an optimally chosen representative agent model can provide close estimates of the aggregate MPC without modeling the heterogeneity of the population. As mentioned above, every pair $(\beta,\rho)$ in the economy is associated with a consumption function $c_{\beta,\rho}$ from which the MPC at the respective income value $y$ is obtained. To get a feeling of how different the policy functions are depending on these parameters, observe \Cref{fig:ConsRhoBeta}. 
+
 	\begin{figure}[H]
 		\caption{Consumption functions at different values of $\rho$ and $\beta$.} \label{fig:ConsRhoBeta}
 		
-		\subfloat[$\beta = 0.99$]{\includegraphics[width = 0.45\textwidth]{CarrollConsRho} \label{fig:ConsRho}} 
+		\subfloat[$\beta = 0.99$]{\includegraphics[width = 0.45\textwidth]{CarrollConsRho} \label{fig:ConsRho}}\hspace{0.045\textwidth}
 		\subfloat[$\rho = 3$]{\includegraphics[width = 0.45\textwidth]{CarrollConsBeta} \label{fig:ConsBeta}}
-		
+		\vspace{-1ex}
 		\floatfoot{\begin{minipage}{0.9\textwidth}
 			Each line is a different consumption function. In Panel (a), $\beta = 0.99$ for all values of $\rho$. Similarly, in Panel (b) for all different consumption functions, $\rho = 3$
 		\end{minipage}}
 	\end{figure}
+
+In Panel (a), where $\beta$ is fixed at 0.99 and $\rho$ varies from 1 to 5, the concavity of the function is greater as $\rho$ grows. It is also interesting to note that the curves are almost parallel for high-income agents, meaning that for different values of $\rho$, the MPC will be very similar if $y$ is large enough. On the other hand, in Panel (b), $\rho$ is fixed at 3 and $\beta$ varies from $0.89$ to $0.99$. All functions are fairly similar but the concavity again increases as $\beta$ gets closer to $0.99$. Contrary to what was shown in Panel (a), the curves have different slopes for large values of $y$, meaning that the MPC will differ significantly for each different $\beta$. As a final remark, note that the smooth transitions showed in this figure strongly suggest that the choice of the parameters of a representative agent model can balance the underlying heterogeneity of the agents' policy functions when estimating the aggregate MPC.
+	
 In order to make the last point explicit, consider the following setting. There are $200$ agents in the economy with $\beta$, $\rho$ and $y$ independent random variables. The distribution $F$ is obtained by first taking 200 independent draws from the following distributions:
 	\begin{itemize}
 		\item $\beta$: triangular distribution with lower limit $0.9$ and with upper limit and mean equal to $0.99$.
 		\item $\rho$: triangular distribution with lower limit $1$, upper limit $5$ and mean $3$.
 		\item $y$: uniform distribution over the interval $[0,10]$. 
 	\end{itemize}
+
 Then, a triple $(\beta,\rho,y)$ is associated with each agent. The distribution of $(\beta,\rho)$ in the economy is presented in \Cref{fig:distribBetaRho}. As can be seen in the figure, the majority of agents are close to the intersection of the dashed lines, that correspond to the mean (and mode) of the underlying distributions. The joint distribution of the triples $(\beta,\rho,y)$ is presented in \Cref{fig:JointDistrib} to further illustrate the independency of the variables.
 	\begin{figure}[H]
 		\caption{Distribution of $\beta$ and $\rho$ in the economy.}
@@ -373,6 +378,8 @@ Then, a triple $(\beta,\rho,y)$ is associated with each agent. The distribution 
 			The figure shows the marginal distribution $F_{\beta,\rho}$. Each dot represents an agent in the economy. The dashed lines correspond to $\rho = 3$ and $\beta = 0.99$, the means of the triangular distributions.
 		\end{minipage}}
 	\end{figure}
+
+	
 	\begin{figure}[H]
 		\caption{Joint distribution of $\beta$, $\rho$ and $y$ in the economy.}
 		\label{fig:JointDistrib}
@@ -382,7 +389,7 @@ Then, a triple $(\beta,\rho,y)$ is associated with each agent. The distribution 
 		\end{minipage}}
 	\end{figure}
 
-According to the previous section, the joint distribution generated this way determines an aggregated MPC and the choice of $(\overline{\beta}, \overline{\rho})$ is aimed to keep $D(\overline{\beta}, \overline{\rho})$ as closest to zero as possible. Assuming the only known feature of the distribution of $(\beta, \rho)$ is its boundaries -- in this example, $\beta \in [0.9, 0.99]$ and $\rho \in [1,5]$ -- then I construct a grid with $10\,000$ points by taking 100 evenly spaced points from each interval and making all possible combinations. Next, for each pair $(\overline{\beta}, \overline{\rho})$ I compute the $MPC$ associated to a representative agent model with these parameters. The MPCs computed using this procedure are showed in \Cref{fig:MPCPlane}. From the figure it is clear that the blue and red planes intersect in more than one point. Moreover, the intersection is a curve. It is also possible to see that the estimated MPC is more sensible to $\beta$ than to $\rho$, which is in line with \cite{CarrollRequiem}, where the choice of two different $\beta$ values was crucial to obtain a more close estimate of the MPC. The difference $D(\overline{\beta}, \overline{\rho})$ is also presented in \Cref{fig:DiffPlane}. Again is clear than the difference can get as close as zero as desired and, moreover, that the choice of parameters is not unique.
+According to the previous section, the joint distribution generated this way determines an aggregated MPC and the choice of $(\overline{\beta}, \overline{\rho})$ is aimed to keep $D(\overline{\beta}, \overline{\rho})$ as closest to zero as possible. Assuming the only known feature of the distribution of $(\beta, \rho)$ is its boundaries -- in this example, $\beta \in [0.9, 0.99]$ and $\rho \in [1,5]$ -- then I construct a grid with $10\,000$ points by taking 100 evenly spaced points from each interval and making all possible combinations. Next, for each pair $(\overline{\beta}, \overline{\rho})$ I compute the $MPC$ associated to a representative agent model with these parameters. The MPCs computed using this procedure are showed in \Cref{fig:MPCPlane}. 
 	\begin{figure}[H]
 		\caption{Computed MPC for each pair $(\overline{\beta}, \overline{\rho})$.}
 		\label{fig:MPCPlane}
@@ -391,21 +398,27 @@ According to the previous section, the joint distribution generated this way det
 			The figure shows the computed MPC for each pair $\left(\overline{\beta}, \overline{\rho}\right)$ in a 10\,000 point grid constructed in $[0.9, 1] \times [1,5]$. The red plane is set at the real value of the MPC for this economy, approximately at 0.176. 
 		\end{minipage}}
 	\end{figure}
-	\begin{figure}[H]
-		\caption{Difference between real and estimated MPCs for each pair $\left(\overline{\beta}, \overline{\rho}\right)$.}
-		\label{fig:DiffPlane}
-		\includegraphics[width=0.6\textwidth]{CarrollDiff}
-%		\floatfoot{\begin{minipage}{0.6\textwidth}
-%			The figure shows $D(\overline{\beta}, \overline{\rho})$ for each pair of the grid.
-%		\end{minipage}}
-	\end{figure}
+
+\newpage
+From the figure it is clear that the blue and red planes intersect in more than one point. Moreover, the intersection is a curve. It is also possible to see that the estimated MPC is more responsive to $\beta$ than to $\rho$, \azul{which is clear from the higher slope that the blue surface has on the $\overline{\beta}$ axis than in the $\overline{\rho}$ one.} The previous observation is in line with \cite{CarrollRequiem}, where the choice of two different $\beta$ values was crucial to obtain a more close estimate of the MPC. 
+
+%The difference $D(\overline{\beta}, \overline{\rho})$ is also presented in \Cref{fig:DiffPlane}. Again is clear than the difference can get as close as zero as desired and, moreover, that the choice of parameters is not unique.
+%
+%	\begin{figure}[H]
+%		\caption{Difference between real and estimated MPCs for each pair $\left(\overline{\beta}, \overline{\rho}\right)$.}
+%		\label{fig:DiffPlane}
+%		\includegraphics[width=0.6\textwidth]{CarrollDiff}
+%%		\floatfoot{\begin{minipage}{0.6\textwidth}
+%%			The figure shows $D(\overline{\beta}, \overline{\rho})$ for each pair of the grid.
+%%		\end{minipage}}
+%	\end{figure}
 	
-Finally, to give an idea of how the mentioned curve looks, in \Cref{fig:ZeroCurve} I graph the ``Zero'' difference curves, that is, the points $(\overline{\beta}, \overline{\rho})$ for which $|D(\overline{\beta}, \overline{\rho})|$ is less than or equal than a certain tolerance. In Panel (a) the tolerance is set to $10^{-4}$ while in Panel (b) it is set to $10^{-5}$. As seen in this figure, the curve is fairly smooth and again shows that the difference is more sensible to the choice of $\overline{\beta}$ than that of $\overline{\rho}$ as seen in the fact that when the tolerance is $10^{-4}$, for every value of $\overline{\rho}$ there is a $\overline{\beta}$ such that the difference is below the tolerance level but the converse is not true. This observation brings back the discussion over \Cref{fig:ConsRhoBeta}. The reason why choosing $\overline{\beta}$ is more critical than choosing $\overline{\rho}$ can be derived from the fact that the MPC for different values of $\rho$ is fairly similar for $y > 2$ and remembering that 80\% of the uniform distribution over $[0,10]$ is contained in the interval $[2,10]$, where according to \Cref{fig:ConsRhoBeta} the curves have already very similar slopes. On the contrary, since the MPC for different values of $\beta$ may differ greatly, then the range of optimal $\overline{\beta}$ available could be greatly reduced if tolerance is small enough. In the same line, note that decreasing the tolerance by one order of magnitude strongly reduces the set optimal parameters available.
+Finally, to give an idea of how the mentioned curve looks, in \Cref{fig:ZeroCurve} I graph the ``zero'' difference curves, that is, the points $(\overline{\beta}, \overline{\rho})$ for which $|D(\overline{\beta}, \overline{\rho})|$ is less than or equal than a certain tolerance. In Panel (a) the tolerance is set to $10^{-4}$ while in Panel (b) it is set to $10^{-5}$. As seen in this figure, the curve is fairly smooth and again shows that the difference is more sensitive to the choice of $\overline{\beta}$ than that of $\overline{\rho}$ as seen in the fact that when the tolerance is $10^{-4}$, for every value of $\overline{\rho}$ there is a $\overline{\beta}$ such that the difference is below the tolerance level but the converse is not true. This observation brings back the discussion over \Cref{fig:ConsRhoBeta}. The reason why choosing $\overline{\beta}$ is more critical than choosing $\overline{\rho}$ can be derived from the fact that the MPC for different values of $\rho$ is fairly similar for $y > 2$ and remembering that 80\% of the uniform distribution over $[0,10]$ is contained in the interval $[2,10]$, where according to \Cref{fig:ConsRhoBeta} the curves have already very similar slopes. On the contrary, since the MPC for different values of $\beta$ may differ greatly, then the range of optimal $\overline{\beta}$ available could be greatly reduced if tolerance is small enough. In the same line, note that decreasing the tolerance by one order of magnitude strongly reduces the set optimal parameters available.
 	\begin{figure}[H]
 		\caption{``Zero'' difference curves}
 		\label{fig:ZeroCurve}
 		
-		\subfloat[tolerance = $10^{-4}$]{\includegraphics[width=0.45\textwidth]{CarrollMPCCurve_-4}}
+		\subfloat[tolerance = $10^{-4}$]{\includegraphics[width=0.45\textwidth]{CarrollMPCCurve_-4}}\hspace{0.045\textwidth}
 		\subfloat[tolerance = $10^{-5}$]{\includegraphics[width=0.45\textwidth]{CarrollMPCCurve_-5}} \vspace{-2ex}
 
 		\floatfoot{\begin{minipage}{0.9\textwidth}
