@@ -49,14 +49,14 @@
 \begin{frame}[t]{Aggregation is an approximation}
 	\begin{center}
 		\epigraph{\scriptsize (...) all models are approximations. Essentially, all models are wrong, but some are useful. However, %
-the approximate nature of the model must always be borne in mind.}{\scriptsize\textit{Empirical Model-Building and Response Surfaces (1987)} \\ \textsc{George Box and Norman Draper}}
+the approximate nature of the model must always be borne in mind.}{\scriptsize\textit{Empirical Model-Building and Response Surfaces (1987)} \\\vspace{0.2ex} \textsc{George Box and Norman Draper}}
 	\end{center} 
 
 \pause \vfill
 	\begin{itemize}
 		\item Aggregate models are, in particular, approximations. \pause \vfill
 		\item The conditions to have exact aggregation are strict. \pause \vfill
-		\item But the important measure of these models are their predictions. \pause \vfill
+		\item But the important measure of models are their predictions (Friedman, 1953). \pause \vfill
 		\item Three questions: \vspace{.5ex}
 			\begin{itemize}
 				\item Is it possible to calibrate aggregate models to obtain better predictions? \vspace{1ex}
@@ -99,37 +99,37 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 \begin{frame}{The economy}
 	\vfill
 	\begin{itemize}
-		\item Two periods ($t \in \{0,1\}$) and two goods ($x_{1t}, x_{2t}$) with prices $(p_{1t},p_{2t}) \in \R^{2}_{++}$. \vfill
+		\item Two periods ($t \in \{0,1\}$) and two goods ($x_{t}, z_{t}$) with prices $(p_{t},q_{t}) \in \mathbb{R}^{2}_{++}$. \vfill
 		
 		\item Agents identified with pairs income-preferences $(y_{t},\alpha_{t})$, with utility function\vspace{1ex}
-				$$u_{\alpha_{t}}(x_{1t}, x_{2t}) = x_{1t}^{\alpha_{t}}x_{2t}^{1-\alpha_{t}}.$$\vfill
+				$$u_{\alpha_{t}}(x_{t}, z_{t}) = x_{t}^{\alpha_{t}}z_{t}^{1-\alpha_{t}}.$$\vfill
 		
 		\item $(y_{t},\alpha_{t}) \sim F_{t}$ (with marginals $F_{x}$, $x = y_{t},\alpha_{t}$) and $\supp F \subset (0,\infty) \times (0,1)$.\vfill
 		
-		\item Demand for good 1 is $x_{1}(p_{1t}, y_{t} ,\alpha_{t}) = \alpha_{t} y_{t} p_{1t}^{-1}$ and aggregate demand is\vspace{1ex}
-				$$X_{1t}(p_{1t}, F_{t}) 
-					= \frac{1}{p_{1t}} \int_{S} y_{t}\alpha_{t} \, dF(y_{t},\alpha_{t}) 
-					= \frac{1}{p_{1t}}\Big(\mathbb{E}[y_{t}]\mathbb{E}[\alpha_{t}] + \mathrm{Cov}(y_{t},\alpha_{t})\Big).$$\vfill
+		\item Demand for good 1 is $x_{t}(p_{t}, y_{t} ,\alpha_{t}) = \alpha_{t} y_{t} p_{t}^{-1}$ and aggregate demand is\vspace{1ex}
+				$$X_{t}(p_{1t}, F_{t}) 
+					= \frac{1}{p_{t}} \int_{S} y_{t}\alpha_{t} \, dF(y_{t},\alpha_{t}) 
+					= \frac{1}{p_{t}}\Big(\mathbb{E}[y_{t}]\mathbb{E}[\alpha_{t}] + \mathrm{Cov}(y_{t},\alpha_{t})\Big).$$\vfill
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{The researcher's problem and approximation errors}
+\begin{frame}{Researcher's problem and approximation errors}
 	\vfill
 	\begin{itemize}
-		\item Objective: Estimate demand $X_{11}$ using $X_{10}$ and $F_{y_{0}}$.\vfill
+		\item Objective: Estimate demand $X_{1}$ using $X_{0}$ and $F_{y_{0}}$.\vfill
 		
 		\item $F_{\alpha}$ is unknown $\Rightarrow$ use a representative agent (RA) model.\vspace{1ex}
 			\begin{itemize}
 				\item That is, choose $\overline{\alpha}$ and approximate $F_{\alpha}$ with $\delta_{\overline{\alpha}}$.\footnote[frame]{$\delta_{\overline{\alpha}}$ is the Dirac distribution centered at $\overline{\alpha}$.}
 			\end{itemize} \vfill
 			
-		\item Best estimation for $X_{1t}$ is\vspace{1ex}
-				$$\widehat{X}_{1t}(p_{1t}, F_{y_{t}}, \overline{\alpha}) = \overline{\alpha}\, \frac{E[y_{t}]}{p_{1t}}.$$
+		\item Best estimation for $X_{t}$ is\vspace{1ex}
+				$$\widehat{X}_{t}(p_{t}, F_{y_{t}}, \overline{\alpha}) = \overline{\alpha}\, \frac{E[y_{t}]}{p_{t}}.$$
 			\vfill
 				
 		\item Monetized error at time $t$ is\vspace{1ex}
 				$$D_{t}(\overline{\alpha}) 
-		 			:=	p_{1t}\Big| X_{1t} - \widehat{X}_{1t}\Big|
+		 			:=	p_{t}\Big| X_{t} - \widehat{X}_{t}\Big|
 					=	\mathbb{E}[y_{t}]\left|\, \mathbb{E}[\alpha_{t}] + \frac{\mathrm{Cov}(y_{t},\alpha_{t})}{\mathbb{E}[y_{t}]} - \overline{\alpha}\,\right|.$$
 	\end{itemize} \vfill
 
@@ -503,7 +503,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 		\subfloat[$(y_{t},T_{t}), \lambda_{1} = 0.5$]{\includegraphics[width = 0.45\textwidth]{JointYT_0}\label{fig:Jointb}}\,
 		\subfloat[$(y_{t},T_{t}), \lambda_{2} = 1.5$]{\includegraphics[width = 0.45\textwidth]{JointYT_1}\label{fig:Jointc}}
 		\vspace{-2ex}
-		\floatfoot{\begin{minipage}{0.9\textwidth} The figure shows the support of the joint distributions of $(y_{t}, \alpha)$, $(y_{t}, T_{t})$ with $\lambda = 0.5$ and $(y_{t}, T_{t})$ with $\lambda = 0.5$ for five different values of $\sigma_{1}$. The dashed gray lines correspond to $y_{t} = 5.5$, the median of the distribution.
+		\floatfoot{\begin{minipage}{0.9\textwidth} The figure shows the support of the joint distributions of $(y_{t}, T_{t})$ with $\lambda_{1} = 0.5$ and $(y_{t}, T_{t})$ with $\lambda_{2} = 0.5$ for five different values of $\sigma_{1}$. The dashed gray lines correspond to $y_{t} = 5.5$, the median of the distribution. The price vectors used are $\mathbf{p}_{0} = (1,10)$ and $\mathbf{p}_{1} = \lambda_{i} \mathbf{p}_{0}$, with $i = 1,2$.
 		\end{minipage}}
 	\end{figure}
 \end{frame}
@@ -526,7 +526,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 		\subfloat[$\lambda = 0.5$]{\includegraphics[width = 0.45\textwidth]{CategoryAlphasPlot_0} \label{fig:AlphaCata}}\,
 		\subfloat[$\lambda = 1.5$]{\includegraphics[width = 0.45\textwidth]{CategoryAlphasPlot_1} \label{fig:AlphaCatb}}
 		\floatfoot{\begin{minipage}{0.9\textwidth}
-			The blue line shows the optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$. Note that for $\sigma_{1} = 0$, the optimal value of $\overline{\alpha}$ is the same as the one computed at $t = 0$: $0.75$.
+			The blue line shows the optimal $\overline{\alpha}$ at $t = 1$ as a function of $\sigma_{1}$. Note that for $\sigma_{1} = 0$, the optimal value of $\overline{\alpha}$ is the same as the one computed at $t = 0$: $0.75$ (see \Cref{tab:OptimalAlphaT}). The price vectors used are $\mathbf{p}_{0} = (1,10)$ and $\mathbf{p}_{1} = \lambda_{i} \mathbf{p}_{0}$, with $i = 1,2$.
 		\end{minipage}}
 	\end{figure}
 \end{frame}
@@ -538,7 +538,7 @@ the approximate nature of the model must always be borne in mind.}{\scriptsize\t
 		\subfloat[$\lambda = 0.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff1Plot_0} \label{fig:Diffa}}\,
 		\subfloat[$\lambda = 1.5$]{\includegraphics[width = 0.45\textwidth]{Categorydiff1Plot_1} \label{fig:Diffb}}
 		\floatfoot{\begin{minipage}{0.9\textwidth}
-			The blue dots show $D(\overline{T}_{1})$ as a function of $\sigma_{1}$.
+			The blue line shows $D_{1}(\overline{T}_{1})$ as a function of $\sigma_{1}$, computed using \eqref{eq:DiffMix}. The price vectors used are $\mathbf{p}_{0} = (1,10)$ and $\mathbf{p}_{1} = \lambda_{i} \mathbf{p}_{0}$, with $i = 1,2$.
 		\end{minipage}}
 	\end{figure}
 \end{frame}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 NOV 2019 12:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  27 NOV 2019 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2439,14 +2439,6 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
 )
-Runaway argument?
-{\defcounter {refsection}{0}\rela 
-./WrongModels.tex:35: File ended while scanning use of \@writefile.
-<inserted text> 
-                \par 
-l.35 \begin{document}
-                     
-? 
 \openout1 = `WrongModels.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -2463,6 +2455,7 @@ LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
 LaTeX Font Info:    ... okay on input line 35.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2684,7 +2677,7 @@ Package cleveref Info: loaded `spanish' language definitions on input line 7.
 [18
 
 ]
-<../_Paper/Graphics/RAjointDistribs.pdf, id=239, 387.0627pt x 265.04155pt>
+<../_Paper/Graphics/RAjointDistribs.pdf, id=254, 387.0627pt x 265.04155pt>
 File: ../_Paper/Graphics/RAjointDistribs.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/RAjointDistribs.pdf>
@@ -2694,7 +2687,7 @@ ine 351.
  [19
 
  <../_Paper/Graphics/RAjointDistribs.pdf>]
-<../_Paper/Graphics/RAwageDistribs.pdf, id=269, 357.53577pt x 265.04155pt>
+<../_Paper/Graphics/RAwageDistribs.pdf, id=284, 357.53577pt x 265.04155pt>
 File: ../_Paper/Graphics/RAwageDistribs.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/RAwageDistribs.pdf>
@@ -2708,7 +2701,7 @@ Overfull \vbox (0.4643pt too high) detected at line 362
 [20
 
  <../_Paper/Graphics/RAwageDistribs.pdf>]
-<../_Paper/Graphics/RAoptimalAlphas.pdf, id=289, 392.09995pt x 265.04155pt>
+<../_Paper/Graphics/RAoptimalAlphas.pdf, id=304, 392.09995pt x 265.04155pt>
 File: ../_Paper/Graphics/RAoptimalAlphas.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/RAoptimalAlphas.pdf>
@@ -2718,7 +2711,7 @@ ine 373.
  [21
 
  <../_Paper/Graphics/RAoptimalAlphas.pdf>]
-<../_Paper/Graphics/RAdiffPlot.pdf, id=307, 419.61253pt x 265.04155pt>
+<../_Paper/Graphics/RAdiffPlot.pdf, id=322, 419.61253pt x 265.04155pt>
 File: ../_Paper/Graphics/RAdiffPlot.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/RAdiffPlot.pdf>
@@ -2729,7 +2722,7 @@ Package pdftex.def Info: ../_Paper/Graphics/RAdiffPlot.pdf used on input line 3
 
  <../_Paper/Graphics/RAdiffPlot.pdf>] [23
 
-] <../_Paper/Graphics/CarrollCons.pdf, id=334, 397.56642pt x 265.04155pt>
+] <../_Paper/Graphics/CarrollCons.pdf, id=349, 397.56642pt x 265.04155pt>
 File: ../_Paper/Graphics/CarrollCons.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/CarrollCons.pdf>
@@ -2741,7 +2734,7 @@ Package pdftex.def Info: ../_Paper/Graphics/CarrollCons.pdf used on input line
  <../_Paper/Graphics/CarrollCons.pdf>] [25
 
 ]
-<../_Paper/Graphics/CarrollDistrib.pdf, id=359, 391.69234pt x 265.04155pt>
+<../_Paper/Graphics/CarrollDistrib.pdf, id=374, 391.69234pt x 265.04155pt>
 File: ../_Paper/Graphics/CarrollDistrib.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/CarrollDistrib.pdf>
@@ -2751,7 +2744,7 @@ ne 441.
  [26
 
  <../_Paper/Graphics/CarrollDistrib.pdf>]
-<../_Paper/Graphics/CarrollDistrib3d.pdf, id=377, 357.53577pt x 239.73564pt>
+<../_Paper/Graphics/CarrollDistrib3d.pdf, id=392, 357.53577pt x 239.73564pt>
 File: ../_Paper/Graphics/CarrollDistrib3d.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/CarrollDistrib3d.pdf>
@@ -2761,7 +2754,7 @@ line 452.
  [27
 
  <../_Paper/Graphics/CarrollDistrib3d.pdf>]
-<../_Paper/Graphics/CarrollMPC.pdf, id=394, 357.53577pt x 239.73564pt>
+<../_Paper/Graphics/CarrollMPC.pdf, id=409, 357.53577pt x 239.73564pt>
 File: ../_Paper/Graphics/CarrollMPC.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/CarrollMPC.pdf>
@@ -2771,7 +2764,7 @@ Package pdftex.def Info: ../_Paper/Graphics/CarrollMPC.pdf used on input line 4
  [28
 
  <../_Paper/Graphics/CarrollMPC.pdf>]
-<../_Paper/Graphics/CarrollMPCCurve_-4.pdf, id=412, 396.97498pt x 265.04155pt>
+<../_Paper/Graphics/CarrollMPCCurve_-4.pdf, id=427, 396.97498pt x 265.04155pt>
 File: ../_Paper/Graphics/CarrollMPCCurve_-4.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/CarrollMPCCurve_-4.pdf>
@@ -2779,7 +2772,7 @@ Package pdftex.def Info: ../_Paper/Graphics/CarrollMPCCurve_-4.pdf used on inpu
 t line 477.
 (pdftex.def)             Requested size: 154.88905pt x 103.41026pt.
 
-<../_Paper/Graphics/CarrollMPCCurve_-5.pdf, id=413, 396.97498pt x 265.04155pt>
+<../_Paper/Graphics/CarrollMPCCurve_-5.pdf, id=428, 396.97498pt x 265.04155pt>
 File: ../_Paper/Graphics/CarrollMPCCurve_-5.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/CarrollMPCCurve_-5.pdf>
@@ -2796,7 +2789,7 @@ CCurve_-5.pdf): PDF inclusion: multiple pdfs with page group included in a sing
 le page
 >] [30
 
-] <../_Paper/Graphics/JointYT_0.pdf, id=446, 388.2965pt x 265.04155pt>
+] <../_Paper/Graphics/JointYT_0.pdf, id=461, 388.2965pt x 265.04155pt>
 File: ../_Paper/Graphics/JointYT_0.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/JointYT_0.pdf>
@@ -2804,7 +2797,7 @@ Package pdftex.def Info: ../_Paper/Graphics/JointYT_0.pdf used on input line 50
 9.
 (pdftex.def)             Requested size: 154.88905pt x 105.72356pt.
 
-<../_Paper/Graphics/JointYT_1.pdf, id=447, 393.2965pt x 265.04155pt>
+<../_Paper/Graphics/JointYT_1.pdf, id=462, 393.2965pt x 265.04155pt>
 File: ../_Paper/Graphics/JointYT_1.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/JointYT_1.pdf>
@@ -2817,7 +2810,7 @@ Package pdftex.def Info: ../_Paper/Graphics/JointYT_1.pdf used on input line 50
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../_Paper/Graphics/JointYT_1
 .pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] <../_Paper/Graphics/TtLambdas.pdf, id=494, 380.51869pt x 265.04155pt>
+>] <../_Paper/Graphics/TtLambdas.pdf, id=510, 380.51869pt x 265.04155pt>
 File: ../_Paper/Graphics/TtLambdas.pdf Graphic file (type pdf)
 
 <use ../_Paper/Graphics/TtLambdas.pdf>
@@ -2827,7 +2820,7 @@ Package pdftex.def Info: ../_Paper/Graphics/TtLambdas.pdf used on input line 51
  [32
 
  <../_Paper/Graphics/TtLambdas.pdf>]
-<../_Paper/Graphics/CategoryAlphasPlot_0.pdf, id=518, 392.09995pt x 265.04155pt
+<../_Paper/Graphics/CategoryAlphasPlot_0.pdf, id=534, 392.09995pt x 265.04155pt
 >
 File: ../_Paper/Graphics/CategoryAlphasPlot_0.pdf Graphic file (type pdf)
  <use ../_Paper/Graphics/CategoryAlphasPlot_0.pdf>
@@ -2835,14 +2828,23 @@ Package pdftex.def Info: ../_Paper/Graphics/CategoryAlphasPlot_0.pdf used on in
 put line 532.
 (pdftex.def)             Requested size: 154.88905pt x 104.69632pt.
 
-<../_Paper/Graphics/CategoryAlphasPlot_1.pdf, id=519, 392.09995pt x 265.04155pt
+<../_Paper/Graphics/CategoryAlphasPlot_1.pdf, id=535, 392.09995pt x 265.04155pt
 >
 File: ../_Paper/Graphics/CategoryAlphasPlot_1.pdf Graphic file (type pdf)
  <use ../_Paper/Graphics/CategoryAlphasPlot_1.pdf>
 Package pdftex.def Info: ../_Paper/Graphics/CategoryAlphasPlot_1.pdf used on in
 put line 532.
 (pdftex.def)             Requested size: 154.88905pt x 104.69632pt.
- [33
+
+
+LaTeX Warning: Reference `tab:OptimalAlphaT' on page 1 undefined on input line 
+532.
+
+
+LaTeX Warning: Reference `tab:OptimalAlphaT' on page 1 undefined on input line 
+532.
+
+[33
 
  <../_Paper/Graphics/CategoryAlphasPlot_0.pdf> <../_Paper/Graphics/CategoryAlph
 asPlot_1.pdf
@@ -2851,20 +2853,27 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ../_Paper/Graphics/CategoryA
 lphasPlot_1.pdf): PDF inclusion: multiple pdfs with page group included in a si
 ngle page
 >]
-<../_Paper/Graphics/Categorydiff1Plot_0.pdf, id=552, 417.81041pt x 271.56859pt>
+<../_Paper/Graphics/Categorydiff1Plot_0.pdf, id=568, 417.81041pt x 271.56859pt>
 File: ../_Paper/Graphics/Categorydiff1Plot_0.pdf Graphic file (type pdf)
 <use ../_Paper/Graphics/Categorydiff1Plot_0.pdf>
 Package pdftex.def Info: ../_Paper/Graphics/Categorydiff1Plot_0.pdf used on inp
 ut line 544.
 (pdftex.def)             Requested size: 154.88905pt x 100.6777pt.
 
-<../_Paper/Graphics/Categorydiff1Plot_1.pdf, id=553, 417.81041pt x 271.56859pt>
+<../_Paper/Graphics/Categorydiff1Plot_1.pdf, id=569, 417.81041pt x 271.56859pt>
 File: ../_Paper/Graphics/Categorydiff1Plot_1.pdf Graphic file (type pdf)
 <use ../_Paper/Graphics/Categorydiff1Plot_1.pdf>
 Package pdftex.def Info: ../_Paper/Graphics/Categorydiff1Plot_1.pdf used on inp
 ut line 544.
 (pdftex.def)             Requested size: 154.88905pt x 100.6777pt.
- [34
+
+
+LaTeX Warning: Reference `eq:DiffMix' on page 34 undefined on input line 544.
+
+
+LaTeX Warning: Reference `eq:DiffMix' on page 34 undefined on input line 544.
+
+[34
 
  <../_Paper/Graphics/Categorydiff1Plot_0.pdf> <../_Paper/Graphics/Categorydiff1
 Plot_1.pdf
@@ -2898,15 +2907,9 @@ Package cleveref Info: loaded `spanish' language definitions on input line 35.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 566.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 566.
+Package rerunfilecheck Info: File `WrongModels.out' has not changed.
+(rerunfilecheck)             Checksum: DFE0A04858E39A3375E64D9EE37EBCD1;296.
 
-
-Package rerunfilecheck Warning: File `WrongModels.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `WrongModels.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  DFE0A04858E39A3375E64D9EE37EBCD1;296.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
@@ -2915,7 +2918,7 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
 Package logreq Info: Writing requests to 'WrongModels.run.xml'.
 \openout1 = `WrongModels.run.xml'.
@@ -2923,54 +2926,58 @@ Package logreq Info: Writing requests to 'WrongModels.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 566.
  ) 
 Here is how much of TeX's memory you used:
- 47714 strings out of 493014
- 945442 string characters out of 6133351
- 1411024 words of memory out of 5000000
- 50167 multiletter control sequences out of 15000+600000
- 38627 words of font info for 127 fonts, out of 8000000 for 9000
+ 47727 strings out of 493014
+ 945591 string characters out of 6133351
+ 1412190 words of memory out of 5000000
+ 50178 multiletter control sequences out of 15000+600000
+ 39402 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,16n,99p,10563b,2552s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/20
-16/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/mathabx-type1/matha10.pfb></usr/local/texlive/2016/texmf-dist/
-fonts/type1/public/mathabx-type1/matha12.pfb></usr/local/texlive/2016/texmf-dis
-t/fonts/type1/public/mathabx-type1/matha5.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/mathabx-type1/matha6.pfb></usr/local/texlive/2016/texmf-d
-ist/fonts/type1/public/mathabx-type1/matha7.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/mathabx-type1/matha8.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/mathabx-type1/matha9.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/public/cm-super/sfsi0700.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/2016/te
-xmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive/2016/texmf-
-dist/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2016/texmf-dist/f
-onts/type1/public/cm-super/sfss1440.pfb>
-Output written on WrongModels.pdf (35 pages, 7082456 bytes).
+pdfTeX warning (dest): name{eq:DiffMix} has been referenced but does not exis
+t, replaced by a fixed one
+
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/mathabx-type1/matha10.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/mathabx-type1/matha12.pfb></usr/local/texlive/2016/texmf-dist/
+fonts/type1/public/mathabx-type1/matha5.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/mathabx-type1/matha6.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/mathabx-type1/matha7.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/mathabx-type1/matha8.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/mathabx-type1/matha9.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/mathabx-type1/mathx10.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2016/
+texmf-dist/fonts/type1/public/cm-super/sfsi0700.pfb></usr/local/texlive/2016/te
+xmf-dist/fonts/type1/public/cm-super/sfss0500.pfb></usr/local/texlive/2016/texm
+f-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2016/texmf-
+dist/fonts/type1/public/cm-super/sfss0700.pfb></usr/local/texlive/2016/texmf-di
+st/fonts/type1/public/cm-super/sfss0800.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/cm-super/sfss0900.pfb></usr/local/texlive/2016/texmf-dist/f
+onts/type1/public/cm-super/sfss1000.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/cm-super/sfsx0800.pfb>
+Output written on WrongModels.pdf (35 pages, 7094833 bytes).
 PDF statistics:
- 741 PDF objects out of 1000 (max. 8388607)
- 623 compressed objects within 7 object streams
- 136 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 764 PDF objects out of 1000 (max. 8388607)
+ 644 compressed objects within 7 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 
