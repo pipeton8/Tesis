@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  5 DEC 2019 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  6 DEC 2019 16:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1967,20 +1967,34 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count305
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks56
+\footnotemargin=\dimen346
+\c@pp@next@reset=\count306
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count306
-\Gm@cntv=\count307
-\c@Gm@tempcnt=\count308
-\Gm@bindingoffset=\dimen346
-\Gm@wd@mp=\dimen347
-\Gm@odd@mp=\dimen348
-\Gm@even@mp=\dimen349
-\Gm@layoutwidth=\dimen350
-\Gm@layoutheight=\dimen351
-\Gm@layouthoffset=\dimen352
-\Gm@layoutvoffset=\dimen353
-\Gm@dimlist=\toks56
+\Gm@cnth=\count307
+\Gm@cntv=\count308
+\c@Gm@tempcnt=\count309
+\Gm@bindingoffset=\dimen347
+\Gm@wd@mp=\dimen348
+\Gm@odd@mp=\dimen349
+\Gm@even@mp=\dimen350
+\Gm@layoutwidth=\dimen351
+\Gm@layoutheight=\dimen352
+\Gm@layouthoffset=\dimen353
+\Gm@layoutvoffset=\dimen354
+\Gm@dimlist=\toks57
 )
 (./GoF Models.aux
 LaTeX Info: Redefining \. on input line 24.
@@ -2009,55 +2023,55 @@ LaTeX Warning: Label `fig:Diffb@cref' multiply defined.
 )
 \openout1 = `"GoF Models.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 \AtBeginShipoutBox=\box111
-Package backref Info: ** backref set up for natbib ** on input line 25.
-Package hyperref Info: Link coloring ON on input line 25.
+Package backref Info: ** backref set up for natbib ** on input line 26.
+Package hyperref Info: Link coloring ON on input line 26.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count309
+\c@section@level=\count310
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 
 (./GoF Models.out) (./GoF Models.out)
 \@outlinefile=\write8
 \openout8 = `"GoF Models.out"'.
 
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen354
+\scratchcounter=\count311
+\scratchdimen=\dimen355
 \scratchbox=\box112
-\nofMPsegments=\count311
-\nofMParguments=\count312
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen355
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
-\everyMPtoPDFconversion=\toks58
+\nofMPsegments=\count312
+\nofMParguments=\count313
+\everyMPshowfont=\toks58
+\MPscratchCnt=\count314
+\MPscratchDim=\dimen356
+\MPnumerator=\count315
+\makeMPintoPDFobject=\count316
+\everyMPtoPDFconversion=\toks59
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -2066,42 +2080,42 @@ Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@subalgorithm=\count316
-\c@subalgorithm@save=\count317
-\c@loadepth=\count318
+\c@subalgorithm=\count317
+\c@subalgorithm@save=\count318
+\c@loadepth=\count319
  (/usr/local/texlive/2016/texmf-dist/tex/latex/floatrow/fr-subfig.sty
 Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
 \FBsc@max=\skip109
 \FBso@max=\skip110
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 25.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 26.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
-(Font)              using `U/stmry/m/n' instead on input line 25.
+(Font)              using `U/stmry/m/n' instead on input line 26.
 
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 25.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 26.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Package xypdf Info: Line width: 0.47998pt on input line 25.
+Package xypdf Info: Line width: 0.47998pt on input line 26.
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
-Package cleveref Info: loaded `spanish' language definitions on input line 25.
-Package cleveref Info: loaded `english' language definitions on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
+Package cleveref Info: loaded `spanish' language definitions on input line 26.
+Package cleveref Info: loaded `english' language definitions on input line 26.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2145,62 +2159,61 @@ Package cleveref Info: loaded `english' language definitions on input line 25.
 File: ./Graphics/RAjointDistribs.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAjointDistribs.pdf>
-Package pdftex.def Info: ./Graphics/RAjointDistribs.pdf used on input line 232.
+Package pdftex.def Info: ./Graphics/RAjointDistribs.pdf used on input line 228.
 
 (pdftex.def)             Requested size: 290.22107pt x 198.74426pt.
-
-<./Graphics/RAwageDistribs.pdf, id=284, 357.53577pt x 265.04155pt>
+ [13 <./Graphics/RAjointDistribs.pdf>]
+<./Graphics/RAwageDistribs.pdf, id=316, 357.53577pt x 265.04155pt>
 File: ./Graphics/RAwageDistribs.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAwageDistribs.pdf>
-Package pdftex.def Info: ./Graphics/RAwageDistribs.pdf used on input line 249.
+Package pdftex.def Info: ./Graphics/RAwageDistribs.pdf used on input line 250.
 (pdftex.def)             Requested size: 290.22107pt x 215.13947pt.
- [13]
-<./Graphics/RAdiffPlot.pdf, id=303, 419.61253pt x 265.04155pt>
+
+<./Graphics/RAdiffPlot.pdf, id=317, 419.61253pt x 265.04155pt>
 File: ./Graphics/RAdiffPlot.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAdiffPlot.pdf>
 Package pdftex.def Info: ./Graphics/RAdiffPlot.pdf used on input line 259.
 (pdftex.def)             Requested size: 290.22107pt x 183.31967pt.
- [14 <./Graphics/RAjointDistribs.pdf>] [15 <./Graphics/RAwageDistribs.pdf> <./G
-raphics/RAdiffPlot.pdf
+ [14] [15 <./Graphics/RAwageDistribs.pdf> <./Graphics/RAdiffPlot.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/RAdiffPlot.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/RAdiffAlphasPlot.pdf, id=359, 392.09995pt x 265.04155pt>
+>] <./Graphics/RAdiffAlphasPlot.pdf, id=356, 392.09995pt x 265.04155pt>
 File: ./Graphics/RAdiffAlphasPlot.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAdiffAlphasPlot.pdf>
-Package pdftex.def Info: ./Graphics/RAdiffAlphasPlot.pdf used on input line 278
+Package pdftex.def Info: ./Graphics/RAdiffAlphasPlot.pdf used on input line 273
 .
 (pdftex.def)             Requested size: 290.22107pt x 196.1762pt.
-\grado=\count319
-\numvariable=\count320
-\numexponente=\count321
+\grado=\count320
+\numvariable=\count321
+\numexponente=\count322
  [16 <./Graphics/RAdiffAlphasPlot.pdf>]
-<./Graphics/RAoptimalAlphas.pdf, id=388, 392.09995pt x 265.04155pt>
+<./Graphics/RAoptimalAlphas.pdf, id=384, 392.09995pt x 265.04155pt>
 File: ./Graphics/RAoptimalAlphas.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAoptimalAlphas.pdf>
-Package pdftex.def Info: ./Graphics/RAoptimalAlphas.pdf used on input line 290.
+Package pdftex.def Info: ./Graphics/RAoptimalAlphas.pdf used on input line 285.
 
 (pdftex.def)             Requested size: 290.22107pt x 196.1762pt.
  [17 <./Graphics/RAoptimalAlphas.pdf>]
-<./Graphics/CarrollCons.pdf, id=408, 397.56642pt x 265.04155pt>
+<./Graphics/CarrollCons.pdf, id=403, 397.56642pt x 265.04155pt>
 File: ./Graphics/CarrollCons.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollCons.pdf>
-Package pdftex.def Info: ./Graphics/CarrollCons.pdf used on input line 315.
+Package pdftex.def Info: ./Graphics/CarrollCons.pdf used on input line 314.
 (pdftex.def)             Requested size: 290.22107pt x 193.47871pt.
  [18 <./Graphics/CarrollCons.pdf>] [19]
-<./Graphics/CarrollConsRho.pdf, id=448, 391.02798pt x 265.04155pt>
+<./Graphics/CarrollConsRho.pdf, id=443, 391.02798pt x 265.04155pt>
 File: ./Graphics/CarrollConsRho.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollConsRho.pdf>
 Package pdftex.def Info: ./Graphics/CarrollConsRho.pdf used on input line 355.
 (pdftex.def)             Requested size: 217.66211pt x 147.53656pt.
 
-<./Graphics/CarrollConsBeta.pdf, id=449, 391.02798pt x 265.04155pt>
+<./Graphics/CarrollConsBeta.pdf, id=444, 391.02798pt x 265.04155pt>
 File: ./Graphics/CarrollConsBeta.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollConsBeta.pdf>
@@ -2211,94 +2224,99 @@ Package pdftex.def Info: ./Graphics/CarrollConsBeta.pdf used on input line 356.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/CarrollConsBeta.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/CarrollDistrib.pdf, id=474, 391.69234pt x 265.04155pt>
+>] <./Graphics/CarrollDistrib.pdf, id=469, 391.69234pt x 265.04155pt>
 File: ./Graphics/CarrollDistrib.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollDistrib.pdf>
-Package pdftex.def Info: ./Graphics/CarrollDistrib.pdf used on input line 376.
+Package pdftex.def Info: ./Graphics/CarrollDistrib.pdf used on input line 377.
 (pdftex.def)             Requested size: 290.22107pt x 196.3784pt.
-
-<./Graphics/CarrollDistrib3d.pdf, id=475, 357.53577pt x 239.73564pt>
+ [21 <./Graphics/CarrollDistrib.pdf>]
+<./Graphics/CarrollDistrib3d.pdf, id=485, 357.53577pt x 239.73564pt>
 File: ./Graphics/CarrollDistrib3d.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollDistrib3d.pdf>
-Package pdftex.def Info: ./Graphics/CarrollDistrib3d.pdf used on input line 386
+Package pdftex.def Info: ./Graphics/CarrollDistrib3d.pdf used on input line 388
 .
 (pdftex.def)             Requested size: 290.22107pt x 194.59816pt.
- [21 <./Graphics/CarrollDistrib.pdf>]
-<./Graphics/CarrollMPC.pdf, id=492, 357.53577pt x 239.73564pt>
+
+<./Graphics/CarrollMPC.pdf, id=487, 357.53577pt x 239.73564pt>
 File: ./Graphics/CarrollMPC.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPC.pdf>
-Package pdftex.def Info: ./Graphics/CarrollMPC.pdf used on input line 396.
+Package pdftex.def Info: ./Graphics/CarrollMPC.pdf used on input line 399.
 (pdftex.def)             Requested size: 290.22107pt x 194.59816pt.
  [22 <./Graphics/CarrollDistrib3d.pdf> <./Graphics/CarrollMPC.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/CarrollMPC.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/CarrollMPCCurve_-4.pdf, id=518, 396.97498pt x 265.04155pt>
+>] <./Graphics/CarrollMPCCurve_-4.pdf, id=513, 396.97498pt x 265.04155pt>
 File: ./Graphics/CarrollMPCCurve_-4.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPCCurve_-4.pdf>
 Package pdftex.def Info: ./Graphics/CarrollMPCCurve_-4.pdf used on input line 4
-21.
+26.
 (pdftex.def)             Requested size: 217.66211pt x 145.32439pt.
 
-<./Graphics/CarrollMPCCurve_-5.pdf, id=519, 396.97498pt x 265.04155pt>
+<./Graphics/CarrollMPCCurve_-5.pdf, id=514, 396.97498pt x 265.04155pt>
 File: ./Graphics/CarrollMPCCurve_-5.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPCCurve_-5.pdf>
 Package pdftex.def Info: ./Graphics/CarrollMPCCurve_-5.pdf used on input line 4
-22.
+27.
 (pdftex.def)             Requested size: 217.66211pt x 145.32439pt.
  [23 <./Graphics/CarrollMPCCurve_-4.pdf> <./Graphics/CarrollMPCCurve_-5.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/CarrollMPCCurve_-
 5.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [24] [25] <./Graphics/MonotonocityDt.pdf, id=569, 398.0309pt x 265.04155pt>
+>]
+Overfull \vbox (1.47372pt too high) has occurred while \output is active []
+
+
+[24] [25] <./Graphics/MonotonocityDt.pdf, id=565, 398.0309pt x 265.04155pt>
 File: ./Graphics/MonotonocityDt.pdf Graphic file (type pdf)
 
 <use ./Graphics/MonotonocityDt.pdf>
-Package pdftex.def Info: ./Graphics/MonotonocityDt.pdf used on input line 498.
+Package pdftex.def Info: ./Graphics/MonotonocityDt.pdf used on input line 507.
 (pdftex.def)             Requested size: 290.22107pt x 193.26437pt.
 
-<./Graphics/MonotonocityTt.pdf, id=571, 388.2965pt x 265.04155pt>
+<./Graphics/MonotonocityTt.pdf, id=566, 388.2965pt x 265.04155pt>
 File: ./Graphics/MonotonocityTt.pdf Graphic file (type pdf)
 
 <use ./Graphics/MonotonocityTt.pdf>
-Package pdftex.def Info: ./Graphics/MonotonocityTt.pdf used on input line 507.
+Package pdftex.def Info: ./Graphics/MonotonocityTt.pdf used on input line 514.
 (pdftex.def)             Requested size: 290.22107pt x 198.10124pt.
- [26 <./Graphics/MonotonocityDt.pdf>]
-[27 <./Graphics/MonotonocityTt.pdf>] [28] [29]
-<./Graphics/TtLambdas.pdf, id=637, 380.51869pt x 265.04155pt>
+ [26] [27 <./Graphics/MonotonocityDt.pdf> <./Graphics/MonotonocityTt.pdf
+
+pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/MonotonocityTt.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
+>] [28] <./Graphics/TtLambdas.pdf, id=627, 380.51869pt x 265.04155pt>
 File: ./Graphics/TtLambdas.pdf Graphic file (type pdf)
 
 <use ./Graphics/TtLambdas.pdf>
-Package pdftex.def Info: ./Graphics/TtLambdas.pdf used on input line 554.
+Package pdftex.def Info: ./Graphics/TtLambdas.pdf used on input line 561.
 (pdftex.def)             Requested size: 290.22107pt x 202.15353pt.
- [30]
-<./Graphics/JointYA.pdf, id=659, 392.0627pt x 265.04155pt>
+ [29] [30 <./Graphics/TtLambdas.pdf>]
+<./Graphics/JointYA.pdf, id=673, 392.0627pt x 265.04155pt>
 File: ./Graphics/JointYA.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYA.pdf>
-Package pdftex.def Info: ./Graphics/JointYA.pdf used on input line 567.
+Package pdftex.def Info: ./Graphics/JointYA.pdf used on input line 576.
 (pdftex.def)             Requested size: 217.66211pt x 147.14832pt.
 
-<./Graphics/JointYT_0.pdf, id=660, 388.2965pt x 265.04155pt>
+<./Graphics/JointYT_0.pdf, id=674, 388.2965pt x 265.04155pt>
 File: ./Graphics/JointYT_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYT_0.pdf>
-Package pdftex.def Info: ./Graphics/JointYT_0.pdf used on input line 569.
+Package pdftex.def Info: ./Graphics/JointYT_0.pdf used on input line 578.
 (pdftex.def)             Requested size: 217.66211pt x 148.57593pt.
 
-<./Graphics/JointYT_1.pdf, id=661, 393.2965pt x 265.04155pt>
+<./Graphics/JointYT_1.pdf, id=675, 393.2965pt x 265.04155pt>
 File: ./Graphics/JointYT_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYT_1.pdf>
-Package pdftex.def Info: ./Graphics/JointYT_1.pdf used on input line 570.
+Package pdftex.def Info: ./Graphics/JointYT_1.pdf used on input line 579.
 (pdftex.def)             Requested size: 217.66211pt x 146.68324pt.
- [31 <./Graphics/TtLambdas.pdf>] [32 <./Graphics/JointYA.pdf> <./Graphics/Joint
-YT_0.pdf
+ [31 <./Graphics/JointYA.pdf> <./Graphics/JointYT_0.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/JointYT_0.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
@@ -2306,58 +2324,58 @@ DF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/JointYT_1.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/Categorydiff1Plot_0.pdf, id=748, 417.81041pt x 271.56859pt>
+>] <./Graphics/Categorydiff1Plot_0.pdf, id=738, 417.81041pt x 271.56859pt>
 File: ./Graphics/Categorydiff1Plot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff1Plot_0.pdf>
 Package pdftex.def Info: ./Graphics/Categorydiff1Plot_0.pdf used on input line 
-607.
+616.
 (pdftex.def)             Requested size: 217.66211pt x 141.47752pt.
 
-<./Graphics/Categorydiff1Plot_1.pdf, id=749, 417.81041pt x 271.56859pt>
+<./Graphics/Categorydiff1Plot_1.pdf, id=739, 417.81041pt x 271.56859pt>
 File: ./Graphics/Categorydiff1Plot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff1Plot_1.pdf>
 Package pdftex.def Info: ./Graphics/Categorydiff1Plot_1.pdf used on input line 
-608.
+617.
 (pdftex.def)             Requested size: 217.66211pt x 141.47752pt.
-
-<./Graphics/Categorydiff0Plot_0.pdf, id=754, 417.81041pt x 265.04155pt>
-File: ./Graphics/Categorydiff0Plot_0.pdf Graphic file (type pdf)
-
-<use ./Graphics/Categorydiff0Plot_0.pdf>
-Package pdftex.def Info: ./Graphics/Categorydiff0Plot_0.pdf used on input line 
-620.
-(pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
-
-<./Graphics/Categorydiff0Plot_1.pdf, id=755, 417.81041pt x 265.04155pt>
-File: ./Graphics/Categorydiff0Plot_1.pdf Graphic file (type pdf)
-
-<use ./Graphics/Categorydiff0Plot_1.pdf>
-Package pdftex.def Info: ./Graphics/Categorydiff0Plot_1.pdf used on input line 
-621.
-(pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
- [33 <./Graphics/Categorydiff1Plot_0.pdf> <./Graphics/Categorydiff1Plot_1.pdf
+ [32 <./Graphics/Categorydiff1Plot_0.pdf> <./Graphics/Categorydiff1Plot_1.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/Categorydiff1Plot
 _1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
->] <./Graphics/CategoryAlphasPlot_0.pdf, id=808, 392.09995pt x 265.04155pt>
+>] <./Graphics/Categorydiff0Plot_0.pdf, id=789, 417.81041pt x 265.04155pt>
+File: ./Graphics/Categorydiff0Plot_0.pdf Graphic file (type pdf)
+
+<use ./Graphics/Categorydiff0Plot_0.pdf>
+Package pdftex.def Info: ./Graphics/Categorydiff0Plot_0.pdf used on input line 
+630.
+(pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
+
+<./Graphics/Categorydiff0Plot_1.pdf, id=790, 417.81041pt x 265.04155pt>
+File: ./Graphics/Categorydiff0Plot_1.pdf Graphic file (type pdf)
+
+<use ./Graphics/Categorydiff0Plot_1.pdf>
+Package pdftex.def Info: ./Graphics/Categorydiff0Plot_1.pdf used on input line 
+631.
+(pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
+
+<./Graphics/CategoryAlphasPlot_0.pdf, id=798, 392.09995pt x 265.04155pt>
 File: ./Graphics/CategoryAlphasPlot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/CategoryAlphasPlot_0.pdf>
 Package pdftex.def Info: ./Graphics/CategoryAlphasPlot_0.pdf used on input line
- 633.
+ 647.
 (pdftex.def)             Requested size: 217.66211pt x 147.1281pt.
 
-<./Graphics/CategoryAlphasPlot_1.pdf, id=809, 392.09995pt x 265.04155pt>
+<./Graphics/CategoryAlphasPlot_1.pdf, id=799, 392.09995pt x 265.04155pt>
 File: ./Graphics/CategoryAlphasPlot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/CategoryAlphasPlot_1.pdf>
 Package pdftex.def Info: ./Graphics/CategoryAlphasPlot_1.pdf used on input line
- 634.
+ 648.
 (pdftex.def)             Requested size: 217.66211pt x 147.1281pt.
- [34 <./Graphics/Categorydiff0Plot_0.pdf> <./Graphics/Categorydiff0Plot_1.pdf
+ [33 <./Graphics/Categorydiff0Plot_0.pdf> <./Graphics/Categorydiff0Plot_1.pdf
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/Categorydiff0Plot
 _1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
@@ -2372,7 +2390,7 @@ e
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/CategoryAlphasPlo
 t_1.pdf): PDF inclusion: multiple pdfs with page group included in a single pag
 e
->] [35] [36] [37] (./GoF Models.bbl (./GoF Models.brf)
+>] [34] [35] [36] (./GoF Models.bbl (./GoF Models.brf)
 \tf@brf=\write9
 \openout9 = `"GoF Models.brf"'.
 
@@ -2380,14 +2398,14 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 21.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [38] [39])
+) [37] [38])
 
-Package caption Warning: Unused \captionsetup[subalgorithm] on input line 25.
+Package caption Warning: Unused \captionsetup[subalgorithm] on input line 26.
 See the caption package documentation for explanation.
 
-[40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 716.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 716.
+[39]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 731.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 731.
  (./GoF Models.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
@@ -2397,8 +2415,8 @@ LaTeX Info: Redefining \% on input line 28.
 Package cleveref Info: loaded `spanish' language definitions on input line 28.
 Package cleveref Info: loaded `english' language definitions on input line 32.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 716.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 716.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 731.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 731.
 Package rerunfilecheck Info: File `"GoF Models".out' has not changed.
 (rerunfilecheck)             Checksum: 15E7B98FD455D98F20CAF57121395DE2;1298.
 Package rerunfilecheck Info: File `"GoF Models".brf' has not changed.
@@ -2410,21 +2428,21 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 716.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 731.
  )
 (\end occurred inside a group at level 2)
 
-### semi simple group (level 2) entered at line 41 (\begingroup)
-### semi simple group (level 1) entered at line 14 (\begingroup)
+### semi simple group (level 2) entered at line 42 (\begingroup)
+### semi simple group (level 1) entered at line 15 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 39248 strings out of 493014
- 751345 string characters out of 6133351
- 915777 words of memory out of 5000000
- 41916 multiletter control sequences out of 15000+600000
+ 39337 strings out of 493014
+ 752860 string characters out of 6133351
+ 919649 words of memory out of 5000000
+ 42007 multiletter control sequences out of 15000+600000
  45580 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,95p,10522b,2974s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,12n,95p,10522b,2972s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm
 -super-t1.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm
@@ -2464,10 +2482,10 @@ e/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/
 16/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "GoF Models.pdf" (40 pages, 7364019 bytes).
+Output written on "GoF Models.pdf" (39 pages, 7363433 bytes).
 PDF statistics:
- 1102 PDF objects out of 1200 (max. 8388607)
- 970 compressed objects within 10 object streams
- 153 named destinations out of 1000 (max. 500000)
+ 1091 PDF objects out of 1200 (max. 8388607)
+ 960 compressed objects within 10 object streams
+ 147 named destinations out of 1000 (max. 500000)
  290 words of extra memory for PDF output out of 10000 (max. 10000000)
 
