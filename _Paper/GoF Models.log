@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 DEC 2019 11:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 DEC 2019 12:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2151,11 +2151,20 @@ Package cleveref Info: loaded `english' language definitions on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[1
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 29.
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 29.
+ [1
 
-{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12]
-<./Graphics/RAjointDistribs.pdf, id=278, 387.0627pt x 265.04155pt>
+{/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+ [4] [5]
+[6] [7] [8] [9] [10] [11] [12]
+<./Graphics/RAjointDistribs.pdf, id=281, 387.0627pt x 265.04155pt>
 File: ./Graphics/RAjointDistribs.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAjointDistribs.pdf>
@@ -2163,14 +2172,14 @@ Package pdftex.def Info: ./Graphics/RAjointDistribs.pdf used on input line 228.
 
 (pdftex.def)             Requested size: 290.22107pt x 198.74426pt.
  [13 <./Graphics/RAjointDistribs.pdf>]
-<./Graphics/RAwageDistribs.pdf, id=316, 357.53577pt x 265.04155pt>
+<./Graphics/RAwageDistribs.pdf, id=319, 357.53577pt x 265.04155pt>
 File: ./Graphics/RAwageDistribs.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAwageDistribs.pdf>
 Package pdftex.def Info: ./Graphics/RAwageDistribs.pdf used on input line 250.
 (pdftex.def)             Requested size: 290.22107pt x 215.13947pt.
 
-<./Graphics/RAdiffPlot.pdf, id=317, 419.61253pt x 265.04155pt>
+<./Graphics/RAdiffPlot.pdf, id=320, 419.61253pt x 265.04155pt>
 File: ./Graphics/RAdiffPlot.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAdiffPlot.pdf>
@@ -2180,7 +2189,7 @@ Package pdftex.def Info: ./Graphics/RAdiffPlot.pdf used on input line 259.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/RAdiffPlot.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/RAdiffAlphasPlot.pdf, id=356, 392.09995pt x 265.04155pt>
+>] <./Graphics/RAdiffAlphasPlot.pdf, id=359, 392.09995pt x 265.04155pt>
 File: ./Graphics/RAdiffAlphasPlot.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAdiffAlphasPlot.pdf>
@@ -2191,7 +2200,7 @@ Package pdftex.def Info: ./Graphics/RAdiffAlphasPlot.pdf used on input line 273
 \numvariable=\count321
 \numexponente=\count322
  [16 <./Graphics/RAdiffAlphasPlot.pdf>]
-<./Graphics/RAoptimalAlphas.pdf, id=384, 392.09995pt x 265.04155pt>
+<./Graphics/RAoptimalAlphas.pdf, id=387, 392.09995pt x 265.04155pt>
 File: ./Graphics/RAoptimalAlphas.pdf Graphic file (type pdf)
 
 <use ./Graphics/RAoptimalAlphas.pdf>
@@ -2199,21 +2208,21 @@ Package pdftex.def Info: ./Graphics/RAoptimalAlphas.pdf used on input line 285.
 
 (pdftex.def)             Requested size: 290.22107pt x 196.1762pt.
  [17 <./Graphics/RAoptimalAlphas.pdf>]
-<./Graphics/CarrollCons.pdf, id=403, 397.56642pt x 265.04155pt>
+<./Graphics/CarrollCons.pdf, id=406, 397.56642pt x 265.04155pt>
 File: ./Graphics/CarrollCons.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollCons.pdf>
 Package pdftex.def Info: ./Graphics/CarrollCons.pdf used on input line 311.
 (pdftex.def)             Requested size: 290.22107pt x 193.47871pt.
  [18 <./Graphics/CarrollCons.pdf>] [19]
-<./Graphics/CarrollConsRho.pdf, id=443, 391.02798pt x 265.04155pt>
+<./Graphics/CarrollConsRho.pdf, id=446, 391.02798pt x 265.04155pt>
 File: ./Graphics/CarrollConsRho.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollConsRho.pdf>
 Package pdftex.def Info: ./Graphics/CarrollConsRho.pdf used on input line 352.
 (pdftex.def)             Requested size: 217.66211pt x 147.53656pt.
 
-<./Graphics/CarrollConsBeta.pdf, id=444, 391.02798pt x 265.04155pt>
+<./Graphics/CarrollConsBeta.pdf, id=447, 391.02798pt x 265.04155pt>
 File: ./Graphics/CarrollConsBeta.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollConsBeta.pdf>
@@ -2224,14 +2233,14 @@ Package pdftex.def Info: ./Graphics/CarrollConsBeta.pdf used on input line 353.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/CarrollConsBeta.p
 df): PDF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/CarrollDistrib.pdf, id=469, 391.69234pt x 265.04155pt>
+>] <./Graphics/CarrollDistrib.pdf, id=472, 391.69234pt x 265.04155pt>
 File: ./Graphics/CarrollDistrib.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollDistrib.pdf>
 Package pdftex.def Info: ./Graphics/CarrollDistrib.pdf used on input line 374.
 (pdftex.def)             Requested size: 290.22107pt x 196.3784pt.
  [21 <./Graphics/CarrollDistrib.pdf>]
-<./Graphics/CarrollDistrib3d.pdf, id=485, 357.53577pt x 239.73564pt>
+<./Graphics/CarrollDistrib3d.pdf, id=488, 357.53577pt x 239.73564pt>
 File: ./Graphics/CarrollDistrib3d.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollDistrib3d.pdf>
@@ -2239,7 +2248,7 @@ Package pdftex.def Info: ./Graphics/CarrollDistrib3d.pdf used on input line 385
 .
 (pdftex.def)             Requested size: 290.22107pt x 194.59816pt.
 
-<./Graphics/CarrollMPC.pdf, id=487, 357.53577pt x 239.73564pt>
+<./Graphics/CarrollMPC.pdf, id=490, 357.53577pt x 239.73564pt>
 File: ./Graphics/CarrollMPC.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPC.pdf>
@@ -2249,7 +2258,7 @@ Package pdftex.def Info: ./Graphics/CarrollMPC.pdf used on input line 396.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/CarrollMPC.pdf): 
 PDF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/CarrollMPCCurve_-4.pdf, id=513, 396.97498pt x 265.04155pt>
+>] <./Graphics/CarrollMPCCurve_-4.pdf, id=516, 396.97498pt x 265.04155pt>
 File: ./Graphics/CarrollMPCCurve_-4.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPCCurve_-4.pdf>
@@ -2257,7 +2266,7 @@ Package pdftex.def Info: ./Graphics/CarrollMPCCurve_-4.pdf used on input line 4
 23.
 (pdftex.def)             Requested size: 217.66211pt x 145.32439pt.
 
-<./Graphics/CarrollMPCCurve_-5.pdf, id=514, 396.97498pt x 265.04155pt>
+<./Graphics/CarrollMPCCurve_-5.pdf, id=517, 396.97498pt x 265.04155pt>
 File: ./Graphics/CarrollMPCCurve_-5.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPCCurve_-5.pdf>
@@ -2272,14 +2281,14 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/CarrollMPCCurve_-
 Overfull \vbox (1.47372pt too high) has occurred while \output is active []
 
 
-[24] [25] <./Graphics/MonotonocityDt.pdf, id=565, 398.0309pt x 265.04155pt>
+[24] [25] <./Graphics/MonotonocityDt.pdf, id=568, 398.0309pt x 265.04155pt>
 File: ./Graphics/MonotonocityDt.pdf Graphic file (type pdf)
 
 <use ./Graphics/MonotonocityDt.pdf>
 Package pdftex.def Info: ./Graphics/MonotonocityDt.pdf used on input line 504.
 (pdftex.def)             Requested size: 290.22107pt x 193.26437pt.
 
-<./Graphics/MonotonocityTt.pdf, id=566, 388.2965pt x 265.04155pt>
+<./Graphics/MonotonocityTt.pdf, id=569, 388.2965pt x 265.04155pt>
 File: ./Graphics/MonotonocityTt.pdf Graphic file (type pdf)
 
 <use ./Graphics/MonotonocityTt.pdf>
@@ -2289,28 +2298,28 @@ Package pdftex.def Info: ./Graphics/MonotonocityTt.pdf used on input line 511.
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/MonotonocityTt.pd
 f): PDF inclusion: multiple pdfs with page group included in a single page
->] [28] <./Graphics/TtLambdas.pdf, id=627, 380.51869pt x 265.04155pt>
+>] [28] <./Graphics/TtLambdas.pdf, id=629, 380.51869pt x 265.04155pt>
 File: ./Graphics/TtLambdas.pdf Graphic file (type pdf)
 
 <use ./Graphics/TtLambdas.pdf>
 Package pdftex.def Info: ./Graphics/TtLambdas.pdf used on input line 558.
 (pdftex.def)             Requested size: 290.22107pt x 202.15353pt.
  [29] [30 <./Graphics/TtLambdas.pdf>]
-<./Graphics/JointYA.pdf, id=673, 392.0627pt x 265.04155pt>
+<./Graphics/JointYA.pdf, id=675, 392.0627pt x 265.04155pt>
 File: ./Graphics/JointYA.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYA.pdf>
 Package pdftex.def Info: ./Graphics/JointYA.pdf used on input line 573.
 (pdftex.def)             Requested size: 217.66211pt x 147.14832pt.
 
-<./Graphics/JointYT_0.pdf, id=674, 388.2965pt x 265.04155pt>
+<./Graphics/JointYT_0.pdf, id=676, 388.2965pt x 265.04155pt>
 File: ./Graphics/JointYT_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYT_0.pdf>
 Package pdftex.def Info: ./Graphics/JointYT_0.pdf used on input line 575.
 (pdftex.def)             Requested size: 217.66211pt x 148.57593pt.
 
-<./Graphics/JointYT_1.pdf, id=675, 393.2965pt x 265.04155pt>
+<./Graphics/JointYT_1.pdf, id=677, 393.2965pt x 265.04155pt>
 File: ./Graphics/JointYT_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYT_1.pdf>
@@ -2324,7 +2333,7 @@ DF inclusion: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/JointYT_1.pdf): P
 DF inclusion: multiple pdfs with page group included in a single page
->] <./Graphics/Categorydiff1Plot_0.pdf, id=738, 417.81041pt x 271.56859pt>
+>] <./Graphics/Categorydiff1Plot_0.pdf, id=740, 417.81041pt x 271.56859pt>
 File: ./Graphics/Categorydiff1Plot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff1Plot_0.pdf>
@@ -2332,7 +2341,7 @@ Package pdftex.def Info: ./Graphics/Categorydiff1Plot_0.pdf used on input line
 613.
 (pdftex.def)             Requested size: 217.66211pt x 141.47752pt.
 
-<./Graphics/Categorydiff1Plot_1.pdf, id=739, 417.81041pt x 271.56859pt>
+<./Graphics/Categorydiff1Plot_1.pdf, id=741, 417.81041pt x 271.56859pt>
 File: ./Graphics/Categorydiff1Plot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff1Plot_1.pdf>
@@ -2344,7 +2353,7 @@ Package pdftex.def Info: ./Graphics/Categorydiff1Plot_1.pdf used on input line
 pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./Graphics/Categorydiff1Plot
 _1.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 
->] <./Graphics/Categorydiff0Plot_0.pdf, id=789, 417.81041pt x 265.04155pt>
+>] <./Graphics/Categorydiff0Plot_0.pdf, id=791, 417.81041pt x 265.04155pt>
 File: ./Graphics/Categorydiff0Plot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff0Plot_0.pdf>
@@ -2352,7 +2361,7 @@ Package pdftex.def Info: ./Graphics/Categorydiff0Plot_0.pdf used on input line
 627.
 (pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
 
-<./Graphics/Categorydiff0Plot_1.pdf, id=790, 417.81041pt x 265.04155pt>
+<./Graphics/Categorydiff0Plot_1.pdf, id=792, 417.81041pt x 265.04155pt>
 File: ./Graphics/Categorydiff0Plot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff0Plot_1.pdf>
@@ -2360,7 +2369,7 @@ Package pdftex.def Info: ./Graphics/Categorydiff0Plot_1.pdf used on input line
 628.
 (pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
 
-<./Graphics/CategoryAlphasPlot_0.pdf, id=798, 392.09995pt x 265.04155pt>
+<./Graphics/CategoryAlphasPlot_0.pdf, id=800, 392.09995pt x 265.04155pt>
 File: ./Graphics/CategoryAlphasPlot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/CategoryAlphasPlot_0.pdf>
@@ -2368,7 +2377,7 @@ Package pdftex.def Info: ./Graphics/CategoryAlphasPlot_0.pdf used on input line
  644.
 (pdftex.def)             Requested size: 217.66211pt x 147.1281pt.
 
-<./Graphics/CategoryAlphasPlot_1.pdf, id=799, 392.09995pt x 265.04155pt>
+<./Graphics/CategoryAlphasPlot_1.pdf, id=801, 392.09995pt x 265.04155pt>
 File: ./Graphics/CategoryAlphasPlot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/CategoryAlphasPlot_1.pdf>
@@ -2436,10 +2445,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 729.
 ### semi simple group (level 1) entered at line 15 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 39337 strings out of 493014
- 752860 string characters out of 6133351
- 918649 words of memory out of 5000000
- 42007 multiletter control sequences out of 15000+600000
+ 39355 strings out of 493014
+ 753184 string characters out of 6133351
+ 919732 words of memory out of 5000000
+ 42022 multiletter control sequences out of 15000+600000
  45580 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,12n,95p,10522b,2972s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2482,10 +2491,10 @@ e/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/
 16/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "GoF Models.pdf" (39 pages, 7363268 bytes).
+Output written on "GoF Models.pdf" (39 pages, 7365275 bytes).
 PDF statistics:
- 1091 PDF objects out of 1200 (max. 8388607)
- 960 compressed objects within 10 object streams
+ 1094 PDF objects out of 1200 (max. 8388607)
+ 963 compressed objects within 10 object streams
  147 named destinations out of 1000 (max. 500000)
  290 words of extra memory for PDF output out of 10000 (max. 10000000)
 
