@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 DEC 2019 00:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  19 DEC 2019 11:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2203,21 +2203,21 @@ Package pdftex.def Info: ./Graphics/RAoptimalAlphas.pdf used on input line 285.
 File: ./Graphics/CarrollCons.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollCons.pdf>
-Package pdftex.def Info: ./Graphics/CarrollCons.pdf used on input line 314.
+Package pdftex.def Info: ./Graphics/CarrollCons.pdf used on input line 311.
 (pdftex.def)             Requested size: 290.22107pt x 193.47871pt.
  [18 <./Graphics/CarrollCons.pdf>] [19]
 <./Graphics/CarrollConsRho.pdf, id=443, 391.02798pt x 265.04155pt>
 File: ./Graphics/CarrollConsRho.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollConsRho.pdf>
-Package pdftex.def Info: ./Graphics/CarrollConsRho.pdf used on input line 355.
+Package pdftex.def Info: ./Graphics/CarrollConsRho.pdf used on input line 352.
 (pdftex.def)             Requested size: 217.66211pt x 147.53656pt.
 
 <./Graphics/CarrollConsBeta.pdf, id=444, 391.02798pt x 265.04155pt>
 File: ./Graphics/CarrollConsBeta.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollConsBeta.pdf>
-Package pdftex.def Info: ./Graphics/CarrollConsBeta.pdf used on input line 356.
+Package pdftex.def Info: ./Graphics/CarrollConsBeta.pdf used on input line 353.
 
 (pdftex.def)             Requested size: 217.66211pt x 147.53656pt.
  [20 <./Graphics/CarrollConsRho.pdf> <./Graphics/CarrollConsBeta.pdf
@@ -2228,14 +2228,14 @@ df): PDF inclusion: multiple pdfs with page group included in a single page
 File: ./Graphics/CarrollDistrib.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollDistrib.pdf>
-Package pdftex.def Info: ./Graphics/CarrollDistrib.pdf used on input line 377.
+Package pdftex.def Info: ./Graphics/CarrollDistrib.pdf used on input line 374.
 (pdftex.def)             Requested size: 290.22107pt x 196.3784pt.
  [21 <./Graphics/CarrollDistrib.pdf>]
 <./Graphics/CarrollDistrib3d.pdf, id=485, 357.53577pt x 239.73564pt>
 File: ./Graphics/CarrollDistrib3d.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollDistrib3d.pdf>
-Package pdftex.def Info: ./Graphics/CarrollDistrib3d.pdf used on input line 388
+Package pdftex.def Info: ./Graphics/CarrollDistrib3d.pdf used on input line 385
 .
 (pdftex.def)             Requested size: 290.22107pt x 194.59816pt.
 
@@ -2243,7 +2243,7 @@ Package pdftex.def Info: ./Graphics/CarrollDistrib3d.pdf used on input line 388
 File: ./Graphics/CarrollMPC.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPC.pdf>
-Package pdftex.def Info: ./Graphics/CarrollMPC.pdf used on input line 399.
+Package pdftex.def Info: ./Graphics/CarrollMPC.pdf used on input line 396.
 (pdftex.def)             Requested size: 290.22107pt x 194.59816pt.
  [22 <./Graphics/CarrollDistrib3d.pdf> <./Graphics/CarrollMPC.pdf
 
@@ -2254,7 +2254,7 @@ File: ./Graphics/CarrollMPCCurve_-4.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPCCurve_-4.pdf>
 Package pdftex.def Info: ./Graphics/CarrollMPCCurve_-4.pdf used on input line 4
-26.
+23.
 (pdftex.def)             Requested size: 217.66211pt x 145.32439pt.
 
 <./Graphics/CarrollMPCCurve_-5.pdf, id=514, 396.97498pt x 265.04155pt>
@@ -2262,7 +2262,7 @@ File: ./Graphics/CarrollMPCCurve_-5.pdf Graphic file (type pdf)
 
 <use ./Graphics/CarrollMPCCurve_-5.pdf>
 Package pdftex.def Info: ./Graphics/CarrollMPCCurve_-5.pdf used on input line 4
-27.
+24.
 (pdftex.def)             Requested size: 217.66211pt x 145.32439pt.
  [23 <./Graphics/CarrollMPCCurve_-4.pdf> <./Graphics/CarrollMPCCurve_-5.pdf
 
@@ -2276,14 +2276,14 @@ Overfull \vbox (1.47372pt too high) has occurred while \output is active []
 File: ./Graphics/MonotonocityDt.pdf Graphic file (type pdf)
 
 <use ./Graphics/MonotonocityDt.pdf>
-Package pdftex.def Info: ./Graphics/MonotonocityDt.pdf used on input line 507.
+Package pdftex.def Info: ./Graphics/MonotonocityDt.pdf used on input line 504.
 (pdftex.def)             Requested size: 290.22107pt x 193.26437pt.
 
 <./Graphics/MonotonocityTt.pdf, id=566, 388.2965pt x 265.04155pt>
 File: ./Graphics/MonotonocityTt.pdf Graphic file (type pdf)
 
 <use ./Graphics/MonotonocityTt.pdf>
-Package pdftex.def Info: ./Graphics/MonotonocityTt.pdf used on input line 514.
+Package pdftex.def Info: ./Graphics/MonotonocityTt.pdf used on input line 511.
 (pdftex.def)             Requested size: 290.22107pt x 198.10124pt.
  [26] [27 <./Graphics/MonotonocityDt.pdf> <./Graphics/MonotonocityTt.pdf
 
@@ -2293,28 +2293,28 @@ f): PDF inclusion: multiple pdfs with page group included in a single page
 File: ./Graphics/TtLambdas.pdf Graphic file (type pdf)
 
 <use ./Graphics/TtLambdas.pdf>
-Package pdftex.def Info: ./Graphics/TtLambdas.pdf used on input line 561.
+Package pdftex.def Info: ./Graphics/TtLambdas.pdf used on input line 558.
 (pdftex.def)             Requested size: 290.22107pt x 202.15353pt.
  [29] [30 <./Graphics/TtLambdas.pdf>]
 <./Graphics/JointYA.pdf, id=673, 392.0627pt x 265.04155pt>
 File: ./Graphics/JointYA.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYA.pdf>
-Package pdftex.def Info: ./Graphics/JointYA.pdf used on input line 576.
+Package pdftex.def Info: ./Graphics/JointYA.pdf used on input line 573.
 (pdftex.def)             Requested size: 217.66211pt x 147.14832pt.
 
 <./Graphics/JointYT_0.pdf, id=674, 388.2965pt x 265.04155pt>
 File: ./Graphics/JointYT_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYT_0.pdf>
-Package pdftex.def Info: ./Graphics/JointYT_0.pdf used on input line 578.
+Package pdftex.def Info: ./Graphics/JointYT_0.pdf used on input line 575.
 (pdftex.def)             Requested size: 217.66211pt x 148.57593pt.
 
 <./Graphics/JointYT_1.pdf, id=675, 393.2965pt x 265.04155pt>
 File: ./Graphics/JointYT_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/JointYT_1.pdf>
-Package pdftex.def Info: ./Graphics/JointYT_1.pdf used on input line 579.
+Package pdftex.def Info: ./Graphics/JointYT_1.pdf used on input line 576.
 (pdftex.def)             Requested size: 217.66211pt x 146.68324pt.
  [31 <./Graphics/JointYA.pdf> <./Graphics/JointYT_0.pdf
 
@@ -2329,7 +2329,7 @@ File: ./Graphics/Categorydiff1Plot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff1Plot_0.pdf>
 Package pdftex.def Info: ./Graphics/Categorydiff1Plot_0.pdf used on input line 
-616.
+613.
 (pdftex.def)             Requested size: 217.66211pt x 141.47752pt.
 
 <./Graphics/Categorydiff1Plot_1.pdf, id=739, 417.81041pt x 271.56859pt>
@@ -2337,7 +2337,7 @@ File: ./Graphics/Categorydiff1Plot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff1Plot_1.pdf>
 Package pdftex.def Info: ./Graphics/Categorydiff1Plot_1.pdf used on input line 
-617.
+614.
 (pdftex.def)             Requested size: 217.66211pt x 141.47752pt.
  [32 <./Graphics/Categorydiff1Plot_0.pdf> <./Graphics/Categorydiff1Plot_1.pdf
 
@@ -2349,7 +2349,7 @@ File: ./Graphics/Categorydiff0Plot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff0Plot_0.pdf>
 Package pdftex.def Info: ./Graphics/Categorydiff0Plot_0.pdf used on input line 
-630.
+627.
 (pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
 
 <./Graphics/Categorydiff0Plot_1.pdf, id=790, 417.81041pt x 265.04155pt>
@@ -2357,7 +2357,7 @@ File: ./Graphics/Categorydiff0Plot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/Categorydiff0Plot_1.pdf>
 Package pdftex.def Info: ./Graphics/Categorydiff0Plot_1.pdf used on input line 
-631.
+628.
 (pdftex.def)             Requested size: 217.66211pt x 138.07718pt.
 
 <./Graphics/CategoryAlphasPlot_0.pdf, id=798, 392.09995pt x 265.04155pt>
@@ -2365,7 +2365,7 @@ File: ./Graphics/CategoryAlphasPlot_0.pdf Graphic file (type pdf)
 
 <use ./Graphics/CategoryAlphasPlot_0.pdf>
 Package pdftex.def Info: ./Graphics/CategoryAlphasPlot_0.pdf used on input line
- 647.
+ 644.
 (pdftex.def)             Requested size: 217.66211pt x 147.1281pt.
 
 <./Graphics/CategoryAlphasPlot_1.pdf, id=799, 392.09995pt x 265.04155pt>
@@ -2373,7 +2373,7 @@ File: ./Graphics/CategoryAlphasPlot_1.pdf Graphic file (type pdf)
 
 <use ./Graphics/CategoryAlphasPlot_1.pdf>
 Package pdftex.def Info: ./Graphics/CategoryAlphasPlot_1.pdf used on input line
- 648.
+ 645.
 (pdftex.def)             Requested size: 217.66211pt x 147.1281pt.
  [33 <./Graphics/Categorydiff0Plot_0.pdf> <./Graphics/Categorydiff0Plot_1.pdf
 
@@ -2404,8 +2404,8 @@ Package caption Warning: Unused \captionsetup[subalgorithm] on input line 26.
 See the caption package documentation for explanation.
 
 [39]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 731.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 731.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 729.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 729.
  (./GoF Models.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
@@ -2415,12 +2415,12 @@ LaTeX Info: Redefining \% on input line 28.
 Package cleveref Info: loaded `spanish' language definitions on input line 28.
 Package cleveref Info: loaded `english' language definitions on input line 32.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 731.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 731.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 729.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 729.
 Package rerunfilecheck Info: File `"GoF Models".out' has not changed.
-(rerunfilecheck)             Checksum: 15E7B98FD455D98F20CAF57121395DE2;1298.
+(rerunfilecheck)             Checksum: 8DF2442936CDD1B9B4599BCFA152F45C;1298.
 Package rerunfilecheck Info: File `"GoF Models".brf' has not changed.
-(rerunfilecheck)             Checksum: 33495CEC10F4A986E3BE15D4E603ACDB;1656.
+(rerunfilecheck)             Checksum: A1EE503877B6CDFBFAD810BE90091FA7;1656.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2428,7 +2428,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 731.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 729.
  )
 (\end occurred inside a group at level 2)
 
@@ -2438,7 +2438,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 731.
 Here is how much of TeX's memory you used:
  39337 strings out of 493014
  752860 string characters out of 6133351
- 919647 words of memory out of 5000000
+ 918649 words of memory out of 5000000
  42007 multiletter control sequences out of 15000+600000
  45580 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2482,7 +2482,7 @@ e/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/
 16/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "GoF Models.pdf" (39 pages, 7363252 bytes).
+Output written on "GoF Models.pdf" (39 pages, 7363268 bytes).
 PDF statistics:
  1091 PDF objects out of 1200 (max. 8388607)
  960 compressed objects within 10 object streams
